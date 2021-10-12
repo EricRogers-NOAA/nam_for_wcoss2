@@ -1,0 +1,1084 @@
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/init/bash)
+ogers/nam.v4.2.0/exec ']'
++ source /apps/prod/lmodules/startLmod
+++ module purge
++++ /usr/share/lmod/lmod/libexec/lmod bash purge
+++ eval unset '__LMOD_REF_COUNT_ACLOCAL_PATH;' unset 'ACLOCAL_PATH;' unset 'BACIO_INC4;' unset 'BACIO_INC8;' unset 'BACIO_LIB4;' unset 'BACIO_LIB8;' unset 'BUFR_INC4;' unset 'BUFR_INC4_DA;' unset 'BUFR_INC8;' unset 'BUFR_INC8_DA;' unset 'BUFR_INCd;' unset 'BUFR_INCd_DA;' unset 'BUFR_LIB4;' unset 'BUFR_LIB4_DA;' unset 'BUFR_LIB8;' unset 'BUFR_LIB8_DA;' unset 'BUFR_LIBd;' unset 'BUFR_LIBd_DA;' unset '__LMOD_REF_COUNT_CLASSPATH;' unset 'CLASSPATH;' unset '__LMOD_REF_COUNT_CMAKE_PREFIX_PATH;' unset 'CMAKE_PREFIX_PATH;' unset '__LMOD_REF_COUNT_CPATH;' unset 'CPATH;' unset '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH;' unset 'CPLUS_INCLUDE_PATH;' unset 'CRAYPE_DIR;' unset 'CRAYPE_NETWORK_TARGET;' unset 'CRAYPE_VERSION;' unset 'CRAY_CPU_TARGET;' unset '__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH;' unset 'CRAY_LD_LIBRARY_PATH;' unset 'CRAY_LMOD_COMPILER;' unset 'CRAY_LMOD_CPU;' unset 'CRAY_LMOD_MPI;' unset 'CRAY_LMOD_NET;' unset 'CRAY_MPICH_BASEDIR;' unset 'CRAY_MPICH_DIR;' unset 'CRAY_MPICH_PREFIX;' unset 'CRAY_MPICH_ROOTDIR;' unset 'CRAY_MPICH_VER;' unset 'CRAY_MPICH_VERSION;' unset 'CRTM_FIX;' unset 'CRTM_INC;' unset 'CRTM_LIB;' unset '__LMOD_REF_COUNT_C_INCLUDE_PATH;' unset 'C_INCLUDE_PATH;' unset '__LMOD_REF_COUNT_DYLD_LIBRARY_PATH;' unset 'DYLD_LIBRARY_PATH;' unset 'G2TMPL_INC;' unset 'G2TMPL_LIB;' unset 'G2_INC4;' unset 'G2_INCd;' unset 'G2_LIB4;' unset 'G2_LIBd;' unset 'GFSIO_INC;' unset 'GFSIO_LIB;' unset 'HDF5_INCLUDES;' unset 'HDF5_LIBRARIES;' unset 'HDF5_ROOT;' unset 'HDF5_VERSION;' unset 'HPC_OPT;' unset '__LMOD_REF_COUNT_INCLUDE;' unset 'INCLUDE;' '__LMOD_REF_COUNT_INFOPATH=/apps/docs/info:1;' export '__LMOD_REF_COUNT_INFOPATH;' 'INFOPATH=:/apps/docs/info;' export 'INFOPATH;' unset '__LMOD_REF_COUNT_INTEL_LICENSE_FILE;' unset 'INTEL_LICENSE_FILE;' unset 'INTEL_MAJOR_VERSION;' unset 'INTEL_MINOR_VERSION;' unset 'INTEL_PATH;' unset 'INTEL_PYTHONHOME;' unset 'INTEL_VERSION;' unset 'IPPROOT;' unset 'IP_INC4;' unset 'IP_INC8;' unset 'IP_INCd;' unset 'IP_LIB4;' unset 'IP_LIB8;' unset 'IP_LIBd;' unset 'I_MPI_ROOT;' unset 'JASPER_INC;' unset 'JASPER_LIB;' unset 'JASPER_LIBDIR;' unset 'JASPER_ROOT;' unset 'JASPER_SRC;' unset 'JASPER_VER;' unset 'JPEG_INC;' unset 'JPEG_LIB;' unset 'JPEG_VER;' unset 'LANDSFCUTIL_INC4;' unset 'LANDSFCUTIL_INCd;' unset 'LANDSFCUTIL_LIB4;' unset 'LANDSFCUTIL_LIBd;' unset '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' unset 'LD_LIBRARY_PATH;' unset 'LIBJPEG_INC;' unset 'LIBJPEG_LIB;' unset 'LIBJPEG_LIBDIR;' unset 'LIBJPEG_ROOT;' unset 'LIBJPEG_SRC;' unset 'LIBJPEG_VER;' unset 'LIBPNG_INC;' unset 'LIBPNG_LIB;' unset 'LIBPNG_LIBDIR;' unset 'LIBPNG_ROOT;' unset 'LIBPNG_SRC;' unset 'LIBPNG_VER;' unset '__LMOD_REF_COUNT_LIBRARY_PATH;' unset 'LIBRARY_PATH;' unset 'LIBXML2_INC;' unset 'LIBXML2_LIB;' unset 'LIBXML2_LIBDIR;' unset 'LIBXML2_ROOT;' unset 'LIBXML2_SRC;' unset 'LIBXML2_VER;' unset '__LMOD_REF_COUNT_LMOD_CUSTOM_PATHS;' unset 'LMOD_CUSTOM_PATHS;' unset 'LMOD_FAMILY_COMPILER;' unset 'LMOD_FAMILY_COMPILER_VERSION;' unset 'LMOD_FAMILY_CRAYPE;' unset 'LMOD_FAMILY_CRAYPE_CPU;' unset 'LMOD_FAMILY_CRAYPE_CPU_VERSION;' unset 'LMOD_FAMILY_CRAYPE_NETWORK;' unset 'LMOD_FAMILY_CRAYPE_NETWORK_VERSION;' unset 'LMOD_FAMILY_CRAYPE_VERSION;' unset 'LMOD_FAMILY_MPI;' unset 'LMOD_FAMILY_MPI_VERSION;' unset 'LMOD_FAMILY_PRGENV;' unset 'LMOD_FAMILY_PRGENV_VERSION;' unset '__LMOD_REF_COUNT_LOADEDMODULES;' unset 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/usr/share/lmod/lmod/share/man:1\;/usr/share/man:1\;/opt/pbs/share/man:1\;/opt/clmgr/man:1\;/opt/sgi/share/man:1\;/opt/clmgr/share/man:1\;/opt/clmgr/lib/cm-cli/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man;' export 'MANPATH;' unset 'MKGFSNEMSIOCTL;' unset 'MKLROOT;' '__LMOD_REF_COUNT_MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:1\;/usr/share/modules:1\;/usr/share/Modules/\$MODULE_VERSION/modulefiles:1\;/usr/share/modules/modulefiles:1\;/usr/share/modulefiles/Linux:1\;/usr/share/modulefiles/Core:1\;/usr/share/lmod/lmod/modulefiles/Core:1\;/opt/cray/pe/lmod/modulefiles/core:1\;/opt/cray/pe/lmod/modulefiles/craype-targets/default:1\;/apps/prod/lmodules/sys_core:1\;/apps/ops/prod/nco/modulefiles/core:1\;/apps/prod/lmodules/core:1\;/opt/cray/modulefiles:1\;/opt/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/usr/share/modules:/usr/share/Modules/\$MODULE_VERSION/modulefiles:/usr/share/modules/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles/core:/apps/prod/lmodules/core:/opt/cray/modulefiles:/opt/modulefiles;' export 'MODULEPATH;' unset 'MPICH_DIR;' unset 'NEMSIO_CHGDATE;' unset 'NEMSIO_GET;' unset 'NEMSIO_INC;' unset 'NEMSIO_LIB;' unset 'NEMSIO_READ;' unset 'NETCDF;' unset 'NETCDF_INCLUDES;' unset 'NETCDF_LIBRARIES;' unset 'NETCDF_ROOT;' unset 'NETCDF_VERSION;' unset '__LMOD_REF_COUNT_NLSPATH;' unset 'NLSPATH;' unset 'NetCDF;' unset 'NetCDF_INCLUDES;' unset 'NetCDF_LIBRARIES;' unset 'NetCDF_ROOT;' unset 'NetCDF_VERSION;' '__LMOD_REF_COUNT_PATH=/opt/clmgr/sbin:1\;/opt/clmgr/bin:1\;/opt/sgi/sbin:1\;/opt/sgi/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/bin:2\;/usr/lib/mit/bin:1\;/usr/lib/mit/sbin:1\;/opt/pbs/bin:1\;/sbin:2\;.:2\;/u/Eric.Rogers/bin:1\;/usr/sbin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin;' export 'PATH;' unset 'PE_ENV;' unset '__LMOD_REF_COUNT_PE_FORTRAN_PKGCONFIG_LIBS;' unset 'PE_FORTRAN_PKGCONFIG_LIBS;' unset '__LMOD_REF_COUNT_PE_INTEL_FIXED_PKGCONFIG_PATH;' unset 'PE_INTEL_FIXED_PKGCONFIG_PATH;' unset '__LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV;' unset 'PE_MPICH_FIXED_PRGENV;' unset '__LMOD_REF_COUNT_PE_MPICH_FORTRAN_PKGCONFIG_LIBS;' unset 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS;' unset '__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_INTEL;' unset 'PE_MPICH_GENCOMPILERS_INTEL;' unset 'PE_MPICH_GTL_DIR_amd_gfx906;' unset 'PE_MPICH_GTL_DIR_amd_gfx908;' unset 'PE_MPICH_GTL_DIR_nvidia70;' unset 'PE_MPICH_GTL_DIR_nvidia80;' unset 'PE_MPICH_GTL_LIBS_amd_gfx906;' unset 'PE_MPICH_GTL_LIBS_amd_gfx908;' unset 'PE_MPICH_GTL_LIBS_nvidia70;' unset 'PE_MPICH_GTL_LIBS_nvidia80;' unset 'PE_MPICH_MODULE_NAME;' unset '__LMOD_REF_COUNT_PE_MPICH_PKGCONFIG_LIBS;' unset 'PE_MPICH_PKGCONFIG_LIBS;' unset 'PE_MPICH_PKGCONFIG_VARIABLES;' unset 'PE_PERFTOOLS_MPICH_LIBDIR;' unset '__LMOD_REF_COUNT_PE_PKGCONFIG_LIBS;' unset 'PE_PKGCONFIG_LIBS;' unset '__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS;' unset 'PE_PKGCONFIG_PRODUCTS;' unset '__LMOD_REF_COUNT_PE_PRODUCT_LIST;' unset 'PE_PRODUCT_LIST;' unset 'PKGCONFIG_ENABLED;' unset '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' unset 'PKG_CONFIG_PATH;' unset 'PNG_INC;' unset 'PNG_LIB;' unset 'PNG_LIBDIR;' unset 'PNG_VER;' unset 'PSTLROOT;' unset 'SFCIO_INC;' unset 'SFCIO_LIB;' unset 'SIGIO_INC;' unset 'SIGIO_LIB;' unset 'SP_INC4;' unset 'SP_INC8;' unset 'SP_INCd;' unset 'SP_LIB4;' unset 'SP_LIB8;' unset 'SP_LIBd;' unset 'TBBROOT;' unset 'W3EMC_INC4;' unset 'W3EMC_INC8;' unset 'W3EMC_INCd;' unset 'W3EMC_LIB4;' unset 'W3EMC_LIB8;' unset 'W3EMC_LIBd;' unset 'W3NCO_INC4;' unset 'W3NCO_INC8;' unset 'W3NCO_INCd;' unset 'W3NCO_LIB4;' unset 'W3NCO_LIB8;' unset 'W3NCO_LIBd;' unset 'WRF_IO_INC;' unset 'WRF_IO_LIB;' unset 'XML2_INC;' unset 'XML2_LIB;' unset 'XML2_LIBDIR;' unset 'XML2_VER;' unset 'ZLIB_INC;' unset 'ZLIB_LIB;' unset 'ZLIB_LIBDIR;' unset 'ZLIB_ROOT;' unset 'ZLIB_SRC;' unset 'ZLIB_VER;' unset 'Z_INC;' unset 'Z_LIB;' unset 'Z_LIBDIR;' unset 'Z_VER;' unset '__LMOD_REF_COUNT__LMFILES_;' unset '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXt9LG1wYXRoQT17Ii9sZnMvaDIvZW1jL2xhbS9ub3NjcnViL0VyaWMuUm9nZXJzL25hbS52NC4yLjAvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMiLCIvdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCIvb3B0L2Ny;' export '_ModuleTable001_;' '_ModuleTable002_=YXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdCIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMvY29yZSIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZSIsIi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3Vzci9zaGFyZS9tb2R1bGVzOi91c3Ivc2hhcmUvTW9kdWxlcy8kTU9EVUxFX1ZFUlNJT04vbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9t;' export '_ModuleTable002_;' '_ModuleTable003_=b2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmU6L2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzL2NvcmU6L2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlOi9vcHQvY3JheS9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzIix9;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;' unset '_ModuleTable005_;' unset '_ModuleTable006_;' unset '_ModuleTable007_;' unset '_ModuleTable008_;' unset '_ModuleTable009_;' unset '_ModuleTable010_;' unset '_ModuleTable011_;' unset '_ModuleTable012_;' unset '_ModuleTable013_;' unset '_ModuleTable014_;' unset '_ModuleTable015_;' unset '_ModuleTable016_;' unset '_ModuleTable017_;' unset '_ModuleTable018_;' unset '_ModuleTable019_;' unset '_ModuleTable020_;' unset '_ModuleTable021_;' unset 'bacio_ROOT;' unset 'bacio_VERSION;' unset 'bufr_ROOT;' unset 'bufr_VERSION;' unset 'crtm_ROOT;' unset 'crtm_VERSION;' unset 'g2_ROOT;' unset 'g2_VERSION;' unset 'g2tmpl_ROOT;' unset 'g2tmpl_VERSION;' unset 'gfsio_ROOT;' unset 'gfsio_VERSION;' unset 'ip_ROOT;' unset 'ip_VERSION;' unset 'landsfcutil_ROOT;' unset 'landsfcutil_VERSION;' unset 'nemsio_ROOT;' unset 'nemsio_VERSION;' unset 'sfcio_ROOT;' unset 'sfcio_VERSION;' unset 'sigio_ROOT;' unset 'sigio_VERSION;' unset 'sp_ROOT;' unset 'sp_VERSION;' unset 'w3emc_ROOT;' unset 'w3emc_VERSION;' unset 'w3nco_ROOT;' unset 'w3nco_VERSION;' unset 'wrf_io_ROOT;' unset 'wrf_io_VERSION;'
++++ unset __LMOD_REF_COUNT_ACLOCAL_PATH
++++ unset ACLOCAL_PATH
++++ unset BACIO_INC4
++++ unset BACIO_INC8
++++ unset BACIO_LIB4
++++ unset BACIO_LIB8
++++ unset BUFR_INC4
++++ unset BUFR_INC4_DA
++++ unset BUFR_INC8
++++ unset BUFR_INC8_DA
++++ unset BUFR_INCd
++++ unset BUFR_INCd_DA
++++ unset BUFR_LIB4
++++ unset BUFR_LIB4_DA
++++ unset BUFR_LIB8
++++ unset BUFR_LIB8_DA
++++ unset BUFR_LIBd
++++ unset BUFR_LIBd_DA
++++ unset __LMOD_REF_COUNT_CLASSPATH
++++ unset CLASSPATH
++++ unset __LMOD_REF_COUNT_CMAKE_PREFIX_PATH
++++ unset CMAKE_PREFIX_PATH
++++ unset __LMOD_REF_COUNT_CPATH
++++ unset CPATH
++++ unset __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH
++++ unset CPLUS_INCLUDE_PATH
++++ unset CRAYPE_DIR
++++ unset CRAYPE_NETWORK_TARGET
++++ unset CRAYPE_VERSION
++++ unset CRAY_CPU_TARGET
++++ unset __LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH
++++ unset CRAY_LD_LIBRARY_PATH
++++ unset CRAY_LMOD_COMPILER
++++ unset CRAY_LMOD_CPU
++++ unset CRAY_LMOD_MPI
++++ unset CRAY_LMOD_NET
++++ unset CRAY_MPICH_BASEDIR
++++ unset CRAY_MPICH_DIR
++++ unset CRAY_MPICH_PREFIX
++++ unset CRAY_MPICH_ROOTDIR
++++ unset CRAY_MPICH_VER
++++ unset CRAY_MPICH_VERSION
++++ unset CRTM_FIX
++++ unset CRTM_INC
++++ unset CRTM_LIB
++++ unset __LMOD_REF_COUNT_C_INCLUDE_PATH
++++ unset C_INCLUDE_PATH
++++ unset __LMOD_REF_COUNT_DYLD_LIBRARY_PATH
++++ unset DYLD_LIBRARY_PATH
++++ unset G2TMPL_INC
++++ unset G2TMPL_LIB
++++ unset G2_INC4
++++ unset G2_INCd
++++ unset G2_LIB4
++++ unset G2_LIBd
++++ unset GFSIO_INC
++++ unset GFSIO_LIB
++++ unset HDF5_INCLUDES
++++ unset HDF5_LIBRARIES
++++ unset HDF5_ROOT
++++ unset HDF5_VERSION
++++ unset HPC_OPT
++++ unset __LMOD_REF_COUNT_INCLUDE
++++ unset INCLUDE
++++ __LMOD_REF_COUNT_INFOPATH=/apps/docs/info:1
++++ export __LMOD_REF_COUNT_INFOPATH
++++ INFOPATH=:/apps/docs/info
++++ export INFOPATH
++++ unset __LMOD_REF_COUNT_INTEL_LICENSE_FILE
++++ unset INTEL_LICENSE_FILE
++++ unset INTEL_MAJOR_VERSION
++++ unset INTEL_MINOR_VERSION
++++ unset INTEL_PATH
++++ unset INTEL_PYTHONHOME
++++ unset INTEL_VERSION
++++ unset IPPROOT
++++ unset IP_INC4
++++ unset IP_INC8
++++ unset IP_INCd
++++ unset IP_LIB4
++++ unset IP_LIB8
++++ unset IP_LIBd
++++ unset I_MPI_ROOT
++++ unset JASPER_INC
++++ unset JASPER_LIB
++++ unset JASPER_LIBDIR
++++ unset JASPER_ROOT
++++ unset JASPER_SRC
++++ unset JASPER_VER
++++ unset JPEG_INC
++++ unset JPEG_LIB
++++ unset JPEG_VER
++++ unset LANDSFCUTIL_INC4
++++ unset LANDSFCUTIL_INCd
++++ unset LANDSFCUTIL_LIB4
++++ unset LANDSFCUTIL_LIBd
++++ unset __LMOD_REF_COUNT_LD_LIBRARY_PATH
++++ unset LD_LIBRARY_PATH
++++ unset LIBJPEG_INC
++++ unset LIBJPEG_LIB
++++ unset LIBJPEG_LIBDIR
++++ unset LIBJPEG_ROOT
++++ unset LIBJPEG_SRC
++++ unset LIBJPEG_VER
++++ unset LIBPNG_INC
++++ unset LIBPNG_LIB
++++ unset LIBPNG_LIBDIR
++++ unset LIBPNG_ROOT
++++ unset LIBPNG_SRC
++++ unset LIBPNG_VER
++++ unset __LMOD_REF_COUNT_LIBRARY_PATH
++++ unset LIBRARY_PATH
++++ unset LIBXML2_INC
++++ unset LIBXML2_LIB
++++ unset LIBXML2_LIBDIR
++++ unset LIBXML2_ROOT
++++ unset LIBXML2_SRC
++++ unset LIBXML2_VER
++++ unset __LMOD_REF_COUNT_LMOD_CUSTOM_PATHS
++++ unset LMOD_CUSTOM_PATHS
++++ unset LMOD_FAMILY_COMPILER
++++ unset LMOD_FAMILY_COMPILER_VERSION
++++ unset LMOD_FAMILY_CRAYPE
++++ unset LMOD_FAMILY_CRAYPE_CPU
++++ unset LMOD_FAMILY_CRAYPE_CPU_VERSION
++++ unset LMOD_FAMILY_CRAYPE_NETWORK
++++ unset LMOD_FAMILY_CRAYPE_NETWORK_VERSION
++++ unset LMOD_FAMILY_CRAYPE_VERSION
++++ unset LMOD_FAMILY_MPI
++++ unset LMOD_FAMILY_MPI_VERSION
++++ unset LMOD_FAMILY_PRGENV
++++ unset LMOD_FAMILY_PRGENV_VERSION
++++ unset __LMOD_REF_COUNT_LOADEDMODULES
++++ unset LOADEDMODULES
++++ __LMOD_REF_COUNT_MANPATH='/usr/share/lmod/lmod/share/man:1;/usr/share/man:1;/opt/pbs/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1'
++++ export __LMOD_REF_COUNT_MANPATH
++++ MANPATH=/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man
++++ export MANPATH
++++ unset MKGFSNEMSIOCTL
++++ unset MKLROOT
++++ __LMOD_REF_COUNT_MODULEPATH='/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:1;/usr/share/modules:1;/usr/share/Modules/$MODULE_VERSION/modulefiles:1;/usr/share/modules/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/opt/cray/pe/lmod/modulefiles/core:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default:1;/apps/prod/lmodules/sys_core:1;/apps/ops/prod/nco/modulefiles/core:1;/apps/prod/lmodules/core:1;/opt/cray/modulefiles:1;/opt/modulefiles:1'
++++ export __LMOD_REF_COUNT_MODULEPATH
++++ MODULEPATH='/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/usr/share/modules:/usr/share/Modules/$MODULE_VERSION/modulefiles:/usr/share/modules/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles/core:/apps/prod/lmodules/core:/opt/cray/modulefiles:/opt/modulefiles'
++++ export MODULEPATH
++++ unset MPICH_DIR
++++ unset NEMSIO_CHGDATE
++++ unset NEMSIO_GET
++++ unset NEMSIO_INC
++++ unset NEMSIO_LIB
++++ unset NEMSIO_READ
++++ unset NETCDF
++++ unset NETCDF_INCLUDES
++++ unset NETCDF_LIBRARIES
++++ unset NETCDF_ROOT
++++ unset NETCDF_VERSION
++++ unset __LMOD_REF_COUNT_NLSPATH
++++ unset NLSPATH
++++ unset NetCDF
++++ unset NetCDF_INCLUDES
++++ unset NetCDF_LIBRARIES
++++ unset NetCDF_ROOT
++++ unset NetCDF_VERSION
++++ __LMOD_REF_COUNT_PATH='/opt/clmgr/sbin:1;/opt/clmgr/bin:1;/opt/sgi/sbin:1;/opt/sgi/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:2;/usr/lib/mit/bin:1;/usr/lib/mit/sbin:1;/opt/pbs/bin:1;/sbin:2;.:2;/u/Eric.Rogers/bin:1;/usr/sbin:1'
++++ export __LMOD_REF_COUNT_PATH
++++ PATH=/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin
++++ export PATH
++++ unset PE_ENV
++++ unset __LMOD_REF_COUNT_PE_FORTRAN_PKGCONFIG_LIBS
++++ unset PE_FORTRAN_PKGCONFIG_LIBS
++++ unset __LMOD_REF_COUNT_PE_INTEL_FIXED_PKGCONFIG_PATH
++++ unset PE_INTEL_FIXED_PKGCONFIG_PATH
++++ unset __LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV
++++ unset PE_MPICH_FIXED_PRGENV
++++ unset __LMOD_REF_COUNT_PE_MPICH_FORTRAN_PKGCONFIG_LIBS
++++ unset PE_MPICH_FORTRAN_PKGCONFIG_LIBS
++++ unset __LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_INTEL
++++ unset PE_MPICH_GENCOMPILERS_INTEL
++++ unset PE_MPICH_GTL_DIR_amd_gfx906
++++ unset PE_MPICH_GTL_DIR_amd_gfx908
++++ unset PE_MPICH_GTL_DIR_nvidia70
++++ unset PE_MPICH_GTL_DIR_nvidia80
++++ unset PE_MPICH_GTL_LIBS_amd_gfx906
++++ unset PE_MPICH_GTL_LIBS_amd_gfx908
++++ unset PE_MPICH_GTL_LIBS_nvidia70
++++ unset PE_MPICH_GTL_LIBS_nvidia80
++++ unset PE_MPICH_MODULE_NAME
++++ unset __LMOD_REF_COUNT_PE_MPICH_PKGCONFIG_LIBS
++++ unset PE_MPICH_PKGCONFIG_LIBS
++++ unset PE_MPICH_PKGCONFIG_VARIABLES
++++ unset PE_PERFTOOLS_MPICH_LIBDIR
++++ unset __LMOD_REF_COUNT_PE_PKGCONFIG_LIBS
++++ unset PE_PKGCONFIG_LIBS
++++ unset __LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS
++++ unset PE_PKGCONFIG_PRODUCTS
++++ unset __LMOD_REF_COUNT_PE_PRODUCT_LIST
++++ unset PE_PRODUCT_LIST
++++ unset PKGCONFIG_ENABLED
++++ unset __LMOD_REF_COUNT_PKG_CONFIG_PATH
++++ unset PKG_CONFIG_PATH
++++ unset PNG_INC
++++ unset PNG_LIB
++++ unset PNG_LIBDIR
++++ unset PNG_VER
++++ unset PSTLROOT
++++ unset SFCIO_INC
++++ unset SFCIO_LIB
++++ unset SIGIO_INC
++++ unset SIGIO_LIB
++++ unset SP_INC4
++++ unset SP_INC8
++++ unset SP_INCd
++++ unset SP_LIB4
++++ unset SP_LIB8
++++ unset SP_LIBd
++++ unset TBBROOT
++++ unset W3EMC_INC4
++++ unset W3EMC_INC8
++++ unset W3EMC_INCd
++++ unset W3EMC_LIB4
++++ unset W3EMC_LIB8
++++ unset W3EMC_LIBd
++++ unset W3NCO_INC4
++++ unset W3NCO_INC8
++++ unset W3NCO_INCd
++++ unset W3NCO_LIB4
++++ unset W3NCO_LIB8
++++ unset W3NCO_LIBd
++++ unset WRF_IO_INC
++++ unset WRF_IO_LIB
++++ unset XML2_INC
++++ unset XML2_LIB
++++ unset XML2_LIBDIR
++++ unset XML2_VER
++++ unset ZLIB_INC
++++ unset ZLIB_LIB
++++ unset ZLIB_LIBDIR
++++ unset ZLIB_ROOT
++++ unset ZLIB_SRC
++++ unset ZLIB_VER
++++ unset Z_INC
++++ unset Z_LIB
++++ unset Z_LIBDIR
++++ unset Z_VER
++++ unset __LMOD_REF_COUNT__LMFILES_
++++ unset _LMFILES_
++++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXt9LG1wYXRoQT17Ii9sZnMvaDIvZW1jL2xhbS9ub3NjcnViL0VyaWMuUm9nZXJzL25hbS52NC4yLjAvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMiLCIvdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCIvb3B0L2Ny
++++ export _ModuleTable001_
++++ _ModuleTable002_=YXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdCIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMvY29yZSIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZSIsIi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3Vzci9zaGFyZS9tb2R1bGVzOi91c3Ivc2hhcmUvTW9kdWxlcy8kTU9EVUxFX1ZFUlNJT04vbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9t
++++ export _ModuleTable002_
++++ _ModuleTable003_=b2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmU6L2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzL2NvcmU6L2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlOi9vcHQvY3JheS9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzIix9
++++ export _ModuleTable003_
++++ _ModuleTable_Sz_=3
++++ export _ModuleTable_Sz_
++++ unset _ModuleTable005_
++++ unset _ModuleTable006_
++++ unset _ModuleTable007_
++++ unset _ModuleTable008_
++++ unset _ModuleTable009_
++++ unset _ModuleTable010_
++++ unset _ModuleTable011_
++++ unset _ModuleTable012_
++++ unset _ModuleTable013_
++++ unset _ModuleTable014_
++++ unset _ModuleTable015_
++++ unset _ModuleTable016_
++++ unset _ModuleTable017_
++++ unset _ModuleTable018_
++++ unset _ModuleTable019_
++++ unset _ModuleTable020_
++++ unset _ModuleTable021_
++++ unset bacio_ROOT
++++ unset bacio_VERSION
++++ unset bufr_ROOT
++++ unset bufr_VERSION
++++ unset crtm_ROOT
++++ unset crtm_VERSION
++++ unset g2_ROOT
++++ unset g2_VERSION
++++ unset g2tmpl_ROOT
++++ unset g2tmpl_VERSION
++++ unset gfsio_ROOT
++++ unset gfsio_VERSION
++++ unset ip_ROOT
++++ unset ip_VERSION
++++ unset landsfcutil_ROOT
++++ unset landsfcutil_VERSION
++++ unset nemsio_ROOT
++++ unset nemsio_VERSION
++++ unset sfcio_ROOT
++++ unset sfcio_VERSION
++++ unset sigio_ROOT
++++ unset sigio_VERSION
++++ unset sp_ROOT
++++ unset sp_VERSION
++++ unset w3emc_ROOT
++++ unset w3emc_VERSION
++++ unset w3nco_ROOT
++++ unset w3nco_VERSION
++++ unset wrf_io_ROOT
++++ unset wrf_io_VERSION
++++ : -s sh
+++ eval
+++ unset MODULEPATH
+++ export MODULEPATH=/apps/prod/lmodules/sys_core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
+++ MODULEPATH=/apps/prod/lmodules/sys_core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
+++ export LMOD_AVAIL_STYLE=en_grouped:system
+++ LMOD_AVAIL_STYLE=en_grouped:system
+++ export LMOD_PACKAGE_PATH=/apps/prod/lmodules
+++ LMOD_PACKAGE_PATH=/apps/prod/lmodules
+++ export LMOD_MODULERCFILE=/apps/prod/lmodules/.modulerc.lua
+++ LMOD_MODULERCFILE=/apps/prod/lmodules/.modulerc.lua
+++ export LMOD_IGNORE_CACHE=yes
+++ LMOD_IGNORE_CACHE=yes
+++ . /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/init/bash
++++ '[' -z '' ']'
++++ case "$-" in
++++ __lmod_vx=x
++++ '[' -n x ']'
++++ set +x
+Shell debugging restarted
++++ unset __lmod_vx
+++ module load envvar/1.0
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load envvar/1.0
+++ eval 'CRAYPE_NETWORK_TARGET=ofi;' export 'CRAYPE_NETWORK_TARGET;' 'CRAY_CPU_TARGET=x86-rome;' export 'CRAY_CPU_TARGET;' 'HPC_OPT=/apps/ops/prod/libs;' export 'HPC_OPT;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=craype-x86-rome:1\;libfabric/1.11.0.4.75:1\;craype-network-ofi:1\;envvar/1.0:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/cray/libfabric/1.11.0.4.75/share/man:1\;/usr/share/lmod/lmod/share/man:1\;/usr/share/man:1\;/opt/pbs/share/man:1\;/opt/clmgr/man:1\;/opt/sgi/share/man:1\;/opt/clmgr/share/man:1\;/opt/clmgr/lib/cm-cli/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/apps/prod/lmodules/sys_core:1\;/opt/cray/pe/perftools/21.02.0/modulefiles:1\;/opt/cray/pe/modulefiles:1\;/opt/cray/modulefiles:1\;/opt/modulefiles:1\;/usr/share/modules:1\;/usr/share/Modules/3.2.10/modulefiles:1\;/usr/share/modules/modulefiles:1\;/opt/cray/pe/craype-targets/default/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/apps/prod/lmodules/sys_core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/opt/cray/libfabric/1.11.0.4.75/bin:1\;/opt/clmgr/sbin:1\;/opt/clmgr/bin:1\;/opt/sgi/sbin:1\;/opt/sgi/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/bin:2\;/usr/lib/mit/bin:1\;/usr/lib/mit/sbin:1\;/opt/pbs/bin:1\;/sbin:2\;.:2\;/u/Eric.Rogers/bin:1\;/usr/sbin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin;' export 'PATH;' '__LMOD_REF_COUNT_PE_PRODUCT_LIST=CRAYPE_X86_ROME:1;' export '__LMOD_REF_COUNT_PE_PRODUCT_LIST;' 'PE_PRODUCT_LIST=CRAYPE_X86_ROME;' export 'PE_PRODUCT_LIST;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT__LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:1\;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1\;/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:1\;/apps/prod/lmodules/sys_core/envvar/1.0:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh;' export '_ModuleTable001_;' '_ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s;' export '_ModuleTable002_;' '_ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZSIsIi9vcHQvY3JheS9wZS9wZXJmdG9vbHMvMjEuMDIuMC9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMiLCIvdXNyL3NoYXJlL01vZHVsZXMvMy4yLjEwL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVz;' export '_ModuleTable003_;' '_ModuleTable004_=L21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3Vzci9zaGFyZS9tb2R1bGVzOi91c3Ivc2hhcmUvTW9kdWxlcy8kTU9EVUxFX1ZFUlNJT04vbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9hcHBzL3Byb2QvbG1vZHVs;' export '_ModuleTable004_;' '_ModuleTable005_=ZXMvc3lzX2NvcmU6L2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzL2NvcmU6L2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlOi9vcHQvY3JheS9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzIix9;' export '_ModuleTable005_;' '_ModuleTable_Sz_=5;' export '_ModuleTable_Sz_;'
++++ CRAYPE_NETWORK_TARGET=ofi
++++ export CRAYPE_NETWORK_TARGET
++++ CRAY_CPU_TARGET=x86-rome
++++ export CRAY_CPU_TARGET
++++ HPC_OPT=/apps/ops/prod/libs
++++ export HPC_OPT
++++ __LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64:1
++++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
++++ LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64
++++ export LD_LIBRARY_PATH
++++ __LMOD_REF_COUNT_LOADEDMODULES='craype-x86-rome:1;libfabric/1.11.0.4.75:1;craype-network-ofi:1;envvar/1.0:1'
++++ export __LMOD_REF_COUNT_LOADEDMODULES
++++ LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0
++++ export LOADEDMODULES
++++ __LMOD_REF_COUNT_MANPATH='/opt/cray/libfabric/1.11.0.4.75/share/man:1;/usr/share/lmod/lmod/share/man:1;/usr/share/man:1;/opt/pbs/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1'
++++ export __LMOD_REF_COUNT_MANPATH
++++ MANPATH=/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man
++++ export MANPATH
++++ __LMOD_REF_COUNT_MODULEPATH='/apps/prod/lmodules/sys_core:1;/opt/cray/pe/perftools/21.02.0/modulefiles:1;/opt/cray/pe/modulefiles:1;/opt/cray/modulefiles:1;/opt/modulefiles:1;/usr/share/modules:1;/usr/share/Modules/3.2.10/modulefiles:1;/usr/share/modules/modulefiles:1;/opt/cray/pe/craype-targets/default/modulefiles:1'
++++ export __LMOD_REF_COUNT_MODULEPATH
++++ MODULEPATH=/apps/prod/lmodules/sys_core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
++++ export MODULEPATH
++++ __LMOD_REF_COUNT_PATH='/opt/cray/libfabric/1.11.0.4.75/bin:1;/opt/clmgr/sbin:1;/opt/clmgr/bin:1;/opt/sgi/sbin:1;/opt/sgi/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:2;/usr/lib/mit/bin:1;/usr/lib/mit/sbin:1;/opt/pbs/bin:1;/sbin:2;.:2;/u/Eric.Rogers/bin:1;/usr/sbin:1'
++++ export __LMOD_REF_COUNT_PATH
++++ PATH=/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin
++++ export PATH
++++ __LMOD_REF_COUNT_PE_PRODUCT_LIST=CRAYPE_X86_ROME:1
++++ export __LMOD_REF_COUNT_PE_PRODUCT_LIST
++++ PE_PRODUCT_LIST=CRAYPE_X86_ROME
++++ export PE_PRODUCT_LIST
++++ __LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:1
++++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
++++ PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig
++++ export PKG_CONFIG_PATH
++++ __LMOD_REF_COUNT__LMFILES_='/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:1;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1;/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:1;/apps/prod/lmodules/sys_core/envvar/1.0:1'
++++ export __LMOD_REF_COUNT__LMFILES_
++++ _LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0
++++ export _LMFILES_
++++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh
++++ export _ModuleTable001_
++++ _ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s
++++ export _ModuleTable002_
++++ _ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZSIsIi9vcHQvY3JheS9wZS9wZXJmdG9vbHMvMjEuMDIuMC9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMiLCIvdXNyL3NoYXJlL01vZHVsZXMvMy4yLjEwL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVz
++++ export _ModuleTable003_
++++ _ModuleTable004_=L21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3Vzci9zaGFyZS9tb2R1bGVzOi91c3Ivc2hhcmUvTW9kdWxlcy8kTU9EVUxFX1ZFUlNJT04vbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9hcHBzL3Byb2QvbG1vZHVs
++++ export _ModuleTable004_
++++ _ModuleTable005_=ZXMvc3lzX2NvcmU6L2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzL2NvcmU6L2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlOi9vcHQvY3JheS9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzIix9
++++ export _ModuleTable005_
++++ _ModuleTable_Sz_=5
++++ export _ModuleTable_Sz_
++++ : -s sh
+++ eval
+++ export MODULEPATH=/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
+++ MODULEPATH=/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
++ module purge
+++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash purge
++ eval unset 'CRAYPE_NETWORK_TARGET;' unset 'CRAY_CPU_TARGET;' unset 'HPC_OPT;' unset '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' unset 'LD_LIBRARY_PATH;' unset '__LMOD_REF_COUNT_LOADEDMODULES;' unset 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/usr/share/lmod/lmod/share/man:1\;/usr/share/man:1\;/opt/pbs/share/man:1\;/opt/clmgr/man:1\;/opt/sgi/share/man:1\;/opt/clmgr/share/man:1\;/opt/clmgr/lib/cm-cli/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/apps/prod/lmodules/sys_core:1\;/apps/ops/prod/nco/modulefiles:1\;/apps/prod/lmodules/core:1\;/opt/cray/pe/perftools/21.02.0/modulefiles:1\;/opt/cray/pe/modulefiles:1\;/opt/cray/modulefiles:1\;/opt/modulefiles:1\;/usr/share/modules:1\;/usr/share/Modules/3.2.10/modulefiles:1\;/usr/share/modules/modulefiles:1\;/opt/cray/pe/craype-targets/default/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/opt/clmgr/sbin:1\;/opt/clmgr/bin:1\;/opt/sgi/sbin:1\;/opt/sgi/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/bin:2\;/usr/lib/mit/bin:1\;/usr/lib/mit/sbin:1\;/opt/pbs/bin:1\;/sbin:2\;.:2\;/u/Eric.Rogers/bin:1\;/usr/sbin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin;' export 'PATH;' unset '__LMOD_REF_COUNT_PE_PRODUCT_LIST;' unset 'PE_PRODUCT_LIST;' unset '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' unset 'PKG_CONFIG_PATH;' unset '__LMOD_REF_COUNT__LMFILES_;' unset '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXt9LG1wYXRoQT17Ii9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmUiLCIvb3B0L2NyYXkvcGUvcGVyZnRvb2xzLzIxLjAyLjAvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9Nb2R1bGVzLzMuMi4xMC9tb2R1bGVmaWxlcyIsIi91c3Iv;' export '_ModuleTable001_;' '_ModuleTable002_=c2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlczovdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovYXBw;' export '_ModuleTable002_;' '_ModuleTable003_=cy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlOi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcy9jb3JlOi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZTovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;' unset '_ModuleTable005_;'
+++ unset CRAYPE_NETWORK_TARGET
+++ unset CRAY_CPU_TARGET
+++ unset HPC_OPT
+++ unset __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ unset LD_LIBRARY_PATH
+++ unset __LMOD_REF_COUNT_LOADEDMODULES
+++ unset LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/usr/share/lmod/lmod/share/man:1;/usr/share/man:1;/opt/pbs/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/apps/prod/lmodules/sys_core:1;/apps/ops/prod/nco/modulefiles:1;/apps/prod/lmodules/core:1;/opt/cray/pe/perftools/21.02.0/modulefiles:1;/opt/cray/pe/modulefiles:1;/opt/cray/modulefiles:1;/opt/modulefiles:1;/usr/share/modules:1;/usr/share/Modules/3.2.10/modulefiles:1;/usr/share/modules/modulefiles:1;/opt/cray/pe/craype-targets/default/modulefiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/opt/clmgr/sbin:1;/opt/clmgr/bin:1;/opt/sgi/sbin:1;/opt/sgi/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:2;/usr/lib/mit/bin:1;/usr/lib/mit/sbin:1;/opt/pbs/bin:1;/sbin:2;.:2;/u/Eric.Rogers/bin:1;/usr/sbin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin
+++ export PATH
+++ unset __LMOD_REF_COUNT_PE_PRODUCT_LIST
+++ unset PE_PRODUCT_LIST
+++ unset __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ unset PKG_CONFIG_PATH
+++ unset __LMOD_REF_COUNT__LMFILES_
+++ unset _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXt9LG1wYXRoQT17Ii9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmUiLCIvb3B0L2NyYXkvcGUvcGVyZnRvb2xzLzIxLjAyLjAvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9Nb2R1bGVzLzMuMi4xMC9tb2R1bGVmaWxlcyIsIi91c3Iv
+++ export _ModuleTable001_
+++ _ModuleTable002_=c2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlczovdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovYXBw
+++ export _ModuleTable002_
+++ _ModuleTable003_=cy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlOi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcy9jb3JlOi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZTovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ unset _ModuleTable005_
+++ : -s sh
++ eval
++ module load envvar/1.0
+++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load envvar/1.0
++ eval 'CRAYPE_NETWORK_TARGET=ofi;' export 'CRAYPE_NETWORK_TARGET;' 'CRAY_CPU_TARGET=x86-rome;' export 'CRAY_CPU_TARGET;' 'HPC_OPT=/apps/ops/prod/libs;' export 'HPC_OPT;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=craype-x86-rome:1\;libfabric/1.11.0.4.75:1\;craype-network-ofi:1\;envvar/1.0:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/cray/libfabric/1.11.0.4.75/share/man:1\;/usr/share/lmod/lmod/share/man:1\;/usr/share/man:1\;/opt/pbs/share/man:1\;/opt/clmgr/man:1\;/opt/sgi/share/man:1\;/opt/clmgr/share/man:1\;/opt/clmgr/lib/cm-cli/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man;' export 'MANPATH;' 'MODULEPATH=/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/opt/cray/libfabric/1.11.0.4.75/bin:1\;/opt/clmgr/sbin:1\;/opt/clmgr/bin:1\;/opt/sgi/sbin:1\;/opt/sgi/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/bin:2\;/usr/lib/mit/bin:1\;/usr/lib/mit/sbin:1\;/opt/pbs/bin:1\;/sbin:2\;.:2\;/u/Eric.Rogers/bin:1\;/usr/sbin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin;' export 'PATH;' '__LMOD_REF_COUNT_PE_PRODUCT_LIST=CRAYPE_X86_ROME:1;' export '__LMOD_REF_COUNT_PE_PRODUCT_LIST;' 'PE_PRODUCT_LIST=CRAYPE_X86_ROME;' export 'PE_PRODUCT_LIST;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT__LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:1\;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1\;/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:1\;/apps/prod/lmodules/sys_core/envvar/1.0:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh;' export '_ModuleTable001_;' '_ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s;' export '_ModuleTable002_;' '_ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZSIsIi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcyIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZSIsIi9vcHQvY3JheS9wZS9wZXJmdG9vbHMvMjEuMDIuMC9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMi;' export '_ModuleTable003_;' '_ModuleTable004_=LCIvdXNyL3NoYXJlL01vZHVsZXMvMy4yLjEwL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3Vzci9zaGFyZS9tb2R1bGVzOi91c3Ivc2hhcmUvTW9kdWxlcy8kTU9EVUxFX1ZFUlNJT04vbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkv;' export '_ModuleTable004_;' '_ModuleTable005_=cGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmU6L2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzL2NvcmU6L2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlOi9vcHQvY3JheS9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzIix9;' export '_ModuleTable005_;' '_ModuleTable_Sz_=5;' export '_ModuleTable_Sz_;'
+++ CRAYPE_NETWORK_TARGET=ofi
+++ export CRAYPE_NETWORK_TARGET
+++ CRAY_CPU_TARGET=x86-rome
+++ export CRAY_CPU_TARGET
+++ HPC_OPT=/apps/ops/prod/libs
+++ export HPC_OPT
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64:1
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='craype-x86-rome:1;libfabric/1.11.0.4.75:1;craype-network-ofi:1;envvar/1.0:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/opt/cray/libfabric/1.11.0.4.75/share/man:1;/usr/share/lmod/lmod/share/man:1;/usr/share/man:1;/opt/pbs/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man
+++ export MANPATH
+++ MODULEPATH=/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/opt/cray/libfabric/1.11.0.4.75/bin:1;/opt/clmgr/sbin:1;/opt/clmgr/bin:1;/opt/sgi/sbin:1;/opt/sgi/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:2;/usr/lib/mit/bin:1;/usr/lib/mit/sbin:1;/opt/pbs/bin:1;/sbin:2;.:2;/u/Eric.Rogers/bin:1;/usr/sbin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin
+++ export PATH
+++ __LMOD_REF_COUNT_PE_PRODUCT_LIST=CRAYPE_X86_ROME:1
+++ export __LMOD_REF_COUNT_PE_PRODUCT_LIST
+++ PE_PRODUCT_LIST=CRAYPE_X86_ROME
+++ export PE_PRODUCT_LIST
+++ __LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:1
+++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig
+++ export PKG_CONFIG_PATH
+++ __LMOD_REF_COUNT__LMFILES_='/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:1;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1;/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:1;/apps/prod/lmodules/sys_core/envvar/1.0:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh
+++ export _ModuleTable001_
+++ _ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s
+++ export _ModuleTable002_
+++ _ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZSIsIi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcyIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZSIsIi9vcHQvY3JheS9wZS9wZXJmdG9vbHMvMjEuMDIuMC9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMi
+++ export _ModuleTable003_
+++ _ModuleTable004_=LCIvdXNyL3NoYXJlL01vZHVsZXMvMy4yLjEwL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3Vzci9zaGFyZS9tb2R1bGVzOi91c3Ivc2hhcmUvTW9kdWxlcy8kTU9EVUxFX1ZFUlNJT04vbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkv
+++ export _ModuleTable004_
+++ _ModuleTable005_=cGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmU6L2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzL2NvcmU6L2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlOi9vcHQvY3JheS9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzIix9
+++ export _ModuleTable005_
+++ _ModuleTable_Sz_=5
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ dir_modules=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles
++ module use /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/
+++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash use /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/
++ eval '__LMOD_REF_COUNT_MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:1\;/apps/prod/lmodules/sys_core:1\;/apps/ops/prod/nco/modulefiles:1\;/apps/prod/lmodules/core:1\;/opt/cray/pe/perftools/21.02.0/modulefiles:1\;/opt/cray/pe/modulefiles:1\;/opt/cray/modulefiles:1\;/opt/modulefiles:1\;/usr/share/modules:1\;/usr/share/Modules/3.2.10/modulefiles:1\;/usr/share/modules/modulefiles:1\;/opt/cray/pe/craype-targets/default/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh;' export '_ModuleTable001_;' '_ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s;' export '_ModuleTable002_;' '_ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2xmcy9oMi9lbWMvbGFtL25vc2NydWIvRXJpYy5Sb2dlcnMvbmFtLnY0LjIuMC9tb2R1bGVmaWxlcyIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmUiLCIvb3B0L2NyYXkvcGUvcGVyZnRvb2xzLzIxLjAyLjAvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMiLCIv;' export '_ModuleTable003_;' '_ModuleTable004_=b3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9Nb2R1bGVzLzMuMi4xMC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlczovdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9t;' export '_ModuleTable004_;' '_ModuleTable005_=b2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlOi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcy9jb3JlOi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZTovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==;' export '_ModuleTable005_;' '_ModuleTable_Sz_=5;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_MODULEPATH='/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:1;/apps/prod/lmodules/sys_core:1;/apps/ops/prod/nco/modulefiles:1;/apps/prod/lmodules/core:1;/opt/cray/pe/perftools/21.02.0/modulefiles:1;/opt/cray/pe/modulefiles:1;/opt/cray/modulefiles:1;/opt/modulefiles:1;/usr/share/modules:1;/usr/share/Modules/3.2.10/modulefiles:1;/usr/share/modules/modulefiles:1;/opt/cray/pe/craype-targets/default/modulefiles:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
+++ export MODULEPATH
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh
+++ export _ModuleTable001_
+++ _ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s
+++ export _ModuleTable002_
+++ _ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2xmcy9oMi9lbWMvbGFtL25vc2NydWIvRXJpYy5Sb2dlcnMvbmFtLnY0LjIuMC9tb2R1bGVmaWxlcyIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmUiLCIvb3B0L2NyYXkvcGUvcGVyZnRvb2xzLzIxLjAyLjAvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMiLCIv
+++ export _ModuleTable003_
+++ _ModuleTable004_=b3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9Nb2R1bGVzLzMuMi4xMC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlczovdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9t
+++ export _ModuleTable004_
+++ _ModuleTable005_=b2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlOi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcy9jb3JlOi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZTovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==
+++ export _ModuleTable005_
+++ _ModuleTable_Sz_=5
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ source /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio
+++ set ver v6.2.3
+++ module unload cce cpe-cray
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash unload cce cpe-cray
+++ eval 'MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh;' export '_ModuleTable001_;' '_ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s;' export '_ModuleTable002_;' '_ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2xmcy9oMi9lbWMvbGFtL25vc2NydWIvRXJpYy5Sb2dlcnMvbmFtLnY0LjIuMC9tb2R1bGVmaWxlcyIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmUiLCIvb3B0L2NyYXkvcGUvcGVyZnRvb2xzLzIxLjAyLjAvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMiLCIv;' export '_ModuleTable003_;' '_ModuleTable004_=b3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9Nb2R1bGVzLzMuMi4xMC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlczovdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9t;' export '_ModuleTable004_;' '_ModuleTable005_=b2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlOi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcy9jb3JlOi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZTovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==;' export '_ModuleTable005_;' '_ModuleTable_Sz_=5;' export '_ModuleTable_Sz_;'
++++ MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
++++ export MODULEPATH
++++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh
++++ export _ModuleTable001_
++++ _ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s
++++ export _ModuleTable002_
++++ _ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2xmcy9oMi9lbWMvbGFtL25vc2NydWIvRXJpYy5Sb2dlcnMvbmFtLnY0LjIuMC9tb2R1bGVmaWxlcyIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmUiLCIvb3B0L2NyYXkvcGUvcGVyZnRvb2xzLzIxLjAyLjAvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMiLCIv
++++ export _ModuleTable003_
++++ _ModuleTable004_=b3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9Nb2R1bGVzLzMuMi4xMC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlczovdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9t
++++ export _ModuleTable004_
++++ _ModuleTable005_=b2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlOi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcy9jb3JlOi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZTovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==
++++ export _ModuleTable005_
++++ _ModuleTable_Sz_=5
++++ export _ModuleTable_Sz_
++++ : -s sh
+++ eval
+++ module load envvar/1.0
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load envvar/1.0
+++ eval 'CRAYPE_NETWORK_TARGET=ofi;' export 'CRAYPE_NETWORK_TARGET;' 'CRAY_CPU_TARGET=x86-rome;' export 'CRAY_CPU_TARGET;' 'HPC_OPT=/apps/ops/prod/libs;' export 'HPC_OPT;' 'LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64;' export 'LD_LIBRARY_PATH;' 'LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0;' export 'LOADEDMODULES;' 'MANPATH=/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man;' export 'MANPATH;' 'MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' 'PATH=/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin;' export 'PATH;' 'PE_PRODUCT_LIST=CRAYPE_X86_ROME;' export 'PE_PRODUCT_LIST;' 'PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig;' export 'PKG_CONFIG_PATH;' '_LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh;' export '_ModuleTable001_;' '_ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s;' export '_ModuleTable002_;' '_ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2xmcy9oMi9lbWMvbGFtL25vc2NydWIvRXJpYy5Sb2dlcnMvbmFtLnY0LjIuMC9tb2R1bGVmaWxlcyIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmUiLCIvb3B0L2NyYXkvcGUvcGVyZnRvb2xzLzIxLjAyLjAvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMiLCIv;' export '_ModuleTable003_;' '_ModuleTable004_=b3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9Nb2R1bGVzLzMuMi4xMC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlczovdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9t;' export '_ModuleTable004_;' '_ModuleTable005_=b2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlOi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcy9jb3JlOi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZTovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==;' export '_ModuleTable005_;' '_ModuleTable_Sz_=5;' export '_ModuleTable_Sz_;'
++++ CRAYPE_NETWORK_TARGET=ofi
++++ export CRAYPE_NETWORK_TARGET
++++ CRAY_CPU_TARGET=x86-rome
++++ export CRAY_CPU_TARGET
++++ HPC_OPT=/apps/ops/prod/libs
++++ export HPC_OPT
++++ LD_LIBRARY_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64
++++ export LD_LIBRARY_PATH
++++ LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0
++++ export LOADEDMODULES
++++ MANPATH=/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man
++++ export MANPATH
++++ MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
++++ export MODULEPATH
++++ PATH=/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin
++++ export PATH
++++ PE_PRODUCT_LIST=CRAYPE_X86_ROME
++++ export PE_PRODUCT_LIST
++++ PKG_CONFIG_PATH=/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig
++++ export PKG_CONFIG_PATH
++++ _LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0
++++ export _LMFILES_
++++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzL2NyYXlwZS1uZXR3b3JrLW9maSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRh
++++ export _ModuleTable001_
++++ _ModuleTable002_=cmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUteDg2LXJvbWUiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LGVudnZhcj17WyJmbiJdPSIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlL2VudnZhci8xLjAiLFsiZnVsbE5hbWUiXT0iZW52dmFyLzEuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVudnZhci8xLjAiLH0sbGliZmFicmljPXtbImZuIl09Ii9vcHQvY3JheS9tb2R1bGVmaWxlcy9s
++++ export _ModuleTable002_
++++ _ModuleTable003_=aWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsiZnVsbE5hbWUiXT0ibGliZmFicmljLzEuMTEuMC40Ljc1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibGliZmFicmljIix9LH0sbXBhdGhBPXsiL2xmcy9oMi9lbWMvbGFtL25vc2NydWIvRXJpYy5Sb2dlcnMvbmFtLnY0LjIuMC9tb2R1bGVmaWxlcyIsIi9hcHBzL3Byb2QvbG1vZHVsZXMvc3lzX2NvcmUiLCIvYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmUiLCIvb3B0L2NyYXkvcGUvcGVyZnRvb2xzLzIxLjAyLjAvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMiLCIv
++++ export _ModuleTable003_
++++ _ModuleTable004_=b3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVzIiwiL3Vzci9zaGFyZS9Nb2R1bGVzLzMuMi4xMC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9wZS9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlczovdXNyL3NoYXJlL01vZHVsZXMvJE1PRFVMRV9WRVJTSU9OL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9t
++++ export _ModuleTable004_
++++ _ModuleTable005_=b2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlOi9hcHBzL29wcy9wcm9kL25jby9tb2R1bGVmaWxlcy9jb3JlOi9hcHBzL3Byb2QvbG1vZHVsZXMvY29yZTovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==
++++ export _ModuleTable005_
++++ _ModuleTable_Sz_=5
++++ export _ModuleTable_Sz_
++++ : -s sh
+++ eval
+++ module load intel/19.1.3.304 PrgEnv-intel/8.1.0
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load intel/19.1.3.304 PrgEnv-intel/8.1.0
+Lmod has detected the following error: /opt/cray/pe/modulefiles/PrgEnv-intel/8.1.0: (PrgEnv-intel/8.1.0): list
+element in quotes followed by """ instead of space 
+While processing the following module(s):
+    Module fullname     Module Filename
+    ---------------     ---------------
+    PrgEnv-intel/8.1.0  /opt/cray/pe/modulefiles/PrgEnv-intel/8.1.0
+
+++ eval false
++++ false
+++ module load craype/2.7.6
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load craype/2.7.6
+++ eval 'ATP_CFLAGS=;' export 'ATP_CFLAGS;' 'ATP_CFLAGS_GNU_FORTRAN=-fno-backtrace;' export 'ATP_CFLAGS_GNU_FORTRAN;' 'CRAYPE_DIR=/opt/cray/pe/craype/2.7.6;' export 'CRAYPE_DIR;' 'CRAYPE_VERSION=2.7.6;' export 'CRAYPE_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=craype-x86-rome:1\;libfabric/1.11.0.4.75:1\;craype-network-ofi:1\;envvar/1.0:1\;craype/2.7.6:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0:craype/2.7.6;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/cray/pe/craype/2.7.6/man:1\;/opt/cray/libfabric/1.11.0.4.75/share/man:1\;/usr/share/lmod/lmod/share/man:1\;/usr/share/man:1\;/opt/pbs/share/man:1\;/opt/clmgr/man:1\;/opt/sgi/share/man:1\;/opt/clmgr/share/man:1\;/opt/clmgr/lib/cm-cli/man:1\;/opt/cray/pe/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/cray/pe/craype/2.7.6/man:/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/opt/cray/pe/man;' export 'MANPATH;' 'MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/opt/cray/pe/craype/2.7.6/bin:1\;/opt/cray/libfabric/1.11.0.4.75/bin:1\;/opt/clmgr/sbin:1\;/opt/clmgr/bin:1\;/opt/sgi/sbin:1\;/opt/sgi/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/bin:2\;/usr/lib/mit/bin:1\;/usr/lib/mit/sbin:1\;/opt/pbs/bin:1\;/sbin:2\;.:2\;/u/Eric.Rogers/bin:1\;/usr/sbin:1\;/opt/cray/pe/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/cray/pe/craype/2.7.6/bin:/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin:/opt/cray/pe/bin;' export 'PATH;' 'PE_ATP_PKGCONFIG_VARIABLES=ATP_CFLAGS_@prgenv@_@language@;' export 'PE_ATP_PKGCONFIG_VARIABLES;' '__LMOD_REF_COUNT_PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/CRAYCLANG/10.0/lib/pkgconfig:1\;/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/CRAYCLANG/10.0/lib/pkgconfig:1\;/opt/cray/pe/netcdf/4.7.4.7/CRAYCLANG/10.0/lib/pkgconfig:1\;/opt/cray/pe/hdf5-parallel/1.12.0.7/CRAYCLANG/10.0/lib/pkgconfig:1\;/opt/cray/pe/hdf5/1.12.0.7/CRAYCLANG/10.0/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH;' 'PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/CRAYCLANG/10.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/CRAYCLANG/10.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.7.4.7/CRAYCLANG/10.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.12.0.7/CRAYCLANG/10.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.12.0.7/CRAYCLANG/10.0/lib/pkgconfig;' export 'PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH;' 'PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/dsmml/0.2.1/dsmml/dsmml/lib/pkgconfig;' export 'PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH;' 'PE_FFTW_DEFAULT_TARGET_broadwell=broadwell;' export 'PE_FFTW_DEFAULT_TARGET_broadwell;' 'PE_FFTW_DEFAULT_TARGET_haswell=haswell;' export 'PE_FFTW_DEFAULT_TARGET_haswell;' 'PE_FFTW_DEFAULT_TARGET_share=share;' export 'PE_FFTW_DEFAULT_TARGET_share;' 'PE_FFTW_DEFAULT_TARGET_x86_64=x86_64;' export 'PE_FFTW_DEFAULT_TARGET_x86_64;' 'PE_FFTW_DEFAULT_TARGET_x86_cascadelake=x86_cascadelake;' export 'PE_FFTW_DEFAULT_TARGET_x86_cascadelake;' 'PE_FFTW_DEFAULT_TARGET_x86_icelake=x86_icelake;' export 'PE_FFTW_DEFAULT_TARGET_x86_icelake;' 'PE_FFTW_DEFAULT_TARGET_x86_milan=x86_milan;' export 'PE_FFTW_DEFAULT_TARGET_x86_milan;' 'PE_FFTW_DEFAULT_TARGET_x86_rome=x86_rome;' export 'PE_FFTW_DEFAULT_TARGET_x86_rome;' 'PE_FFTW_DEFAULT_TARGET_x86_skylake=x86_skylake;' export 'PE_FFTW_DEFAULT_TARGET_x86_skylake;' 'PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/fftw/3.3.8.11/@PE_FFTW_DEFAULT_TARGET@/lib/pkgconfig;' export 'PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH;' '__LMOD_REF_COUNT_PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS=mpichf90:1;' export '__LMOD_REF_COUNT_PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS;' 'PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS=mpichf90;' export 'PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS;' '__LMOD_REF_COUNT_PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/GNU/9.1/lib/pkgconfig:1\;/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/GNU/9.1/lib/pkgconfig:1\;/opt/cray/pe/netcdf/4.7.4.7/GNU/9.1/lib/pkgconfig:1\;/opt/cray/pe/hdf5-parallel/1.12.0.7/GNU/9.1/lib/pkgconfig:1\;/opt/cray/pe/hdf5/1.12.0.7/GNU/9.1/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH;' 'PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/GNU/9.1/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/GNU/9.1/lib/pkgconfig:/opt/cray/pe/netcdf/4.7.4.7/GNU/9.1/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.12.0.7/GNU/9.1/lib/pkgconfig:/opt/cray/pe/hdf5/1.12.0.7/GNU/9.1/lib/pkgconfig;' export 'PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH;' 'PE_HDF5_DEFAULT_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL;' export 'PE_HDF5_DEFAULT_FIXED_PRGENV;' 'PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL;' export 'PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV;' 'PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH;' export 'PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS;' '__LMOD_REF_COUNT_PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/INTEL/19.0/lib/pkgconfig:1\;/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/INTEL/19.0/lib/pkgconfig:1\;/opt/cray/pe/netcdf/4.7.4.7/INTEL/19.0/lib/pkgconfig:1\;/opt/cray/pe/mpich/8.1.9/ofi/intel/19.0/lib/pkgconfig:1\;/opt/cray/pe/hdf5-parallel/1.12.0.7/INTEL/19.0/lib/pkgconfig:1\;/opt/cray/pe/hdf5/1.12.0.7/INTEL/19.0/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH;' 'PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/INTEL/19.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/INTEL/19.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.7.4.7/INTEL/19.0/lib/pkgconfig:/opt/cray/pe/mpich/8.1.9/ofi/intel/19.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.12.0.7/INTEL/19.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.12.0.7/INTEL/19.0/lib/pkgconfig;' export 'PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH;' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0;' export 'PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64;' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64=9.1;' export 'PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64;' 'PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0;' export 'PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64;' 'PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64=90;' export 'PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64;' 'PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64=91;' export 'PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64;' 'PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64=190;' export 'PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64;' 'PE_LIBSCI_DEFAULT_OMP_REQUIRES=;' export 'PE_LIBSCI_DEFAULT_OMP_REQUIRES;' 'PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp=_mp;' export 'PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp;' 'PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES=PE_LIBSCI_DEFAULT_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME;' export 'PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES;' '__LMOD_REF_COUNT_PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:1;' export '__LMOD_REF_COUNT_PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS;' 'PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH;' export 'PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS;' 'PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/21.08.1.2/@PRGENV@/@PE_LIBSCI_DEFAULT_GENCOMPS@/@PE_LIBSCI_DEFAULT_TARGET@/lib/pkgconfig;' export 'PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH;' 'PE_LIBSCI_DEFAULT_VOLATILE_PRGENV=CRAY\' 'GNU\' 'INTEL;' export 'PE_LIBSCI_DEFAULT_VOLATILE_PRGENV;' 'PE_MPICH_DEFAULT_FIXED_PRGENV=INTEL;' export 'PE_MPICH_DEFAULT_FIXED_PRGENV;' '__LMOD_REF_COUNT_PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS=mpichf90:1;' export '__LMOD_REF_COUNT_PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS;' 'PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS=mpichf90;' export 'PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS;' 'PE_MPICH_DEFAULT_GENCOMPILERS_AMD=4.3;' export 'PE_MPICH_DEFAULT_GENCOMPILERS_AMD;' 'PE_MPICH_DEFAULT_GENCOMPILERS_AOCC=3.0;' export 'PE_MPICH_DEFAULT_GENCOMPILERS_AOCC;' 'PE_MPICH_DEFAULT_GENCOMPILERS_CRAY=10.0;' export 'PE_MPICH_DEFAULT_GENCOMPILERS_CRAY;' 'PE_MPICH_DEFAULT_GENCOMPILERS_CRAYCLANG=10.0;' export 'PE_MPICH_DEFAULT_GENCOMPILERS_CRAYCLANG;' 'PE_MPICH_DEFAULT_GENCOMPILERS_GNU=9.1;' export 'PE_MPICH_DEFAULT_GENCOMPILERS_GNU;' 'PE_MPICH_DEFAULT_GENCOMPILERS_NVIDIA=20.7;' export 'PE_MPICH_DEFAULT_GENCOMPILERS_NVIDIA;' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.9/gtl/lib;' export 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906;' 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.9/gtl/lib;' export 'PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908;' 'PE_MPICH_DEFAULT_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.9/gtl/lib;' export 'PE_MPICH_DEFAULT_GTL_DIR_nvidia70;' 'PE_MPICH_DEFAULT_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.9/gtl/lib;' export 'PE_MPICH_DEFAULT_GTL_DIR_nvidia80;' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa;' export 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906;' 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa;' export 'PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908;' 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia70=-lmpi_gtl_cuda;' export 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia70;' 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia80=-lmpi_gtl_cuda;' export 'PE_MPICH_DEFAULT_GTL_LIBS_nvidia80;' '__LMOD_REF_COUNT_PE_MPICH_DEFAULT_PKGCONFIG_LIBS=mpich:1;' export '__LMOD_REF_COUNT_PE_MPICH_DEFAULT_PKGCONFIG_LIBS;' 'PE_MPICH_DEFAULT_PKGCONFIG_LIBS=mpich;' export 'PE_MPICH_DEFAULT_PKGCONFIG_LIBS;' 'PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@;' export 'PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES;' 'PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.9/ofi/@PRGENV@/@PE_MPICH_DEFAULT_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.9/gtl/lib/pkgconfig;' export 'PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH;' 'PE_MPICH_DEFAULT_VOLATILE_PRGENV=AMD\' 'AOCC\' 'CRAY\' 'CRAYCLANG\' 'GNU\' 'NVIDIA;' export 'PE_MPICH_DEFAULT_VOLATILE_PRGENV;' 'PE_NETCDF_DEFAULT_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL;' export 'PE_NETCDF_DEFAULT_FIXED_PRGENV;' 'PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5;' export 'PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS;' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL;' export 'PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV;' 'PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5_PARALLEL;' export 'PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS;' 'PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS=;' export 'PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS;' 'PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia=,-lcupti,-lcudart,-lcuda;' export 'PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia;' 'PE_PAPI_DEFAULT_ACCEL_LIBS=;' export 'PE_PAPI_DEFAULT_ACCEL_LIBS;' 'PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35=,-lcupti,-lcudart,-lcuda;' export 'PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35;' 'PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES=PE_PAPI_ACCEL_LIBS_@accelerator@\' 'PE_PAPI_ACCEL_FAMILY_LIBS_@accelerator_family@;' export 'PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES;' 'PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV=GNU\' 'CRAYCLANG\' 'INTEL;' export 'PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV;' '__LMOD_REF_COUNT_PE_PKGCONFIG_DEFAULT_LIBS=mpich:1;' export '__LMOD_REF_COUNT_PE_PKGCONFIG_DEFAULT_LIBS;' 'PE_PKGCONFIG_DEFAULT_LIBS=mpich;' export 'PE_PKGCONFIG_DEFAULT_LIBS;' '__LMOD_REF_COUNT_PE_PKGCONFIG_DEFAULT_PRODUCTS=PE_PARALLEL_NETCDF:1\;PE_NETCDF_HDF5PARALLEL:1\;PE_NETCDF:1\;PE_MPICH:1\;PE_LIBSCI:1\;PE_HDF5_PARALLEL:1\;PE_HDF5:1\;PE_FFTW:1;' export '__LMOD_REF_COUNT_PE_PKGCONFIG_DEFAULT_PRODUCTS;' 'PE_PKGCONFIG_DEFAULT_PRODUCTS=PE_PARALLEL_NETCDF:PE_NETCDF_HDF5PARALLEL:PE_NETCDF:PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_HDF5:PE_FFTW;' export 'PE_PKGCONFIG_DEFAULT_PRODUCTS;' '__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS=PE_ATP:1;' export '__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS;' 'PE_PKGCONFIG_PRODUCTS=PE_ATP;' export 'PE_PKGCONFIG_PRODUCTS;' '__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI:1;' export '__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS_DEFAULT;' 'PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI;' export 'PE_PKGCONFIG_PRODUCTS_DEFAULT;' '__LMOD_REF_COUNT_PE_PKG_CONFIG_PATH=/opt/cray/pe/valgrind4hpc/2.12.4/lib/pkgconfig:1\;/opt/cray/pe/cti/2.15.5/lib/pkgconfig:1\;/opt/cray/pe/atp/3.14.5/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PE_PKG_CONFIG_PATH;' 'PE_PKG_CONFIG_PATH=/opt/cray/pe/valgrind4hpc/2.12.4/lib/pkgconfig:/opt/cray/pe/cti/2.15.5/lib/pkgconfig:/opt/cray/pe/atp/3.14.5/lib/pkgconfig;' export 'PE_PKG_CONFIG_PATH;' '__LMOD_REF_COUNT_PE_PRODUCT_LIST=CRAYPE:1\;CRAYPE_X86_ROME:1;' export '__LMOD_REF_COUNT_PE_PRODUCT_LIST;' 'PE_PRODUCT_LIST=CRAYPE:CRAYPE_X86_ROME;' export 'PE_PRODUCT_LIST;' 'PE_SMA_DEFAULT_COMPFLAG=;' export 'PE_SMA_DEFAULT_COMPFLAG;' 'PE_SMA_DEFAULT_COMPFLAG_GNU=-fcray-pointer;' export 'PE_SMA_DEFAULT_COMPFLAG_GNU;' 'PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64=64;' export 'PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64;' 'PE_SMA_DEFAULT_DIR_PGI_DEFAULT64=64;' export 'PE_SMA_DEFAULT_DIR_PGI_DEFAULT64;' 'PE_SMA_DEFAULT_PKGCONFIG_VARIABLES=PE_SMA_COMPFLAG_@prgenv@;' export 'PE_SMA_DEFAULT_PKGCONFIG_VARIABLES;' 'PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/sma/11.3.3/ofi/sma@PE_SMA_DEFAULT_DIR_DEFAULT64@/lib64/pkgconfig;' export 'PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH;' 'PKGCONFIG_ENABLED=1;' export 'PKGCONFIG_ENABLED;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/cray/pe/craype/2.7.6/pkg-config:1\;/opt/cray/pe/iobuf/2.0.10/lib/pkgconfig:1\;/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:1\;/opt/cray/pe/atp/3.14.5/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/opt/cray/pe/craype/2.7.6/pkg-config:/opt/cray/pe/iobuf/2.0.10/lib/pkgconfig:/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:/opt/cray/pe/atp/3.14.5/lib/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/6.0.0.9/lib64/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH_DEFAULT;' 'PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/6.0.0.9/lib64/pkgconfig;' export 'PKG_CONFIG_PATH_DEFAULT;' '__LMOD_REF_COUNT__LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:1\;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1\;/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:1\;/apps/prod/lmodules/sys_core/envvar/1.0:1\;/opt/cray/pe/modulefiles/craype/2.7.6:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0:/opt/cray/pe/modulefiles/craype/2.7.6;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzL2NyYXlwZS8yLjcuNiIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjYiLFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUvMi43LjYiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUtbmV0d29yay1vZmkiLFsiZnVsbE5h;' export '_ModuleTable001_;' '_ModuleTable002_=bWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsiY3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvbW9kdWxlZmlsZXMvY3JheXBlLXg4Ni1yb21lIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxlbnZ2YXI9e1siZm4iXT0iL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNf;' export '_ModuleTable002_;' '_ModuleTable003_=Y29yZS9lbnZ2YXIvMS4wIixbImZ1bGxOYW1lIl09ImVudnZhci8xLjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJlbnZ2YXIvMS4wIix9LGxpYmZhYnJpYz17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMvbGliZmFicmljLzEuMTEuMC40Ljc1IixbImZ1bGxOYW1lIl09ImxpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImxpYmZhYnJpYyIsfSx9LG1wYXRoQT17Ii9sZnMvaDIvZW1jL2xhbS9ub3NjcnViL0VyaWMuUm9nZXJzL25hbS52NC4yLjAvbW9k;' export '_ModuleTable003_;' '_ModuleTable004_=dWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlIiwiL2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzIiwiL2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlIiwiL29wdC9jcmF5L3BlL3BlcmZ0b29scy8yMS4wMi4wL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L21vZHVsZWZpbGVzIiwiL29wdC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcyIsIi91c3Ivc2hhcmUvTW9kdWxlcy8zLjIuMTAvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIv;' export '_ModuleTable004_;' '_ModuleTable005_=dXNyL3NoYXJlL21vZHVsZXM6L3Vzci9zaGFyZS9Nb2R1bGVzLyRNT0RVTEVfVkVSU0lPTi9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQ6L2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZTovYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMvY29yZTovYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmU6L29wdC9jcmF5L21vZHVs;' export '_ModuleTable005_;' '_ModuleTable006_=ZWZpbGVzOi9vcHQvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable006_;' '_ModuleTable_Sz_=6;' export '_ModuleTable_Sz_;'
++++ ATP_CFLAGS=
++++ export ATP_CFLAGS
++++ ATP_CFLAGS_GNU_FORTRAN=-fno-backtrace
++++ export ATP_CFLAGS_GNU_FORTRAN
++++ CRAYPE_DIR=/opt/cray/pe/craype/2.7.6
++++ export CRAYPE_DIR
++++ CRAYPE_VERSION=2.7.6
++++ export CRAYPE_VERSION
++++ __LMOD_REF_COUNT_LOADEDMODULES='craype-x86-rome:1;libfabric/1.11.0.4.75:1;craype-network-ofi:1;envvar/1.0:1;craype/2.7.6:1'
++++ export __LMOD_REF_COUNT_LOADEDMODULES
++++ LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0:craype/2.7.6
++++ export LOADEDMODULES
++++ __LMOD_REF_COUNT_MANPATH='/opt/cray/pe/craype/2.7.6/man:1;/opt/cray/libfabric/1.11.0.4.75/share/man:1;/usr/share/lmod/lmod/share/man:1;/usr/share/man:1;/opt/pbs/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1;/opt/cray/pe/man:1'
++++ export __LMOD_REF_COUNT_MANPATH
++++ MANPATH=/opt/cray/pe/craype/2.7.6/man:/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/opt/cray/pe/man
++++ export MANPATH
++++ MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
++++ export MODULEPATH
++++ __LMOD_REF_COUNT_PATH='/opt/cray/pe/craype/2.7.6/bin:1;/opt/cray/libfabric/1.11.0.4.75/bin:1;/opt/clmgr/sbin:1;/opt/clmgr/bin:1;/opt/sgi/sbin:1;/opt/sgi/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:2;/usr/lib/mit/bin:1;/usr/lib/mit/sbin:1;/opt/pbs/bin:1;/sbin:2;.:2;/u/Eric.Rogers/bin:1;/usr/sbin:1;/opt/cray/pe/bin:1'
++++ export __LMOD_REF_COUNT_PATH
++++ PATH=/opt/cray/pe/craype/2.7.6/bin:/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:.:/u/Eric.Rogers/bin:/usr/sbin:/opt/cray/pe/bin
++++ export PATH
++++ PE_ATP_PKGCONFIG_VARIABLES=ATP_CFLAGS_@prgenv@_@language@
++++ export PE_ATP_PKGCONFIG_VARIABLES
++++ __LMOD_REF_COUNT_PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH='/opt/cray/pe/parallel-netcdf/1.12.1.7/CRAYCLANG/10.0/lib/pkgconfig:1;/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/CRAYCLANG/10.0/lib/pkgconfig:1;/opt/cray/pe/netcdf/4.7.4.7/CRAYCLANG/10.0/lib/pkgconfig:1;/opt/cray/pe/hdf5-parallel/1.12.0.7/CRAYCLANG/10.0/lib/pkgconfig:1;/opt/cray/pe/hdf5/1.12.0.7/CRAYCLANG/10.0/lib/pkgconfig:1'
++++ export __LMOD_REF_COUNT_PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH
++++ PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/CRAYCLANG/10.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/CRAYCLANG/10.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.7.4.7/CRAYCLANG/10.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.12.0.7/CRAYCLANG/10.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.12.0.7/CRAYCLANG/10.0/lib/pkgconfig
++++ export PE_CRAYCLANG_DEFAULT_FIXED_PKGCONFIG_PATH
++++ PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/dsmml/0.2.1/dsmml/dsmml/lib/pkgconfig
++++ export PE_DSMML_DEFAULT_VOLATILE_PKGCONFIG_PATH
++++ PE_FFTW_DEFAULT_TARGET_broadwell=broadwell
++++ export PE_FFTW_DEFAULT_TARGET_broadwell
++++ PE_FFTW_DEFAULT_TARGET_haswell=haswell
++++ export PE_FFTW_DEFAULT_TARGET_haswell
++++ PE_FFTW_DEFAULT_TARGET_share=share
++++ export PE_FFTW_DEFAULT_TARGET_share
++++ PE_FFTW_DEFAULT_TARGET_x86_64=x86_64
++++ export PE_FFTW_DEFAULT_TARGET_x86_64
++++ PE_FFTW_DEFAULT_TARGET_x86_cascadelake=x86_cascadelake
++++ export PE_FFTW_DEFAULT_TARGET_x86_cascadelake
++++ PE_FFTW_DEFAULT_TARGET_x86_icelake=x86_icelake
++++ export PE_FFTW_DEFAULT_TARGET_x86_icelake
++++ PE_FFTW_DEFAULT_TARGET_x86_milan=x86_milan
++++ export PE_FFTW_DEFAULT_TARGET_x86_milan
++++ PE_FFTW_DEFAULT_TARGET_x86_rome=x86_rome
++++ export PE_FFTW_DEFAULT_TARGET_x86_rome
++++ PE_FFTW_DEFAULT_TARGET_x86_skylake=x86_skylake
++++ export PE_FFTW_DEFAULT_TARGET_x86_skylake
++++ PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/fftw/3.3.8.11/@PE_FFTW_DEFAULT_TARGET@/lib/pkgconfig
++++ export PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH
++++ __LMOD_REF_COUNT_PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS=mpichf90:1
++++ export __LMOD_REF_COUNT_PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS
++++ PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS=mpichf90
++++ export PE_FORTRAN_DEFAULT_PKGCONFIG_LIBS
++++ __LMOD_REF_COUNT_PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH='/opt/cray/pe/parallel-netcdf/1.12.1.7/GNU/9.1/lib/pkgconfig:1;/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/GNU/9.1/lib/pkgconfig:1;/opt/cray/pe/netcdf/4.7.4.7/GNU/9.1/lib/pkgconfig:1;/opt/cray/pe/hdf5-parallel/1.12.0.7/GNU/9.1/lib/pkgconfig:1;/opt/cray/pe/hdf5/1.12.0.7/GNU/9.1/lib/pkgconfig:1'
++++ export __LMOD_REF_COUNT_PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH
++++ PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/GNU/9.1/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/GNU/9.1/lib/pkgconfig:/opt/cray/pe/netcdf/4.7.4.7/GNU/9.1/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.12.0.7/GNU/9.1/lib/pkgconfig:/opt/cray/pe/hdf5/1.12.0.7/GNU/9.1/lib/pkgconfig
++++ export PE_GNU_DEFAULT_FIXED_PKGCONFIG_PATH
++++ PE_HDF5_DEFAULT_FIXED_PRGENV='GNU CRAYCLANG INTEL'
++++ export PE_HDF5_DEFAULT_FIXED_PRGENV
++++ PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV='GNU CRAYCLANG INTEL'
++++ export PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV
++++ PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
++++ export PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS
++++ __LMOD_REF_COUNT_PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH='/opt/cray/pe/parallel-netcdf/1.12.1.7/INTEL/19.0/lib/pkgconfig:1;/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/INTEL/19.0/lib/pkgconfig:1;/opt/cray/pe/netcdf/4.7.4.7/INTEL/19.0/lib/pkgconfig:1;/opt/cray/pe/mpich/8.1.9/ofi/intel/19.0/lib/pkgconfig:1;/opt/cray/pe/hdf5-parallel/1.12.0.7/INTEL/19.0/lib/pkgconfig:1;/opt/cray/pe/hdf5/1.12.0.7/INTEL/19.0/lib/pkgconfig:1'
++++ export __LMOD_REF_COUNT_PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH
++++ PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.12.1.7/INTEL/19.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.7.4.7/INTEL/19.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.7.4.7/INTEL/19.0/lib/pkgconfig:/opt/cray/pe/mpich/8.1.9/ofi/intel/19.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.12.0.7/INTEL/19.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.12.0.7/INTEL/19.0/lib/pkgconfig
++++ export PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH
++++ PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64=9.0
++++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64
++++ PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64=9.1
++++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64
++++ PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64=19.0
++++ export PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64
++++ PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64=90
++++ export PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64
++++ PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64=91
++++ export PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64
++++ PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64=190
++++ export PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64
++++ PE_LIBSCI_DEFAULT_OMP_REQUIRES=
++++ export PE_LIBSCI_DEFAULT_OMP_REQUIRES
++++ PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp=_mp
++++ export PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp
++++ PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES=PE_LIBSCI_DEFAULT_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME
++++ export PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES
++++ __LMOD_REF_COUNT_PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:1
++++ export __LMOD_REF_COUNT_PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS
++++ PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
++++ export PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS
++++ PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/21.08.1.2/@PRGENV@/@PE_LIBSCI_DEFAULT_GENCOMPS@/@PE_LIBSCI_DEFAULT_TARGET@/lib/pkgconfig
++++ export PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH
++++ PE_LIBSCI_DEFAULT_VOLATILE_PRGENV='CRAY GNU INTEL'
++++ export PE_LIBSCI_DEFAULT_VOLATILE_PRGENV
++++ PE_MPICH_DEFAULT_FIXED_PRGENV=INTEL
++++ export PE_MPICH_DEFAULT_FIXED_PRGENV
++++ __LMOD_REF_COUNT_PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS=mpichf90:1
++++ export __LMOD_REF_COUNT_PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS
++++ PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS=mpichf90
++++ export PE_MPICH_DEFAULT_FORTRAN_PKGCONFIG_LIBS
++++ PE_MPICH_DEFAULT_GENCOMPILERS_AMD=4.3
++++ export PE_MPICH_DEFAULT_GENCOMPILERS_AMD
++++ PE_MPICH_DEFAULT_GENCOMPILERS_AOCC=3.0
++++ export PE_MPICH_DEFAULT_GENCOMPILERS_AOCC
++++ PE_MPICH_DEFAULT_GENCOMPILERS_CRAY=10.0
++++ export PE_MPICH_DEFAULT_GENCOMPILERS_CRAY
++++ PE_MPICH_DEFAULT_GENCOMPILERS_CRAYCLANG=10.0
++++ export PE_MPICH_DEFAULT_GENCOMPILERS_CRAYCLANG
++++ PE_MPICH_DEFAULT_GENCOMPILERS_GNU=9.1
++++ export PE_MPICH_DEFAULT_GENCOMPILERS_GNU
++++ PE_MPICH_DEFAULT_GENCOMPILERS_NVIDIA=20.7
++++ export PE_MPICH_DEFAULT_GENCOMPILERS_NVIDIA
++++ PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.9/gtl/lib
++++ export PE_MPICH_DEFAULT_GTL_DIR_amd_gfx906
++++ PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.9/gtl/lib
++++ export PE_MPICH_DEFAULT_GTL_DIR_amd_gfx908
++++ PE_MPICH_DEFAULT_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.9/gtl/lib
++++ export PE_MPICH_DEFAULT_GTL_DIR_nvidia70
++++ PE_MPICH_DEFAULT_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.9/gtl/lib
++++ export PE_MPICH_DEFAULT_GTL_DIR_nvidia80
++++ PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa
++++ export PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx906
++++ PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa
++++ export PE_MPICH_DEFAULT_GTL_LIBS_amd_gfx908
++++ PE_MPICH_DEFAULT_GTL_LIBS_nvidia70=-lmpi_gtl_cuda
++++ export PE_MPICH_DEFAULT_GTL_LIBS_nvidia70
++++ PE_MPICH_DEFAULT_GTL_LIBS_nvidia80=-lmpi_gtl_cuda
++++ export PE_MPICH_DEFAULT_GTL_LIBS_nvidia80
++++ __LMOD_REF_COUNT_PE_MPICH_DEFAULT_PKGCONFIG_LIBS=mpich:1
++++ export __LMOD_REF_COUNT_PE_MPICH_DEFAULT_PKGCONFIG_LIBS
++++ PE_MPICH_DEFAULT_PKGCONFIG_LIBS=mpich
++++ export PE_MPICH_DEFAULT_PKGCONFIG_LIBS
++++ PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@
++++ export PE_MPICH_DEFAULT_PKGCONFIG_VARIABLES
++++ PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.9/ofi/@PRGENV@/@PE_MPICH_DEFAULT_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.9/gtl/lib/pkgconfig
++++ export PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH
++++ PE_MPICH_DEFAULT_VOLATILE_PRGENV='AMD AOCC CRAY CRAYCLANG GNU NVIDIA'
++++ export PE_MPICH_DEFAULT_VOLATILE_PRGENV
++++ PE_NETCDF_DEFAULT_FIXED_PRGENV='GNU CRAYCLANG INTEL'
++++ export PE_NETCDF_DEFAULT_FIXED_PRGENV
++++ PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5
++++ export PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS
++++ PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV='GNU CRAYCLANG INTEL'
++++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV
++++ PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5_PARALLEL
++++ export PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS
++++ PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS=
++++ export PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS
++++ PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia=,-lcupti,-lcudart,-lcuda
++++ export PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia
++++ PE_PAPI_DEFAULT_ACCEL_LIBS=
++++ export PE_PAPI_DEFAULT_ACCEL_LIBS
++++ PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35=,-lcupti,-lcudart,-lcuda
++++ export PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35
++++ PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES='PE_PAPI_ACCEL_LIBS_@accelerator@ PE_PAPI_ACCEL_FAMILY_LIBS_@accelerator_family@'
++++ export PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES
++++ PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV='GNU CRAYCLANG INTEL'
++++ export PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV
++++ __LMOD_REF_COUNT_PE_PKGCONFIG_DEFAULT_LIBS=mpich:1
++++ export __LMOD_REF_COUNT_PE_PKGCONFIG_DEFAULT_LIBS
++++ PE_PKGCONFIG_DEFAULT_LIBS=mpich
++++ export PE_PKGCONFIG_DEFAULT_LIBS
++++ __LMOD_REF_COUNT_PE_PKGCONFIG_DEFAULT_PRODUCTS='PE_PARALLEL_NETCDF:1;PE_NETCDF_HDF5PARALLEL:1;PE_NETCDF:1;PE_MPICH:1;PE_LIBSCI:1;PE_HDF5_PARALLEL:1;PE_HDF5:1;PE_FFTW:1'
++++ export __LMOD_REF_COUNT_PE_PKGCONFIG_DEFAULT_PRODUCTS
++++ PE_PKGCONFIG_DEFAULT_PRODUCTS=PE_PARALLEL_NETCDF:PE_NETCDF_HDF5PARALLEL:PE_NETCDF:PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_HDF5:PE_FFTW
++++ export PE_PKGCONFIG_DEFAULT_PRODUCTS
++++ __LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS=PE_ATP:1
++++ export __LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS
++++ PE_PKGCONFIG_PRODUCTS=PE_ATP
++++ export PE_PKGCONFIG_PRODUCTS
++++ __LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI:1
++++ export __LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS_DEFAULT
++++ PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI
++++ export PE_PKGCONFIG_PRODUCTS_DEFAULT
++++ __LMOD_REF_COUNT_PE_PKG_CONFIG_PATH='/opt/cray/pe/valgrind4hpc/2.12.4/lib/pkgconfig:1;/opt/cray/pe/cti/2.15.5/lib/pkgconfig:1;/opt/cray/pe/atp/3.14.5/lib/pkgconfig:1'
++++ export __LMOD_REF_COUNT_PE_PKG_CONFIG_PATH
++++ PE_PKG_CONFIG_PATH=/opt/cray/pe/valgrind4hpc/2.12.4/lib/pkgconfig:/opt/cray/pe/cti/2.15.5/lib/pkgconfig:/opt/cray/pe/atp/3.14.5/lib/pkgconfig
++++ export PE_PKG_CONFIG_PATH
++++ __LMOD_REF_COUNT_PE_PRODUCT_LIST='CRAYPE:1;CRAYPE_X86_ROME:1'
++++ export __LMOD_REF_COUNT_PE_PRODUCT_LIST
++++ PE_PRODUCT_LIST=CRAYPE:CRAYPE_X86_ROME
++++ export PE_PRODUCT_LIST
++++ PE_SMA_DEFAULT_COMPFLAG=
++++ export PE_SMA_DEFAULT_COMPFLAG
++++ PE_SMA_DEFAULT_COMPFLAG_GNU=-fcray-pointer
++++ export PE_SMA_DEFAULT_COMPFLAG_GNU
++++ PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64=64
++++ export PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64
++++ PE_SMA_DEFAULT_DIR_PGI_DEFAULT64=64
++++ export PE_SMA_DEFAULT_DIR_PGI_DEFAULT64
++++ PE_SMA_DEFAULT_PKGCONFIG_VARIABLES=PE_SMA_COMPFLAG_@prgenv@
++++ export PE_SMA_DEFAULT_PKGCONFIG_VARIABLES
++++ PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/sma/11.3.3/ofi/sma@PE_SMA_DEFAULT_DIR_DEFAULT64@/lib64/pkgconfig
++++ export PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH
++++ PKGCONFIG_ENABLED=1
++++ export PKGCONFIG_ENABLED
++++ __LMOD_REF_COUNT_PKG_CONFIG_PATH='/opt/cray/pe/craype/2.7.6/pkg-config:1;/opt/cray/pe/iobuf/2.0.10/lib/pkgconfig:1;/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:1;/opt/cray/pe/atp/3.14.5/lib/pkgconfig:1'
++++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
++++ PKG_CONFIG_PATH=/opt/cray/pe/craype/2.7.6/pkg-config:/opt/cray/pe/iobuf/2.0.10/lib/pkgconfig:/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:/opt/cray/pe/atp/3.14.5/lib/pkgconfig
++++ export PKG_CONFIG_PATH
++++ __LMOD_REF_COUNT_PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/6.0.0.9/lib64/pkgconfig:1
++++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH_DEFAULT
++++ PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/6.0.0.9/lib64/pkgconfig
++++ export PKG_CONFIG_PATH_DEFAULT
++++ __LMOD_REF_COUNT__LMFILES_='/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:1;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1;/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:1;/apps/prod/lmodules/sys_core/envvar/1.0:1;/opt/cray/pe/modulefiles/craype/2.7.6:1'
++++ export __LMOD_REF_COUNT__LMFILES_
++++ _LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0:/opt/cray/pe/modulefiles/craype/2.7.6
++++ export _LMFILES_
++++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzL2NyYXlwZS8yLjcuNiIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjYiLFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUvMi43LjYiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUtbmV0d29yay1vZmkiLFsiZnVsbE5h
++++ export _ModuleTable001_
++++ _ModuleTable002_=bWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsiY3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvbW9kdWxlZmlsZXMvY3JheXBlLXg4Ni1yb21lIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxlbnZ2YXI9e1siZm4iXT0iL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNf
++++ export _ModuleTable002_
++++ _ModuleTable003_=Y29yZS9lbnZ2YXIvMS4wIixbImZ1bGxOYW1lIl09ImVudnZhci8xLjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJlbnZ2YXIvMS4wIix9LGxpYmZhYnJpYz17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMvbGliZmFicmljLzEuMTEuMC40Ljc1IixbImZ1bGxOYW1lIl09ImxpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImxpYmZhYnJpYyIsfSx9LG1wYXRoQT17Ii9sZnMvaDIvZW1jL2xhbS9ub3NjcnViL0VyaWMuUm9nZXJzL25hbS52NC4yLjAvbW9k
++++ export _ModuleTable003_
++++ _ModuleTable004_=dWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlIiwiL2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzIiwiL2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlIiwiL29wdC9jcmF5L3BlL3BlcmZ0b29scy8yMS4wMi4wL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L21vZHVsZWZpbGVzIiwiL29wdC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcyIsIi91c3Ivc2hhcmUvTW9kdWxlcy8zLjIuMTAvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIv
++++ export _ModuleTable004_
++++ _ModuleTable005_=dXNyL3NoYXJlL21vZHVsZXM6L3Vzci9zaGFyZS9Nb2R1bGVzLyRNT0RVTEVfVkVSU0lPTi9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQ6L2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZTovYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMvY29yZTovYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmU6L29wdC9jcmF5L21vZHVs
++++ export _ModuleTable005_
++++ _ModuleTable006_=ZWZpbGVzOi9vcHQvbW9kdWxlZmlsZXMiLH0=
++++ export _ModuleTable006_
++++ _ModuleTable_Sz_=6
++++ export _ModuleTable_Sz_
++++ : -s sh
+++ eval
+++ module load cray-mpich/8.1.7
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load cray-mpich/8.1.7
+++ eval '__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpich/8.1.7/ofi/cray/10.0/lib:1;' export '__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH;' 'CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpich/8.1.7/ofi/cray/10.0/lib;' export 'CRAY_LD_LIBRARY_PATH;' 'CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.7/ofi;' export 'CRAY_MPICH_BASEDIR;' 'CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.7/ofi/cray/10.0;' export 'CRAY_MPICH_PREFIX;' 'CRAY_MPICH_VER=8.1.7;' export 'CRAY_MPICH_VER;' 'CRAY_MPICH_VERSION=8.1.7;' export 'CRAY_MPICH_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=craype-x86-rome:1\;libfabric/1.11.0.4.75:1\;craype-network-ofi:1\;envvar/1.0:1\;craype/2.7.6:1\;cray-mpich/8.1.7:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0:craype/2.7.6:cray-mpich/8.1.7;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/cray/pe/mpich/8.1.7/ofi/man:1\;/opt/cray/pe/mpich/8.1.7/man/mpich:1\;/opt/cray/pe/craype/2.7.6/man:1\;/opt/cray/libfabric/1.11.0.4.75/share/man:1\;/usr/share/lmod/lmod/share/man:1\;/usr/share/man:1\;/opt/pbs/share/man:1\;/opt/clmgr/man:1\;/opt/sgi/share/man:1\;/opt/clmgr/share/man:1\;/opt/clmgr/lib/cm-cli/man:1\;/opt/cray/pe/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/cray/pe/mpich/8.1.7/ofi/man:/opt/cray/pe/mpich/8.1.7/man/mpich:/opt/cray/pe/craype/2.7.6/man:/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/opt/cray/pe/man;' export 'MANPATH;' 'MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PE_FORTRAN_PKGCONFIG_LIBS=mpichf90:2;' export '__LMOD_REF_COUNT_PE_FORTRAN_PKGCONFIG_LIBS;' 'PE_FORTRAN_PKGCONFIG_LIBS=mpichf90;' export 'PE_FORTRAN_PKGCONFIG_LIBS;' '__LMOD_REF_COUNT_PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.7/ofi/intel/19.0/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PE_INTEL_FIXED_PKGCONFIG_PATH;' 'PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.7/ofi/intel/19.0/lib/pkgconfig;' export 'PE_INTEL_FIXED_PKGCONFIG_PATH;' 'PE_MPICH_FIXED_PRGENV=INTEL;' export 'PE_MPICH_FIXED_PRGENV;' '__LMOD_REF_COUNT_PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90:2;' export '__LMOD_REF_COUNT_PE_MPICH_FORTRAN_PKGCONFIG_LIBS;' 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90;' export 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS;' 'PE_MPICH_GENCOMPILERS_AMD=4.0;' export 'PE_MPICH_GENCOMPILERS_AMD;' 'PE_MPICH_GENCOMPILERS_AOCC=3.0;' export 'PE_MPICH_GENCOMPILERS_AOCC;' 'PE_MPICH_GENCOMPILERS_CRAY=10.0;' export 'PE_MPICH_GENCOMPILERS_CRAY;' 'PE_MPICH_GENCOMPILERS_CRAYCLANG=10.0;' export 'PE_MPICH_GENCOMPILERS_CRAYCLANG;' 'PE_MPICH_GENCOMPILERS_GNU=9.1;' export 'PE_MPICH_GENCOMPILERS_GNU;' 'PE_MPICH_GENCOMPILERS_NVIDIA=20.7;' export 'PE_MPICH_GENCOMPILERS_NVIDIA;' 'PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.7/gtl/lib;' export 'PE_MPICH_GTL_DIR_amd_gfx906;' 'PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.7/gtl/lib;' export 'PE_MPICH_GTL_DIR_amd_gfx908;' 'PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.7/gtl/lib;' export 'PE_MPICH_GTL_DIR_nvidia70;' 'PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.7/gtl/lib;' export 'PE_MPICH_GTL_DIR_nvidia80;' 'PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa;' export 'PE_MPICH_GTL_LIBS_amd_gfx906;' 'PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa;' export 'PE_MPICH_GTL_LIBS_amd_gfx908;' 'PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda;' export 'PE_MPICH_GTL_LIBS_nvidia70;' 'PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda;' export 'PE_MPICH_GTL_LIBS_nvidia80;' 'PE_MPICH_MODULE_NAME=cray-mpich;' export 'PE_MPICH_MODULE_NAME;' '__LMOD_REF_COUNT_PE_MPICH_PKGCONFIG_LIBS=mpich:2;' export '__LMOD_REF_COUNT_PE_MPICH_PKGCONFIG_LIBS;' 'PE_MPICH_PKGCONFIG_LIBS=mpich;' export 'PE_MPICH_PKGCONFIG_LIBS;' 'PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@;' export 'PE_MPICH_PKGCONFIG_VARIABLES;' 'PE_MPICH_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.7/ofi/@PRGENV@/@PE_MPICH_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.7/gtl/lib/pkgconfig;' export 'PE_MPICH_VOLATILE_PKGCONFIG_PATH;' 'PE_MPICH_VOLATILE_PRGENV=AMD\' 'AOCC\' 'CRAY\' 'CRAYCLANG\' 'GNU\' 'NVIDIA;' export 'PE_MPICH_VOLATILE_PRGENV;' 'PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.7/ofi/cray/10.0/lib;' export 'PE_PERFTOOLS_MPICH_LIBDIR;' '__LMOD_REF_COUNT_PE_PKGCONFIG_LIBS=mpich:2;' export '__LMOD_REF_COUNT_PE_PKGCONFIG_LIBS;' 'PE_PKGCONFIG_LIBS=mpich;' export 'PE_PKGCONFIG_LIBS;' '__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS=PE_MPICH:2\;PE_ATP:1;' export '__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS;' 'PE_PKGCONFIG_PRODUCTS=PE_MPICH:PE_ATP;' export 'PE_PKGCONFIG_PRODUCTS;' '__LMOD_REF_COUNT__LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:1\;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1\;/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:1\;/apps/prod/lmodules/sys_core/envvar/1.0:1\;/opt/cray/pe/modulefiles/craype/2.7.6:1\;/opt/cray/pe/modulefiles/cray-mpich/8.1.7:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0:/opt/cray/pe/modulefiles/craype/2.7.6:/opt/cray/pe/modulefiles/cray-mpich/8.1.7;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXktbXBpY2giXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMvY3JheS1tcGljaC84LjEuNyIsWyJmdWxsTmFtZSJdPSJjcmF5LW1waWNoLzguMS43IixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1tcGljaC84LjEuNyIsfSxjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzL2NyYXlwZS8yLjcuNiIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjYiLFsibG9h;' export '_ModuleTable001_;' '_ModuleTable002_=ZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUvMi43LjYiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUtbmV0d29yay1vZmkiLFsiZnVsbE5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsiY3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQv;' export '_ModuleTable002_;' '_ModuleTable003_=bW9kdWxlZmlsZXMvY3JheXBlLXg4Ni1yb21lIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxlbnZ2YXI9e1siZm4iXT0iL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZS9lbnZ2YXIvMS4wIixbImZ1bGxOYW1lIl09ImVudnZhci8xLjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJlbnZ2YXIvMS4wIix9LGxpYmZhYnJpYz17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMvbGliZmFicmljLzEuMTEu;' export '_ModuleTable003_;' '_ModuleTable004_=MC40Ljc1IixbImZ1bGxOYW1lIl09ImxpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImxpYmZhYnJpYyIsfSx9LG1wYXRoQT17Ii9sZnMvaDIvZW1jL2xhbS9ub3NjcnViL0VyaWMuUm9nZXJzL25hbS52NC4yLjAvbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlIiwiL2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzIiwiL2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlIiwiL29wdC9jcmF5L3BlL3BlcmZ0b29scy8yMS4wMi4wL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L21vZHVs;' export '_ModuleTable004_;' '_ModuleTable005_=ZWZpbGVzIiwiL29wdC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcyIsIi91c3Ivc2hhcmUvTW9kdWxlcy8zLjIuMTAvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvdXNyL3NoYXJlL21vZHVsZXM6L3Vzci9zaGFyZS9Nb2R1bGVzLyRNT0RVTEVfVkVSU0lPTi9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29y;' export '_ModuleTable005_;' '_ModuleTable006_=ZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQ6L2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZTovYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMvY29yZTovYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmU6L29wdC9jcmF5L21vZHVsZWZpbGVzOi9vcHQvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable006_;' '_ModuleTable_Sz_=6;' export '_ModuleTable_Sz_;'
++++ __LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpich/8.1.7/ofi/cray/10.0/lib:1
++++ export __LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH
++++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpich/8.1.7/ofi/cray/10.0/lib
++++ export CRAY_LD_LIBRARY_PATH
++++ CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.7/ofi
++++ export CRAY_MPICH_BASEDIR
++++ CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.7/ofi/cray/10.0
++++ export CRAY_MPICH_PREFIX
++++ CRAY_MPICH_VER=8.1.7
++++ export CRAY_MPICH_VER
++++ CRAY_MPICH_VERSION=8.1.7
++++ export CRAY_MPICH_VERSION
++++ __LMOD_REF_COUNT_LOADEDMODULES='craype-x86-rome:1;libfabric/1.11.0.4.75:1;craype-network-ofi:1;envvar/1.0:1;craype/2.7.6:1;cray-mpich/8.1.7:1'
++++ export __LMOD_REF_COUNT_LOADEDMODULES
++++ LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:envvar/1.0:craype/2.7.6:cray-mpich/8.1.7
++++ export LOADEDMODULES
++++ __LMOD_REF_COUNT_MANPATH='/opt/cray/pe/mpich/8.1.7/ofi/man:1;/opt/cray/pe/mpich/8.1.7/man/mpich:1;/opt/cray/pe/craype/2.7.6/man:1;/opt/cray/libfabric/1.11.0.4.75/share/man:1;/usr/share/lmod/lmod/share/man:1;/usr/share/man:1;/opt/pbs/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1;/opt/cray/pe/man:1'
++++ export __LMOD_REF_COUNT_MANPATH
++++ MANPATH=/opt/cray/pe/mpich/8.1.7/ofi/man:/opt/cray/pe/mpich/8.1.7/man/mpich:/opt/cray/pe/craype/2.7.6/man:/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/share/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/opt/cray/pe/man
++++ export MANPATH
++++ MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
++++ export MODULEPATH
++++ __LMOD_REF_COUNT_PE_FORTRAN_PKGCONFIG_LIBS=mpichf90:2
++++ export __LMOD_REF_COUNT_PE_FORTRAN_PKGCONFIG_LIBS
++++ PE_FORTRAN_PKGCONFIG_LIBS=mpichf90
++++ export PE_FORTRAN_PKGCONFIG_LIBS
++++ __LMOD_REF_COUNT_PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.7/ofi/intel/19.0/lib/pkgconfig:1
++++ export __LMOD_REF_COUNT_PE_INTEL_FIXED_PKGCONFIG_PATH
++++ PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.7/ofi/intel/19.0/lib/pkgconfig
++++ export PE_INTEL_FIXED_PKGCONFIG_PATH
++++ PE_MPICH_FIXED_PRGENV=INTEL
++++ export PE_MPICH_FIXED_PRGENV
++++ __LMOD_REF_COUNT_PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90:2
++++ export __LMOD_REF_COUNT_PE_MPICH_FORTRAN_PKGCONFIG_LIBS
++++ PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90
++++ export PE_MPICH_FORTRAN_PKGCONFIG_LIBS
++++ PE_MPICH_GENCOMPILERS_AMD=4.0
++++ export PE_MPICH_GENCOMPILERS_AMD
++++ PE_MPICH_GENCOMPILERS_AOCC=3.0
++++ export PE_MPICH_GENCOMPILERS_AOCC
++++ PE_MPICH_GENCOMPILERS_CRAY=10.0
++++ export PE_MPICH_GENCOMPILERS_CRAY
++++ PE_MPICH_GENCOMPILERS_CRAYCLANG=10.0
++++ export PE_MPICH_GENCOMPILERS_CRAYCLANG
++++ PE_MPICH_GENCOMPILERS_GNU=9.1
++++ export PE_MPICH_GENCOMPILERS_GNU
++++ PE_MPICH_GENCOMPILERS_NVIDIA=20.7
++++ export PE_MPICH_GENCOMPILERS_NVIDIA
++++ PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.7/gtl/lib
++++ export PE_MPICH_GTL_DIR_amd_gfx906
++++ PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.7/gtl/lib
++++ export PE_MPICH_GTL_DIR_amd_gfx908
++++ PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.7/gtl/lib
++++ export PE_MPICH_GTL_DIR_nvidia70
++++ PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.7/gtl/lib
++++ export PE_MPICH_GTL_DIR_nvidia80
++++ PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa
++++ export PE_MPICH_GTL_LIBS_amd_gfx906
++++ PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa
++++ export PE_MPICH_GTL_LIBS_amd_gfx908
++++ PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda
++++ export PE_MPICH_GTL_LIBS_nvidia70
++++ PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda
++++ export PE_MPICH_GTL_LIBS_nvidia80
++++ PE_MPICH_MODULE_NAME=cray-mpich
++++ export PE_MPICH_MODULE_NAME
++++ __LMOD_REF_COUNT_PE_MPICH_PKGCONFIG_LIBS=mpich:2
++++ export __LMOD_REF_COUNT_PE_MPICH_PKGCONFIG_LIBS
++++ PE_MPICH_PKGCONFIG_LIBS=mpich
++++ export PE_MPICH_PKGCONFIG_LIBS
++++ PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@
++++ export PE_MPICH_PKGCONFIG_VARIABLES
++++ PE_MPICH_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.7/ofi/@PRGENV@/@PE_MPICH_GENCOMPS@/lib/pkgconfig:/opt/cray/pe/mpich/8.1.7/gtl/lib/pkgconfig
++++ export PE_MPICH_VOLATILE_PKGCONFIG_PATH
++++ PE_MPICH_VOLATILE_PRGENV='AMD AOCC CRAY CRAYCLANG GNU NVIDIA'
++++ export PE_MPICH_VOLATILE_PRGENV
++++ PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.7/ofi/cray/10.0/lib
++++ export PE_PERFTOOLS_MPICH_LIBDIR
++++ __LMOD_REF_COUNT_PE_PKGCONFIG_LIBS=mpich:2
++++ export __LMOD_REF_COUNT_PE_PKGCONFIG_LIBS
++++ PE_PKGCONFIG_LIBS=mpich
++++ export PE_PKGCONFIG_LIBS
++++ __LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS='PE_MPICH:2;PE_ATP:1'
++++ export __LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS
++++ PE_PKGCONFIG_PRODUCTS=PE_MPICH:PE_ATP
++++ export PE_PKGCONFIG_PRODUCTS
++++ __LMOD_REF_COUNT__LMFILES_='/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:1;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1;/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:1;/apps/prod/lmodules/sys_core/envvar/1.0:1;/opt/cray/pe/modulefiles/craype/2.7.6:1;/opt/cray/pe/modulefiles/cray-mpich/8.1.7:1'
++++ export __LMOD_REF_COUNT__LMFILES_
++++ _LMFILES_=/opt/cray/pe/craype-targets/default/modulefiles/craype-x86-rome:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/craype-targets/default/modulefiles/craype-network-ofi:/apps/prod/lmodules/sys_core/envvar/1.0:/opt/cray/pe/modulefiles/craype/2.7.6:/opt/cray/pe/modulefiles/cray-mpich/8.1.7
++++ export _LMFILES_
++++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXktbXBpY2giXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMvY3JheS1tcGljaC84LjEuNyIsWyJmdWxsTmFtZSJdPSJjcmF5LW1waWNoLzguMS43IixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1tcGljaC84LjEuNyIsfSxjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzL2NyYXlwZS8yLjcuNiIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjYiLFsibG9h
++++ export _ModuleTable001_
++++ _ModuleTable002_=ZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUvMi43LjYiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUtbmV0d29yay1vZmkiLFsiZnVsbE5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsiY3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQv
++++ export _ModuleTable002_
++++ _ModuleTable003_=bW9kdWxlZmlsZXMvY3JheXBlLXg4Ni1yb21lIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxlbnZ2YXI9e1siZm4iXT0iL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZS9lbnZ2YXIvMS4wIixbImZ1bGxOYW1lIl09ImVudnZhci8xLjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJlbnZ2YXIvMS4wIix9LGxpYmZhYnJpYz17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMvbGliZmFicmljLzEuMTEu
++++ export _ModuleTable003_
++++ _ModuleTable004_=MC40Ljc1IixbImZ1bGxOYW1lIl09ImxpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImxpYmZhYnJpYyIsfSx9LG1wYXRoQT17Ii9sZnMvaDIvZW1jL2xhbS9ub3NjcnViL0VyaWMuUm9nZXJzL25hbS52NC4yLjAvbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlIiwiL2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzIiwiL2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlIiwiL29wdC9jcmF5L3BlL3BlcmZ0b29scy8yMS4wMi4wL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L21vZHVs
++++ export _ModuleTable004_
++++ _ModuleTable005_=ZWZpbGVzIiwiL29wdC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcyIsIi91c3Ivc2hhcmUvTW9kdWxlcy8zLjIuMTAvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvdXNyL3NoYXJlL21vZHVsZXM6L3Vzci9zaGFyZS9Nb2R1bGVzLyRNT0RVTEVfVkVSU0lPTi9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29y
++++ export _ModuleTable005_
++++ _ModuleTable006_=ZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQ6L2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZTovYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMvY29yZTovYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmU6L29wdC9jcmF5L21vZHVsZWZpbGVzOi9vcHQvbW9kdWxlZmlsZXMiLH0=
++++ export _ModuleTable006_
++++ _ModuleTable_Sz_=6
++++ export _ModuleTable_Sz_
++++ : -s sh
+++ eval
+++ setenv COMP ftn
+/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio: line 16: setenv: command not found
+++ setenv COMP_MP ftn
+/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio: line 17: setenv: command not found
+++ setenv COMP_MPI ftn
+/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio: line 18: setenv: command not found
+++ setenv C_COMP cc
+/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio: line 20: setenv: command not found
+++ setenv C_COMP_MP cc
+/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio: line 21: setenv: command not found
+++ set COMPILER intel
+++ setenv FFLAGS_COM '-fp-model strict'
+/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio: line 25: setenv: command not found
+++ setenv LDFLAGS_COM -mkl
+/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio: line 26: setenv: command not found
+++ setenv OMPFLAG -qopenmp
+/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles/modulefile.nam_ref2nemsio: line 27: setenv: command not found
+++ module load bufr/11.4.0
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load bufr/11.4.0
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested:
+"bufr/11.4.0"
+   Try: "module spider bufr/11.4.0" to see how to load the module(s).
+
+
+
+++ eval false
++++ false
+++ module load nemsio/2.5.2
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load nemsio/2.5.2
+Lmod has detected the following error: The following module(s) are unknown: "nemsio/2.5.2"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "nemsio/2.5.2"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+++ eval false
++++ false
+++ module load sfcio/1.4.1
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load sfcio/1.4.1
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested:
+"sfcio/1.4.1"
+   Try: "module spider sfcio/1.4.1" to see how to load the module(s).
+
+
+
+++ eval false
++++ false
+++ module load sigio/2.3.2
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load sigio/2.3.2
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested:
+"sigio/2.3.2"
+   Try: "module spider sigio/2.3.2" to see how to load the module(s).
+
+
+
+++ eval false
++++ false
+++ module load sp/2.3.3
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load sp/2.3.3
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested:
+"sp/2.3.3"
+   Try: "module spider sp/2.3.3" to see how to load the module(s).
+
+
+
+++ eval false
++++ false
+++ module load w3nco/2.4.1
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load w3nco/2.4.1
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested:
+"w3nco/2.4.1"
+   Try: "module spider w3nco/2.4.1" to see how to load the module(s).
+
+
+
+++ eval false
++++ false
+++ module load w3emc/2.7.3
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load w3emc/2.7.3
+Lmod has detected the following error: The following module(s) are unknown: "w3emc/2.7.3"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "w3emc/2.7.3"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+++ eval false
++++ false
+++ module load crtm/2.3.0
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load crtm/2.3.0
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested:
+"crtm/2.3.0"
+   Try: "module spider crtm/2.3.0" to see how to load the module(s).
+
+
+
+++ eval false
++++ false
+++ module load bacio/2.4.1
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load bacio/2.4.1
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested:
+"bacio/2.4.1"
+   Try: "module spider bacio/2.4.1" to see how to load the module(s).
+
+
+
+++ eval false
++++ false
+++ module load wrf_io/1.1.1
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load wrf_io/1.1.1
+Lmod has detected the following error: The following module(s) are unknown: "wrf_io/1.1.1"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "wrf_io/1.1.1"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+++ eval false
++++ false
+++ module load netcdf/4.7.4
++++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash load netcdf/4.7.4
+Lmod has detected the following error: These module(s) or extension(s) exist but cannot be loaded as requested:
+"netcdf/4.7.4"
+   Try: "module spider netcdf/4.7.4" to see how to load the module(s).
+
+
+
+++ eval false
++++ false
++ module list
+++ /apps/spack/lmod/8.3/gcc/10.2.0/e46danmz3nxjfbecz5pejrwb27hjdshu/lmod/lmod/libexec/lmod bash list
+
+Currently Loaded Modules:
+  1) craype-x86-rome             3) craype-network-ofi   5) craype/2.7.6
+  2) libfabric/1.11.0.4.75 (H)   4) envvar/1.0           6) cray-mpich/8.1.7
+
+  Where:
+   H:  Hidden Module
+
+ 
+
++ eval 'MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles;' export 'MODULEPATH;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXktbXBpY2giXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMvY3JheS1tcGljaC84LjEuNyIsWyJmdWxsTmFtZSJdPSJjcmF5LW1waWNoLzguMS43IixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1tcGljaC84LjEuNyIsfSxjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzL2NyYXlwZS8yLjcuNiIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjYiLFsibG9h;' export '_ModuleTable001_;' '_ModuleTable002_=ZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUvMi43LjYiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUtbmV0d29yay1vZmkiLFsiZnVsbE5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsiY3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQv;' export '_ModuleTable002_;' '_ModuleTable003_=bW9kdWxlZmlsZXMvY3JheXBlLXg4Ni1yb21lIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxlbnZ2YXI9e1siZm4iXT0iL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZS9lbnZ2YXIvMS4wIixbImZ1bGxOYW1lIl09ImVudnZhci8xLjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJlbnZ2YXIvMS4wIix9LGxpYmZhYnJpYz17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMvbGliZmFicmljLzEuMTEu;' export '_ModuleTable003_;' '_ModuleTable004_=MC40Ljc1IixbImZ1bGxOYW1lIl09ImxpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImxpYmZhYnJpYyIsfSx9LG1wYXRoQT17Ii9sZnMvaDIvZW1jL2xhbS9ub3NjcnViL0VyaWMuUm9nZXJzL25hbS52NC4yLjAvbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlIiwiL2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzIiwiL2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlIiwiL29wdC9jcmF5L3BlL3BlcmZ0b29scy8yMS4wMi4wL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L21vZHVs;' export '_ModuleTable004_;' '_ModuleTable005_=ZWZpbGVzIiwiL29wdC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcyIsIi91c3Ivc2hhcmUvTW9kdWxlcy8zLjIuMTAvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvdXNyL3NoYXJlL21vZHVsZXM6L3Vzci9zaGFyZS9Nb2R1bGVzLyRNT0RVTEVfVkVSU0lPTi9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29y;' export '_ModuleTable005_;' '_ModuleTable006_=ZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQ6L2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZTovYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMvY29yZTovYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmU6L29wdC9jcmF5L21vZHVsZWZpbGVzOi9vcHQvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable006_;' '_ModuleTable_Sz_=6;' export '_ModuleTable_Sz_;'
+++ MODULEPATH=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/modulefiles:/apps/prod/lmodules/sys_core:/apps/ops/prod/nco/modulefiles:/apps/prod/lmodules/core:/opt/cray/pe/perftools/21.02.0/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/share/modules:/usr/share/Modules/3.2.10/modulefiles:/usr/share/modules/modulefiles:/opt/cray/pe/craype-targets/default/modulefiles
+++ export MODULEPATH
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImNyYXktbXBpY2giXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbW9kdWxlZmlsZXMvY3JheS1tcGljaC84LjEuNyIsWyJmdWxsTmFtZSJdPSJjcmF5LW1waWNoLzguMS43IixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1tcGljaC84LjEuNyIsfSxjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzL2NyYXlwZS8yLjcuNiIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjYiLFsibG9h
+++ export _ModuleTable001_
+++ _ModuleTable002_=ZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUvMi43LjYiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcy9jcmF5cGUtbmV0d29yay1vZmkiLFsiZnVsbE5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsiY3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQv
+++ export _ModuleTable002_
+++ _ModuleTable003_=bW9kdWxlZmlsZXMvY3JheXBlLXg4Ni1yb21lIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxlbnZ2YXI9e1siZm4iXT0iL2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZS9lbnZ2YXIvMS4wIixbImZ1bGxOYW1lIl09ImVudnZhci8xLjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJlbnZ2YXIvMS4wIix9LGxpYmZhYnJpYz17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMvbGliZmFicmljLzEuMTEu
+++ export _ModuleTable003_
+++ _ModuleTable004_=MC40Ljc1IixbImZ1bGxOYW1lIl09ImxpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImxpYmZhYnJpYyIsfSx9LG1wYXRoQT17Ii9sZnMvaDIvZW1jL2xhbS9ub3NjcnViL0VyaWMuUm9nZXJzL25hbS52NC4yLjAvbW9kdWxlZmlsZXMiLCIvYXBwcy9wcm9kL2xtb2R1bGVzL3N5c19jb3JlIiwiL2FwcHMvb3BzL3Byb2QvbmNvL21vZHVsZWZpbGVzIiwiL2FwcHMvcHJvZC9sbW9kdWxlcy9jb3JlIiwiL29wdC9jcmF5L3BlL3BlcmZ0b29scy8yMS4wMi4wL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L3BlL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L21vZHVs
+++ export _ModuleTable004_
+++ _ModuleTable005_=ZWZpbGVzIiwiL29wdC9tb2R1bGVmaWxlcyIsIi91c3Ivc2hhcmUvbW9kdWxlcyIsIi91c3Ivc2hhcmUvTW9kdWxlcy8zLjIuMTAvbW9kdWxlZmlsZXMiLCIvdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvcGUvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvdXNyL3NoYXJlL21vZHVsZXM6L3Vzci9zaGFyZS9Nb2R1bGVzLyRNT0RVTEVfVkVSU0lPTi9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZXMvbW9kdWxlZmlsZXM6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29y
+++ export _ModuleTable005_
+++ _ModuleTable006_=ZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQ6L2FwcHMvcHJvZC9sbW9kdWxlcy9zeXNfY29yZTovYXBwcy9vcHMvcHJvZC9uY28vbW9kdWxlZmlsZXMvY29yZTovYXBwcy9wcm9kL2xtb2R1bGVzL2NvcmU6L29wdC9jcmF5L21vZHVsZWZpbGVzOi9vcHQvbW9kdWxlZmlsZXMiLH0=
+++ export _ModuleTable006_
+++ _ModuleTable_Sz_=6
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ dir_refsorc=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/sorc/nam_ref2nemsio.fd
++ cd /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/sorc/nam_ref2nemsio.fd
++ export OUTDIR=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/exec
++ OUTDIR=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/exec
++ make -f makefile
+ftn  -FR -O3 -I ref2nemsio.f -o nam_ref2nemsio    
+Error: A PrgEnv-* modulefile must be loaded.
+make: *** [makefile:12: ref2nemsio.o] Error 255
++ mv nam_ref2nemsio /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/exec/.
