@@ -1,7 +1,7 @@
 #!/bin/sh
 #PBS -N nam_catchup_analysis_tm06_12
-##PBS -l place=vscatter,select=9:ncpus=128:mpiprocs=16:ompthreads=8:mem=500GB
-#PBS -l place=vscatter:excl,select=9:ncpus=16:mpiprocs=16:ompthreads=1
+#PBS -l place=vscatter:excl,select=9:ncpus=128:mpiprocs=16:ompthreads=8
+##PBS -l place=vscatter:excl,select=9:ncpus=16:mpiprocs=16:ompthreads=1
 #PBS -l walltime=00:20:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_tm06_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_tm06_12.out
@@ -18,8 +18,8 @@ module load intel/19.1.3.304
 module load cray-mpich/8.1.9
 module load cray-pals/1.0.17
 
-module load prod_util/2.0.9
-module load prod_envir/2.0.4
+module load prod_util/2.0.10
+module load prod_envir/2.0.5
 module load crtm/2.3.0
 module load cfp/2.0.4
 module load netcdf/4.7.4
@@ -30,7 +30,7 @@ export FI_OFI_RXM_SAR_LIMIT=3145728
 
 export ntasks=144
 export ppn=16
-export threads=1
+export threads=8
 
 # OMP settings
 export OMP_PLACES=cores
