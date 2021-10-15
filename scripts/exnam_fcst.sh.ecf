@@ -637,8 +637,9 @@ ln -sf $FIXnam/nam_global_o3clim.txt fort.48
 
 export LANG=en_US
 export OMP_NUM_THREADS=1
-export OMP_PROC_BIND=close
 
+# These are for multi-thread runs
+###export OMP_PROC_BIND=close
 ##export MPICH_ABORT_ON_ERROR=1
 ##export MPICH_ENV_DISPLAY=1
 ##export MPICH_VERSION_DISPLAY=1
