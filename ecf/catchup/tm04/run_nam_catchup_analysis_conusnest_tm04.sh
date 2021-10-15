@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -N nam_catchup_analysis_conus_tm04_12
-#PBS -l place=vscatter,select=11:ncpus=128:mpiprocs=16:ompthreads=8:mem=500GB
+#PBS -l place=vscatter:excl,select=11:ncpus=128:mpiprocs=16:ompthreads=8
 #PBS -l walltime=00:20:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_conus_tm04_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_conus_tm04_12.out
@@ -12,13 +12,13 @@
 module purge
 module load envvar/1.0
 module load PrgEnv-intel/8.1.0
-module load craype/2.7.8
+module load craype/2.7.10
 module load intel/19.1.3.304
-module load cray-mpich/8.1.7
-module load cray-pals/1.0.12
+module load cray-mpich/8.1.9
+module load cray-pals/1.0.17
 
-module load prod_util/2.0.9
-module load prod_envir/2.0.4
+module load prod_util/2.0.10
+module load prod_envir/2.0.5
 module load crtm/2.3.0
 module load cfp/2.0.4
 module load netcdf/4.7.4
