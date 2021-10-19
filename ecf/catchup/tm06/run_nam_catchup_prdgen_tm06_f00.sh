@@ -21,8 +21,8 @@ module load cray-pals/1.0.17
 module load netcdf/4.7.4
 module load prod_util/2.0.10
 module load prod_envir/2.0.5
-module load grib_util/1.2.3
 module load libjpeg/9c
+module load grib_util/1.2.3
 module load jasper/2.0.25
 module load libpng/1.6.37
 module load zlib/1.2.11

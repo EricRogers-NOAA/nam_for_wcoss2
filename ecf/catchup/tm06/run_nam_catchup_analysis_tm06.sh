@@ -1,7 +1,6 @@
 #!/bin/sh
 #PBS -N nam_catchup_analysis_tm06_12
 #PBS -l place=vscatter:excl,select=9:ncpus=128:mpiprocs=16:ompthreads=8
-##PBS -l place=vscatter:excl,select=9:ncpus=16:mpiprocs=16:ompthreads=1
 #PBS -l walltime=00:20:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_tm06_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_tm06_12.out

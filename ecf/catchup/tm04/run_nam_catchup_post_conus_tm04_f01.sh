@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -N nam_nam_catchup_post_conus_tm04_f01_12
-#PBS -l select=1:ncpus=28:mem=70GB
+#PBS -l select=1:ncpus=28:mem=100GB
 #PBS -l walltime=00:20:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_post_conus_tm04_f01_12
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_post_conus_tm04_f01_12

@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -N nam_catchup_forecast_tm06_12
-#PBS -l place=scatter:excl,select=14:ncpus=128
+#PBS -l place=vscatter:excl,select=14:ncpus=128
 #PBS -l walltime=00:45:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_12.out
