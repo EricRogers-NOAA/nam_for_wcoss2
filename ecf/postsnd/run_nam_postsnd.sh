@@ -1,7 +1,7 @@
 #!/bin/sh
 #PBS -N nam_postsnd_12
 #PBS -l select=1:ncpus=1:mem=4GB
-#PBS -l walltime=00:05:00
+#PBS -l walltime=00:20:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_postsnd_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_postsnd_12.out
 #PBS -q dev
