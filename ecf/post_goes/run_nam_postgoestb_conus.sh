@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_post_goestb_12
-#PBS -l select=1:ncpus=84:mem=200GB
+#PBS -N nam_post_goestb_conus_12
+#PBS -l place=vscatter:excl,select=1:ncpus=128
 #PBS -l walltime=02:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_12.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_12.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_conus_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_conus_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -25,15 +25,16 @@ module load crtm/2.3.0
 
 set -x
 
-export procs=64
-export procspernode=64
+export procs=128
+export procspernode=128
 
 export cyc=12
 export PDY=20210824
 export tmmark=tm00
+export domain=conus
 export envir=canned
 export nam_ver=v4.2.0
-export jobid=jnam_post_goestb_${cyc}.${PBS_JOBID}
+export jobid=jnam_post_goestb_conus_${cyc}.${PBS_JOBID}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
@@ -50,4 +51,4 @@ export OMP_PLACES=cores
 
 #execute J-job
 
-$HOMEjobs/JNAM_POST_GOESTB
+$HOMEjobs/JNAM_POST_GOESTB_NEST
