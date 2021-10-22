@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_catchup_coldstart_partialcyc_alaska_12
+#PBS -N nam_catchup_coldstart_partialcyc_alaska_18
 #PBS -l select=1:ncpus=2:mem=8GB
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_coldstart_partialcyc_alaska_12.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_coldstart_partialcyc_alaska_12.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_coldstart_partialcyc_alaska_18.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_coldstart_partialcyc_alaska_18.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -26,7 +26,7 @@ module load grib_util/1.2.2
 
 set -x
 
-export cyc=12
+export cyc=18
 export PDY=20210824
 export tmmark=tm06
 export envir=canned

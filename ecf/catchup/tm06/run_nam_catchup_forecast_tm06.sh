@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_catchup_forecast_tm06_12
+#PBS -N nam_catchup_forecast_tm06_18
 #PBS -l place=vscatter:excl,select=14:ncpus=128
 #PBS -l walltime=00:45:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_12.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_12.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_18.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_18.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -17,7 +17,7 @@ module load intel/19.1.3.304
 module load cray-mpich/8.1.9
 module load cray-pals/1.0.17
 
-module load prod_util/2.0.9
+module load prod_util/2.0.10
 module load prod_envir/2.0.4
 module load cfp/2.0.4
 module load hdf5/1.10.6
@@ -38,7 +38,7 @@ export OMP_PLACES=cores
 export OMP_NUM_THREADS=$threads
 export OMP_STACKSIZE=1G
 
-export cyc=12
+export cyc=18
 export PDY=20210824
 export tmmark=tm06
 export envir=canned

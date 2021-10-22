@@ -57,8 +57,9 @@ CYCLE_HOUR=`echo $CYCLE_TIME | cut -c9-10`
 
 CYCSICE_UPDATE=00
 CYCSST_UPDATE=00
-CYCSICE_UPDATE=06
-CYCSST_UPDATE=06
+#For canned data testing
+##CYCSICE_UPDATE=06
+##CYCSST_UPDATE=06
 
 # How old can the NESDIS snow/ice data and SST data be?  Set the age
 # in hours below.  if older, the snow/ice/sst programs will not run

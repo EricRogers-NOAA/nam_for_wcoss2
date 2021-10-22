@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_catchup_npsguess_hawaii_12
+#PBS -N nam_catchup_npsguess_hawaii_18
 #PBS -l select=1:ncpus=28:mem=100GB
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_npsguess_hawaii_12.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_npsguess_hawaii_12.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_npsguess_hawaii_18.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_npsguess_hawaii_18.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -13,9 +13,9 @@ module purge
 module load envvar/1.0
 module load PrgEnv-intel/8.1.0
 module load intel/19.1.3.304
+module load cray-pals/1.0.17
 module load craype/2.7.10
 module load cray-mpich/8.1.9
-module load cray-pals/1.0.17
 
 # Loading NetCDF 4
 module load netcdf/4.7.4
@@ -26,7 +26,7 @@ module load grib_util/1.2.3
 
 set -x
 
-export cyc=12
+export cyc=18
 export PDY=20210824
 export domain=hawaii
 export tmmark=tm01
