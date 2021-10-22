@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_nam_catchup_post_tm01_f00_12
+#PBS -N nam_nam_catchup_post_tm01_f00_18
 #PBS -l select=1:ncpus=28:mem=28GB
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_post_tm01_f00_12
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_post_tm01_f00_12
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_post_tm01_f00_18
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_post_tm01_f00_18
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -26,7 +26,7 @@ set -x
 export procs=28
 export procspernode=28
 
-export cyc=12
+export cyc=18
 export PDY=20210824
 export tmmark=tm01
 export envir=canned
