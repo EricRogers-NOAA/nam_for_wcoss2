@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_awips_f27_18
+#PBS -N nam_bulls_f48_18
 #PBS -l select=1:ncpus=1:mem=5GB
 #PBS -l walltime=00:30:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_awips_f27_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_awips_f27_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_bulls_f48_18.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_bulls_f48_18.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -32,15 +32,15 @@ set -x
 
 export cyc=18
 export PDY=20210824
-export fcsthrs=27
+export fcsthrs=48
 export tmmark=tm00
 export envir=canned
 export nam_ver=v4.2.0
 export SENDCOM=YES
 export SENDDBN=NO
 export SENDDBN_NTC=NO
-export jobid=jnam_awips_f27_${cyc}.${PBS_JOBID}
-export job=nam_awips_f27_12
+export jobid=jnam_bulls_f60_${cyc}.${PBS_JOBID}
+export job=nam_bulls_f60_12
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
@@ -53,4 +53,4 @@ export HOMEjobs=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/jobs
 
 #execute J-job
 
-$HOMEjobs/JNAM_AWIPS
+$HOMEjobs/JNAM_BULLS
