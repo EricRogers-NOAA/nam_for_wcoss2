@@ -1,0 +1,10 @@
+run_nam_metgrid_boco.sh
+run_nam_nemsinterp_boco_1.sh
+run_nam_nemsinterp_boco_2.sh
+run_nam_nemsinterp_boco_3.sh
+run_nam_nemsinterp_boco_4.sh
+run_nam_nemsinterp_boco_5.sh
+run_nam_nemsinterp_boco_6.sh
+run_nam_nemsinterp_boco_7.sh
+run_nam_prelim.sh
+run_nam_ungrib_boco.sh
