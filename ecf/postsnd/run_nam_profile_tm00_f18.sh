@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_profile_12_f18
+#PBS -N nam_profile_18_f18
 #PBS -l select=1:ncpus=1:mem=4GB
 #PBS -l walltime=00:05:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_profile_f18_12.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_profile_f18_12.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_profile_f18_18.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_profile_f18_18.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -27,7 +27,7 @@ set -x
 export procs=1
 export procspernode=1
 
-export cyc=12
+export cyc=18
 export PDY=20210824
 export tmmark=tm00
 export envir=canned
