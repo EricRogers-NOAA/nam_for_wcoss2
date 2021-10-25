@@ -106,7 +106,7 @@ EOF
   . prep_step
 
   startmsg
-  ${MPIEXEC} $EXECnam/nam_ncep_post >> $pgmout 2>errfile
+  ${MPIEXEC} -n ${procs} -ppn ${procspernode} --cpu-bind core --depth 1 $EXECnam/nam_ncep_post >> $pgmout 2>errfile
   export err=$?;err_chk
 
 # add wgrib2 here

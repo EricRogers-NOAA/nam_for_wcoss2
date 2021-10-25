@@ -1,11 +1,12 @@
 #!/bin/sh
-#PBS -N nam_forecast_parentext_12
+#PBS -N nam_forecast_parentext_18
 #PBS -l place=vscatter:excl,select=4:ncpus=128
 #PBS -l walltime=00:30:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_12.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_12.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_18.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_18.out
 #PBS -q dev
 #PBS -A NAM-DEV
+#PBS -l hyper=true
 #PBS -l debug=true
 #PBS -V
 
@@ -38,11 +39,29 @@ export ppn=128
 export threads=1
 
 # OMP settings
-export OMP_PLACES=cores
+export OMP_PROC_BIND=true
 export OMP_NUM_THREADS=$threads
 export OMP_STACKSIZE=1G
 
-export cyc=12
+export MPICH_ABORT_ON_ERROR=1
+export MPICH_ENV_DISPLAY=1
+export MPICH_VERSION_DISPLAY=1
+export MPICH_OFI_VERBOSE=1
+export MPICH_OFI_NIC_VERBOSE=1
+#export MPICH_RANK_REORDER_DISPLAY=1
+
+#ulimit -c unlimited
+export MALLOC_MMAP_MAX_=0
+export MALLOC_TRIM_THRESHOLD_=134217728
+export OMP_PROC_BIND=true
+export FORT_FMT_NO_WRAP_MARGIN=true
+export MPICH_REDUCE_NO_SMP=1
+export FOR_DISABLE_KMP_MALLOC=TRUE
+export MPICH_OFI_STARTUP_CONNECT=1
+export FI_OFI_RXM_RX_SIZE=40000
+export FI_OFI_RXM_TX_SIZE=40000
+
+export cyc=18
 export PDY=20210824
 export tmmark=tm00
 export envir=canned

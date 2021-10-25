@@ -26,7 +26,7 @@ postmsg "$msg"
 cd $DATA
 
 export domain=${domain:-parentonly}
-export NODE_CONFIGFILE=${NODE_CONFIGFILE:-$PARMnam/nam_node_decomposition_opsconfig.tm00}
+export NODE_CONFIGFILE=${NODE_CONFIGFILE:-$PARMnam/nam_node_decomposition_opsconfig.tm00_wcoss2}
 
 export tmmark=tm00
 
