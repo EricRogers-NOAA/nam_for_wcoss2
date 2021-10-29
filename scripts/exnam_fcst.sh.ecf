@@ -319,6 +319,11 @@ else
   evapbucket=3
 fi
 
+#For parent, reset restval=true for restarting from non-zero fcst hour
+if [ $RESTARTNZF = "YES" ]; then
+  export restval=true
+fi
+
 # Run config file to import node decomposition
 export domain=parent
 set -a; . $NODE_CONFIGFILE; set +a
@@ -431,6 +436,10 @@ for domain in ${nests}; do
         fi
         if [ $GUESStm00 = GDAS ] ; then
           export restval=false
+        fi
+       # This ensures all nests get restval=true for restarting from non-zero fcst hour
+        if [ $RESTARTNZF = "YES" ]; then
+          export restval=true
         fi
       fi
     fi
