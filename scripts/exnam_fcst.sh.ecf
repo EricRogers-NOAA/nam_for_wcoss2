@@ -71,6 +71,7 @@ if [ $tmmark = tm00 ] ; then
     for domain in $reg; do
       lasthour=`ls -1rt restartdone.0${domain}.????h_* | tail -1 | cut -c 18-19`
       let lasthour_0$domain=$lasthour
+      typeset -Z2 lasthour_0$domain
     done
 
     if [ $RUNTYPE = CATCHUP ] ; then
