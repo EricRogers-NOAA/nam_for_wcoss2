@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_main.out_18
+#PBS -N nam_main.out_00
 #PBS -l select=1:ncpus=1:mem=2GB
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_main_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_main_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_main_00.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_main_00.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -25,8 +25,8 @@ module load grib_util/1.2.3
 
 set -x
 
-export cyc=18
-export PDY=20210824
+export cyc=00
+export PDY=20210825
 export tmmark=tm00
 export envir=canned
 export nam_ver=v4.2.0
