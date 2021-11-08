@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -N nam_main.out_12
-#PBS -l select=1:ncpus=1:mem=2GB
+#PBS -l select=1:ncpus=1:mem=200MB
 #PBS -l walltime=00:20:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_main_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_main_12.out
