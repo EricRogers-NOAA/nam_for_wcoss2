@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_analysis_18
+#PBS -N nam_analysis__12
 #PBS -l place=vscatter:excl,select=9:ncpus=128:mpiprocs=16:ompthreads=8
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_analysis_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_analysis_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_analysis__12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_analysis__12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -42,7 +42,7 @@ export OMP_PLACES=cores
 export OMP_NUM_THREADS=$threads
 export OMP_STACKSIZE=1G
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export tmmark=tm00
 export envir=canned
