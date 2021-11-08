@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_catchup_forecast_tm05_18
+#PBS -N nam_catchup_forecast_tm05_12
 #PBS -l place=vscatter:excl,select=14:ncpus=128
 #PBS -l walltime=00:45:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm05_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm05_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm05_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm05_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -59,8 +59,11 @@ export FORT_FMT_NO_WRAP_MARGIN=true
 
 export MPICH_REDUCE_NO_SMP=1
 export FI_OFI_RXM_RX_SIZE=40000
+#test
+##export FI_OFI_RXM_BUFFER_SIZE=128000
+##export FI_OFI_RXM_RX_SIZE=64000
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export tmmark=tm05
 export envir=canned

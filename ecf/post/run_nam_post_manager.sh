@@ -1,15 +1,13 @@
 #!/bin/sh
-#PBS -N nam_catchup_analysis_alaska_tm03_12
-#PBS -l place=vscatter:excl,select=11:ncpus=128:mpiprocs=16:ompthreads=8
+#PBS -N nam_post_manager_12
+#PBS -l select=1:ncpus=1:mem=200MB
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_alaska_tm03_12.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_alaska_tm03_12.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_manager_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_manager_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
 #PBS -V
-
-set -x
 
 VERFILE=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/versions
 . $VERFILE/nam.ver
@@ -22,35 +20,24 @@ module load craype/${craype_ver}
 module load cray-mpich/${cray_mpich_ver}
 module load cray-pals/${cray_pals_ver}
 
+module load netcdf/${netcdf_ver}
 module load prod_util/${prod_util_ver}
 module load prod_envir/${prod_envir_ver}
-module load crtm/${crtm_ver}
-module load cfp/${cfp_ver}
-module load netcdf/${netcdf_ver}
+module load libjpeg/${libjpeg_ver}
+module load grib_util/${grib_util_ver}
 
 set -x
 
-export FI_OFI_RXM_SAR_LIMIT=3145728
-export MPICH_COLL_OPT_OFF=1
-
-export ntasks=176
-export ppn=16
-export threads=8
-
-# OMP settings
-export OMP_PLACES=cores
-export OMP_NUM_THREADS=$threads
-export OMP_STACKSIZE=1G
-
 export cyc=12
 export PDY=20210824
-export tmmark=tm03
+export tmmark=tm00
 export envir=canned
-export domain=alaska
 export nam_ver=v4.2.0
-export jobid=jnam_catchup_analysis_${domain}.${tmmark}_${cyc}.${PBS_JOBID}
+export jobid=jnam_post_manager_${cyc}.${PBS_JOBID}
+
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
+export WKDIRNAME=nam_{cyc}_main_${envir}
 
 export MPI_LABELIO=YES
 export MP_STDOUTMODE="ORDERED"
@@ -61,4 +48,4 @@ export HOMEjobs=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/jobs
 
 #execute J-job
 
-$HOMEjobs/JNAM_ANALYSIS_NEST
+$HOMEjobs/JNAM_POST_MANAGER

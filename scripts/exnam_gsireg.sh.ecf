@@ -64,6 +64,7 @@ nens=81
 # Not using FGAT or 4DEnVar, so hardwire nhr_assimilation to 3
 export nhr_assimilation=3
 typeset -Z2 nhr_assimilation
+rm filelist${nhr_assimilation}
 
 #####  connect with GDAS EnKF ensemble #################
 if [ $HYB_ENS = ".true." ]; then
@@ -108,7 +109,7 @@ else
   mydate=`echo ${adate} |cut -c1-8`
   thishour=`echo ${adate} |cut -c9-10`
   mydbzinfile=refd3d.t${thishour}z.grb2f00
-  datref=${COMINhourly}/radar.${mydate}
+  datref=${COMINradar}/radar.${mydate}
   cp ${datref}/$mydbzinfile .
   refflag=$?
 

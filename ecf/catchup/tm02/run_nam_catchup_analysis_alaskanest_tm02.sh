@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_catchup_analysis_alaska_tm02_18
+#PBS -N nam_catchup_analysis_alaska_tm02_12
 #PBS -l place=vscatter:excl,select=11:ncpus=128:mpiprocs=16:ompthreads=8
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_alaska_tm02_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_alaska_tm02_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_alaska_tm02_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_analysis_alaska_tm02_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -31,6 +31,7 @@ module load netcdf/${netcdf_ver}
 set -x
 
 export FI_OFI_RXM_SAR_LIMIT=3145728
+export MPICH_COLL_OPT_OFF=1
 
 export ntasks=176
 export ppn=16
@@ -41,7 +42,7 @@ export OMP_PLACES=cores
 export OMP_NUM_THREADS=$threads
 export OMP_STACKSIZE=1G
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export tmmark=tm02
 export envir=canned

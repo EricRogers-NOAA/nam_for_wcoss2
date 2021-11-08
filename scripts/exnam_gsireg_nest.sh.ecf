@@ -64,6 +64,7 @@ nens=81
 # Not using FGAT or 4DEnVar, so hardwire nhr_assimilation to 3
 nhr_assimilation=3
 typeset -Z2 nhr_assimilation
+rm filelist${nhr_assimilation}
 
 # With the enhanced bias correction scheme switched on, there is no need to update
 # the predictors in the nest since the satellite bias corrections from the nest are
@@ -119,7 +120,7 @@ else
   mydate=`echo ${adate} |cut -c1-8`
   thishour=`echo ${adate} |cut -c9-10`
   mydbzinfile=refd3d.t${thishour}z.grb2f00
-  datref=${COMINhourly}/radar.${mydate}
+  datref=${COMINradar}/radar.${mydate}
 
   if [ $domain = alaska -o $domain = hawaii -o $domain = prico -o $domain = firewx ]; then
     # No radar data available in AK quite yet, so switch off in AK nest for now
