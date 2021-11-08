@@ -2,14 +2,14 @@ export PDY=20210824
 ##export PDY=20210930
 #
 export HOMEnam=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0
-#model versions set here
-export nam_ver=v4.2
-export gfs_ver=v16.2
-export rtma_ver=v2.9
-export rap_ver=v5.1
-export ccpa_ver=v4.2
-export radar_ver=v0.0
-export pcpanl_ver=v4.1
+#model versions moved to versions file
+##export nam_ver=v4.2
+##export gfs_ver=v16.2
+##export rtma_ver=v2.9
+##export rap_ver=v5.1
+##export ccpa_ver=v4.2
+##export radar_ver=v0.0
+##export pcpanl_ver=v4.1
 #
 export prodenvir=canned
 export DCOMROOT=/lfs/h1/ops/${prodenvir}/dcom

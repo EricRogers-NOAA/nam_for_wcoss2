@@ -31,6 +31,7 @@ module load netcdf/${netcdf_ver}
 set -x
 
 export FI_OFI_RXM_SAR_LIMIT=3145728
+export MPICH_COLL_OPT_OFF=1
 
 export ntasks=176
 export ppn=16
