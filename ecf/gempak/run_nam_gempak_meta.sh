@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N jnam_gempak_meta_18
+#PBS -N jnam_gempak_meta_12
 #PBS -l select=1:ncpus=24:mem=28GB
 #PBS -l walltime=02:30:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_gempak_meta_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_gempak_meta_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_gempak_meta_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_gempak_meta_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -36,7 +36,7 @@ module load gempak/${gempak_ver}
 
 set -x
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export tmmark=tm00
 export envir=canned

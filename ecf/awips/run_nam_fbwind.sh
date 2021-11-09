@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_fbwind
+#PBS -N nam_fbwind_12
 #PBS -l select=1:ncpus=1:mem=5GB
 #PBS -l walltime=00:30:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_fbwind_00.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_fbwind_00.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_fbwind_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_fbwind_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -35,8 +35,8 @@ module load util_shared/${util_shared_ver}
 
 set -x
 
-export cyc=00
-export PDY=20210825
+export cyc=12
+export PDY=20210824
 export tmmark=tm00
 export envir=canned
 export nam_ver=v4.2.0
