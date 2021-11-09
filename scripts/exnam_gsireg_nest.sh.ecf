@@ -1010,7 +1010,7 @@ else
        mv wrf_inout${nhr_assimilation} $GESDIR/${RUN}.t${cyc}z.nmm_b_restart_${domain}nest_nemsio_anl.${tmmark}
        export err=$?;err_chk
      fi
-     # Call input files ifg coldstarting NAM off GDAS "restart" files so forecast script doesn't have to be
+     # Call input files if coldstarting NAM off GDAS "restart" files so forecast script doesn't have to be
      # modified
      if [ $GUESStm00 = GDAS ] ; then
         mv wrf_inout${nhr_assimilation} $GESDIR/${RUN}.t${cyc}z.nmm_b_restart_${domain}nest_nemsio_anl.${tmmark}
