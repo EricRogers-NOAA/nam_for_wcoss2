@@ -11,7 +11,7 @@ export WKDIRNAME=nam_${cyc}_${tmmark}_${envir}
 
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_pmgr.sh.ecf
+${HOMEnam}/scripts/exnam_pmgr.sh
 jerr=$?
 ########################################################
 

@@ -23,7 +23,7 @@ export WKDIRNAME=nam_${cyc}_main_${envir}
 
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_ungrib_boco.sh.ecf
+${HOMEnam}/scripts/exnam_ungrib_boco.sh
 jerr=$?
 ########################################################
 

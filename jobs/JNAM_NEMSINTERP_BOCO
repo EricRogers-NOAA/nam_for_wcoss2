@@ -28,14 +28,14 @@ if [ $tmmark = tm00 ] ; then
   cd $DATA/run_nemsinterp_${inum}
   # Remove preexisting boco files in case of a rerun
   rm boco*
-  ${HOMEnam}/scripts/exnam_nemsinterp_boco${inum}.sh.ecf
+  ${HOMEnam}/scripts/exnam_nemsinterp_boco${inum}.sh
   jerr=$?
 else
   # tmmark set in ECFLOW LSF script or ROCOTO xml
   cd $DATA/run_nemsinterp_${tmmark}
   # Remove preexisting boco files in case of a rerun
   rm boco*
-  ${HOMEnam}/scripts/exnam_catchup_nemsinterp_boco.sh.ecf $tmmark
+  ${HOMEnam}/scripts/exnam_catchup_nemsinterp_boco.sh $tmmark
   jerr=$?
 fi
 ########################################################

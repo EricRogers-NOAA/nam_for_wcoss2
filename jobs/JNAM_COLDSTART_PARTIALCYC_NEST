@@ -28,7 +28,7 @@ export numdomain=${numdomain:-`grep ${domain} ${PARMnam}/nam_nestdomains | awk '
 if [ $tmmark = tm06 -o $tmmark = tm01 ] ; then
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_coldstart_partialcyc_nest.sh.ecf
+${HOMEnam}/scripts/exnam_coldstart_partialcyc_nest.sh
 jerr=$?
 ########################################################
 fi
@@ -39,7 +39,7 @@ if [ $tmmark = tm00 ] ; then
   if [ $GUESStm00 = GDAS ] ; then
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_coldstart_partialcyc_nest_tm00.sh.ecf
+${HOMEnam}/scripts/exnam_coldstart_partialcyc_nest_tm00.sh
 jerr=$?
 ########################################################
   fi

@@ -87,7 +87,7 @@ msg="Begin job for $job"
 postmsg "$msg"
 ########################################################
 # Execute the script.
-$HOMEnam/scripts/exnam_gempak_meta.sh.ecf
+$HOMEnam/scripts/exnam_gempak_meta.sh
 ########################################################
 msg="job has ended"
 postmsg "$msg"

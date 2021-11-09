@@ -24,7 +24,7 @@ export WKDIRNAME=nam_${cyc}_main_${envir}
 if [ $tmmark = tm06 ] ; then
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_coldstart_prep.sh.ecf
+${HOMEnam}/scripts/exnam_coldstart_prep.sh
 jerr=$?
 ########################################################
 fi
@@ -35,7 +35,7 @@ if [ $tmmark = tm00 ] ; then
   if [ $GUESStm00 = GDAS ] ; then
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_coldstart_prep_tm00.sh.ecf
+${HOMEnam}/scripts/exnam_coldstart_prep_tm00.sh
 jerr=$?
 ########################################################
   fi

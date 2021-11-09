@@ -19,7 +19,7 @@ export numdomain=${numdomain:-`grep ${domain} ${PARMnam}/nam_nestdomains | awk '
 
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_post_nest.sh.ecf
+${HOMEnam}/scripts/exnam_post_nest.sh
 jerr=$?
 ########################################################
 

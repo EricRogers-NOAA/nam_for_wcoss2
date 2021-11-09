@@ -15,7 +15,7 @@ export MP_STDOUTMODE="ORDERED"
 
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_fcst_parentext.sh.ecf
+${HOMEnam}/scripts/exnam_fcst_parentext.sh
 jerr=$?
 ########################################################
 

@@ -42,7 +42,7 @@ export GRIB=grbgrd
 export GRIB1=null
 export type=nam
 export finc=3
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" > $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" > $DATA/poescript
 #################################################################
 
 #################################################################
@@ -60,7 +60,7 @@ export GRIB=awip20
 export GRIB1=null
 export type=nam20
 export finc=3
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 #################################################################
@@ -76,7 +76,7 @@ echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $D
 ##export GRIB1=null
 ##export type=nam44
 ##export finc=3
-##echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+##echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 #################################################################
@@ -93,7 +93,7 @@ export GRIB=awip3d
 export GRIB1=null
 export type=nam40
 export finc=3
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 #################################################################
@@ -111,7 +111,7 @@ export GRIB=awphys
 export GRIB1=awip12
 export type=nam12
 export finc=3
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 if [ $RUNTYPE = CATCHUP ] ; then
@@ -131,7 +131,7 @@ if [ $RUNTYPE = CATCHUP ] ; then
   export GRIB1=null
   export type=namgoes
   export finc=3
-  echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+  echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
   #################################################################
 fi
 
@@ -153,7 +153,7 @@ export GRIB=awp151
 export GRIB1=null
 export type=nam32
 export finc=3
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 cat poescript

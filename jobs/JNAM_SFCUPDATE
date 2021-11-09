@@ -23,7 +23,7 @@ export WKDIRNAME=nam_${cyc}_main_${envir}
 if [ $tmmark = tm06 ] ; then
 ########################################################
 # Execute the script.
-    ${HOMEnam}/scripts/exnam_sfcupdate.sh.ecf
+    ${HOMEnam}/scripts/exnam_sfcupdate.sh
     jerr=$?
 ########################################################
 fi
@@ -34,7 +34,7 @@ if [ $tmmark = tm00 ] ; then
   if [ $GUESStm00 = GDAS ] ; then
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_sfcupdate_tm00.sh.ecf
+${HOMEnam}/scripts/exnam_sfcupdate_tm00.sh
 jerr=$?
 ########################################################
   fi

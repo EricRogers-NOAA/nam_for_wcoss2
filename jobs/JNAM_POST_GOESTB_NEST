@@ -15,7 +15,7 @@ export WKDIRNAME=${jobid:?}
 
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_postgoestb_nest.sh.ecf
+${HOMEnam}/scripts/exnam_postgoestb_nest.sh
 jerr=$?
 ########################################################
 

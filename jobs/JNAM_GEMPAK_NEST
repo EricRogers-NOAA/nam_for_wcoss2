@@ -44,7 +44,7 @@ cp ${NAMFIXgem}/namnests_vcrdgrib1.tbl vcrdgrib1.tbl
 
 cd $DATA
 export type=nam_conusnest
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 #################################################################
@@ -61,7 +61,7 @@ cp ${NAMFIXgem}/namnests_vcrdgrib1.tbl vcrdgrib1.tbl
 
 cd $DATA
 export type=nam_conusnest_mag
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 #################################################################
@@ -79,7 +79,7 @@ cp ${NAMFIXgem}/namnests_vcrdgrib1.tbl vcrdgrib1.tbl
 cd $DATA
 export GRIB=camfld
 export type=nam_conusnest_cam
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 #################################################################
@@ -97,7 +97,7 @@ cp ${NAMFIXgem}/namnests_vcrdgrib1.tbl vcrdgrib1.tbl
 cd $DATA
 export GRIB=hiresf
 export type=nam_alaskanest
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 # Execute the script to make Puerto Rico GEMPAK grids
 mkdir -p $DATA/nam_priconest
@@ -113,7 +113,7 @@ cp ${NAMFIXgem}/namnests_vcrdgrib1.tbl vcrdgrib1.tbl
 cd $DATA
 export GRIB=hiresf
 export type=nam_priconest
-echo "$HOMEnam/scripts/exnam_nawips.sh.ecf $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
+echo "$HOMEnam/scripts/exnam_nawips.sh $type $GRIB $GRIB1 $finc $fend" >> $DATA/poescript
 #################################################################
 
 cat poescript

@@ -20,7 +20,7 @@ export WKDIRNAME=nam_${cyc}_main_${envir}
 
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_metgrid_boco.sh.ecf
+${HOMEnam}/scripts/exnam_metgrid_boco.sh
 jerr=$?
 ########################################################
 

@@ -12,7 +12,7 @@ export WKDIRNAME=${jobid:?}
 
 ########################################################
 # Execute the script.
-${HOMEnam}/scripts/exnam_prdgen.sh.ecf
+${HOMEnam}/scripts/exnam_prdgen.sh
 jerr=$?
 ########################################################
 
