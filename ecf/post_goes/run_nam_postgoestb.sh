@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_post_goestb_00
+#PBS -N nam_post_goestb_12
 #PBS -l select=1:ncpus=84:mem=200GB
 #PBS -l walltime=02:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_00.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_00.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -29,11 +29,11 @@ module load crtm/${crtm_ver}
 
 set -x
 
-export procs=64
-export procspernode=64
+export procs=84
+export procspernode=84
 
-export cyc=00
-export PDY=20210825
+export cyc=12
+export PDY=20210824
 export tmmark=tm00
 export envir=canned
 export nam_ver=v4.2.0

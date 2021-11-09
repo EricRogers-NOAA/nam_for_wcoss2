@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_profile_alaska_18_f51
+#PBS -N nam_profile_alaska_12_f51
 #PBS -l select=1:ncpus=1:mem=10GB
 #PBS -l walltime=00:05:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_profile_alaska_f51_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_profile_alaska_f51_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_profile_alaska_f51_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_profile_alaska_f51_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -11,23 +11,27 @@
 
 set -x
 
+VERFILE=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/versions
+. $VERFILE/nam.ver
+
 module purge
-module load envvar/1.0
-module load intel/19.1.3.304
-module load PrgEnv-intel/8.1.0
-module load craype/2.7.10
-module load cray-mpich/8.1.9
-module load cray-pals/1.0.17
-module load hdf5/1.10.6
-module load netcdf/4.7.4
-module load prod_util/2.0.10
+module load envvar/${envvar_ver}
+module load PrgEnv-intel/${PrgEnv_intel_ver}
+module load intel/${intel_ver}
+module load craype/${craype_ver}
+module load cray-mpich/${cray_mpich_ver}
+module load cray-pals/${cray_pals_ver}
+
+module load hdf5/${hdf5_ver}
+module load netcdf/${netcdf_ver}
+module load prod_util/${prod_util_ver}
 
 set -x
 
 export procs=1
 export procspernode=1
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export tmmark=tm00
 export envir=canned

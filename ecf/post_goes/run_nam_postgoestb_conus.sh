@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_post_goestb_conus_00
+#PBS -N nam_post_goestb_conus_12
 #PBS -l place=vscatter:excl,select=1:ncpus=128
 #PBS -l walltime=02:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_conus_00.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_conus_00.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_conus_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_post_goestb_conus_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -32,8 +32,8 @@ set -x
 export procs=128
 export procspernode=128
 
-export cyc=00
-export PDY=20210825
+export cyc=12
+export PDY=20210824
 export tmmark=tm00
 export domain=conus
 export envir=canned
