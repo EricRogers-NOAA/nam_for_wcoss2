@@ -2,8 +2,8 @@
 #PBS -N nam_catchup_prdgen_tm04_f00
 #PBS -l select=1:ncpus=8:mem=28GB
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_prdgen_tm04_f00_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_prdgen_tm04_f00_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_prdgen_tm04_f00_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_prdgen_tm04_f00_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -35,7 +35,7 @@ module load util_shared/${util_shared_ver}
 
 set -x
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export fcsthrs=00
 export tmmark=tm04
@@ -49,6 +49,7 @@ export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
 export MPI_LABELIO=YES
 export MP_STDOUTMODE="ORDERED"
+export OMP_NUM_THREADS=1
 
 export PS4='+ $SECONDS + '
 export COMDATEROOT=/lfs/h1/ops/canned/com

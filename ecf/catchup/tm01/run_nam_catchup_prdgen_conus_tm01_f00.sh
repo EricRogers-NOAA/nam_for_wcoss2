@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_catchup_prdgen_conus_tm01_f00_18
+#PBS -N nam_catchup_prdgen_conus_tm01_f00_12
 #PBS -l select=1:ncpus=1:mem=12GB
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_prdgen_conus_tm01_f00_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_prdgen_conus_tm01_f00_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_prdgen_conus_tm01_f00_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_prdgen_conus_tm01_f00_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -35,7 +35,7 @@ module load util_shared/${util_shared_ver}
 
 set -x
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export fcsthrs=00
 export domain=conus
