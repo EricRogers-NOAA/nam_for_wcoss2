@@ -56,7 +56,7 @@ valhr=`echo $VALDATE | cut -c9-10`
 timeform=${valyr}"-"${valmn}"-"${valdy}"_"${valhr}":00:00"
 
 cp $FIXnam/nam_micro_lookup.dat eta_micro_lookup.dat
-####cp $PARMnam/nam_post_avblflds.xml post_avblflds.xml
+cp $PARMnam/nam_post_avblflds.xml post_avblflds.xml
 cp $PARMnam/nam_params_grib2_tbl params_grib2_tbl_new
 
 cp $PARMnam/nam_cntrlanl_flatfile.txt postxconfig-NT.txt
@@ -73,7 +73,7 @@ export pgm=nam_ncep_post
 . prep_step
 
 startmsg
-${MPIEXEC} -n ${procs} -ppn ${procspernode} $EXECnam/nam_ncep_post < itag >> $pgmout 2>errfile
+${MPIEXEC} -n ${procs} -ppn ${procspernode} --cpu-bind core --depth 1 $EXECnam/nam_ncep_post < itag >> $pgmout 2>errfile
 export err=$?;err_chk
 
 cp BGDANL${fhr}.tm01 $COMOUT/nam.${cycle}.bgdges${fhr}.tm01.grib2
