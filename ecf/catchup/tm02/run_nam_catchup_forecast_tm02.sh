@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_catchup_forecast_tm02_18
+#PBS -N nam_catchup_forecast_tm02_12
 #PBS -l place=vscatter:excl,select=14:ncpus=128
 #PBS -l walltime=00:45:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm02_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm02_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm02_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm02_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -13,7 +13,7 @@
 set -x
 
 VERFILE=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/versions
-. $VERFILE/nam.ver
+. $VERFILE/run.ver
 
 module purge
 module load envvar/${envvar_ver}
@@ -49,7 +49,7 @@ export MPICH_ENV_DISPLAY=1
 export MPICH_VERSION_DISPLAY=1
 export MPICH_OFI_VERBOSE=1
 export MPICH_OFI_NIC_VERBOSE=1
-####export MPICH_OFI_STARTUP_CONNECT=1
+export MPICH_OFI_STARTUP_CONNECT=1
 
 export MALLOC_MMAP_MAX_=0
 export MALLOC_TRIM_THRESHOLD_=134217728
@@ -60,7 +60,7 @@ export FORT_FMT_NO_WRAP_MARGIN=true
 export MPICH_REDUCE_NO_SMP=1
 export FI_OFI_RXM_RX_SIZE=40000
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export tmmark=tm02
 export envir=canned

@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_analysis_hawaii__12
+#PBS -N nam_analysis_hawaii_12
 #PBS -l place=vscatter:excl,select=4:ncpus=128:mpiprocs=64:ompthreads=2
 #PBS -l walltime=00:20:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_analysis_hawaii__12.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_analysis_hawaii__12.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_analysis_hawaii_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_analysis_hawaii_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -12,7 +12,7 @@
 set -x
 
 VERFILE=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/versions
-. $VERFILE/nam.ver
+. $VERFILE/run.ver
 
 module purge
 module load envvar/${envvar_ver}

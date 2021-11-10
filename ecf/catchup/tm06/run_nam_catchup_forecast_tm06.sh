@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_catchup_forecast_tm06_18
+#PBS -N nam_catchup_forecast_tm06_12
 #PBS -l place=vscatter:excl,select=14:ncpus=128
 #PBS -l walltime=00:45:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_18.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_18.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm06_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
@@ -13,7 +13,7 @@
 set -x
 
 VERFILE=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/versions
-. $VERFILE/nam.ver
+. $VERFILE/run.ver
 
 module purge
 module load envvar/${envvar_ver}
@@ -60,7 +60,7 @@ export FORT_FMT_NO_WRAP_MARGIN=true
 export MPICH_REDUCE_NO_SMP=1
 export FI_OFI_RXM_RX_SIZE=40000
 
-export cyc=18
+export cyc=12
 export PDY=20210824
 export tmmark=tm06
 export envir=canned

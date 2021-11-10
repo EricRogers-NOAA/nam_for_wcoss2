@@ -13,7 +13,7 @@
 set -x
 
 VERFILE=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/versions
-. $VERFILE/nam.ver
+. $VERFILE/run.ver
 
 module purge
 module load envvar/${envvar_ver}

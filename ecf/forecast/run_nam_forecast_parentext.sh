@@ -1,9 +1,9 @@
 #!/bin/sh
-#PBS -N nam_forecast_parentext_00
+#PBS -N nam_forecast_parentext_12
 #PBS -l place=vscatter:excl,select=4:ncpus=128
 #PBS -l walltime=00:30:00
-#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_00.out
-#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_00.out
+#PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_12.out
+#PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l hyper=true
@@ -13,7 +13,7 @@
 set -x
 
 VERFILE=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/versions
-. $VERFILE/nam.ver
+. $VERFILE/run.ver
 
 module purge
 module load envvar/${envvar_ver}
@@ -34,8 +34,6 @@ module load libjpeg/${libjpeg_ver}
 module load grib_util/${grib_util_ver}
 
 set -x
-
-####export FI_OFI_RXM_SAR_LIMIT=3145728
 
 export ntasks=512
 export ppn=128
@@ -63,8 +61,8 @@ export MPICH_OFI_STARTUP_CONNECT=1
 export FI_OFI_RXM_RX_SIZE=40000
 export FI_OFI_RXM_TX_SIZE=40000
 
-export cyc=00
-export PDY=20210825
+export cyc=12
+export PDY=20210824
 export tmmark=tm00
 export envir=canned
 export nam_ver=v4.2.0

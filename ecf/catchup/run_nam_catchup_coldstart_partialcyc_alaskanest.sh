@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -N nam_catchup_coldstart_partialcyc_alaska_12
-#PBS -l select=1:ncpus=2:mem=8GB
+#PBS -l select=1:ncpus=1:mem=8GB
 #PBS -l walltime=00:20:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_coldstart_partialcyc_alaska_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_coldstart_partialcyc_alaska_12.out
@@ -12,7 +12,7 @@
 set -x
 
 VERFILE=/lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/versions
-. $VERFILE/nam.ver
+. $VERFILE/run.ver
 
 module purge
 module load envvar/${envvar_ver}
