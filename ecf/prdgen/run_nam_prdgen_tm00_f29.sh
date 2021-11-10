@@ -49,6 +49,8 @@ export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
 export MPI_LABELIO=YES
 export MP_STDOUTMODE="ORDERED"
+#Need this to recreate Dell run times!
+export OMP_NUM_THREADS=1
 
 export PS4='+ $SECONDS + '
 export COMDATEROOT=/lfs/h1/ops/canned/com
