@@ -1,6 +1,0 @@
-#
-set files = ( `cat list` )
-foreach file ($files)
-sed 's/postmsg "$jlogfile" "$msg"/postmsg "$msg"/g' $file > $file.new
-mv $file.new $file
-end
