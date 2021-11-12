@@ -4,8 +4,10 @@ set -eux
 cd ..
 pwd=$(pwd)
 dir_root=$pwd
+cd versions
+. build.ver
 
-cd sorc
+cd ../sorc
 
 cwd=`pwd`
 

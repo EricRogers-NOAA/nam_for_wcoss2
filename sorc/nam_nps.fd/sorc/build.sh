@@ -1,12 +1,15 @@
 #!/bin/bash
 
-###source /apps/prod/lmodules/startLmod
-module unload cce cpe-cray
-module load envvar/1.0
-module load PrgEnv-intel/8.1.0
-module load intel/19.1.3.304
-module load craype/2.7.6
-module load cray-mpich/8.1.7
+SORC=$(pwd)
+cd ../../../versions
+source build.ver
+cd $SORC
+
+module load envvar/${envvar_ver:-1.0}
+module load PrgEnv-intel/${PrgEnv_intel_ver:-8.1.0}
+module load intel/${intel_ver:-19.1.3.304}
+module load craype/${craype_ver:-2.7.10}
+module load cray-mpich/${cray_mpich_ver:-8.1.10}
 
 cd NMMB_init/NPS
 ./clean

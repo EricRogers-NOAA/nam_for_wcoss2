@@ -3,7 +3,10 @@ set -x
 BASE=`pwd`
 export BASE
 
-###source /apps/prod/lmodules/startLmod
+cd ../../versions
+source build.ver
+cd $BASE
+
 module purge
 module load envvar/1.0
 moduledir=$BASE/modulefiles

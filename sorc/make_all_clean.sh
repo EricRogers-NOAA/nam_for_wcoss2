@@ -39,4 +39,8 @@ rm $OUTDIR/*
 
 cd ${SORCnam}
 
+echo -e " I do not clean the following external source code: \n" \
+	     "   nam_gsi.fd "
+echo " Please clean this by deleting the ./nam.v4.2.0/sorc/nam_gsi.fd/GSI/build subdirectory."
+
 exit 0

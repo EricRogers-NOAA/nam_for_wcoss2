@@ -2,13 +2,16 @@
 
 set -x
 
+versiondir=`dirname $(readlink -f ../versions)`
+echo $versiondir
+. $versiondir/versions/build.ver
+
 cd ..
 pwd=$(pwd)
 dir_root=$pwd
 
 [ -d $dir_root/exec ] || mkdir -p $dir_root/exec
 
-source /apps/prod/lmodules/startLmod
 module purge
 module load envvar/1.0
 

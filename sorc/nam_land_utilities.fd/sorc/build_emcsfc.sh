@@ -7,7 +7,12 @@ SHELL=/bin/sh
 # program sub-directory.
 #------------------------------------------------------------
 
-#set -x
+set -x
+
+SORC=$(pwd)
+cd ../../../versions
+source build.ver
+cd $SORC
 
 for directory in ./*.fd
 do

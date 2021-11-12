@@ -13,8 +13,14 @@ set -x
 #####################################################################################################
 #####################################################################################################
 
-###source /apps/prod/lmodules/startLmod
-###module purge
+SORC=$(pwd)
+
+cd ../../../versions
+source build.ver
+
+cd $SORC
+
+module purge
 module load envvar/1.0
 machine=wcoss2
 

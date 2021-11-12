@@ -3,13 +3,18 @@
 SORCnam=$(pwd)
 MACHID=wcoss2
 
-####source /apps/prod/lmodules/startLmod
+set -x
+
+versiondir=`dirname $(readlink -f ../versions)`
+echo $versiondir
+. $versiondir/versions/build.ver
+
 module purge
 module load envvar/1.0
 
 moduledir=`dirname $(readlink -f ../modulefiles/${MACHID})`
 module use ${moduledir}
-source ${moduledir}/${MACHID}/build/v4.0.0_build
+source ${moduledir}/${MACHID}/build/v4.0.0_build_new
 
 set -x
 export OUTmain=`dirname $(readlink -f ../exec/${MACHID}.exec/ )`
@@ -23,28 +28,27 @@ cd $SORCnam
 
 # Now build nam_post0 code
 cd ${SORCnam}/nam_post0.fd
-./build_post0.sh > build_post0.log 2>> build_post0.log
+./build_post0.sh > ${SORCnam}/build_post0.log 2>> build_post0.log
 
 # Now build ncep post
 cd ${SORCnam}/nam_nceppost.fd/sorc
-./build_ncep_post.sh > build_post.log 2>> build_post.log
+./build_ncep_post.sh > ${SORCnam}/build_post.log 2>> build_post.log
 
 # Now build NMMB forecast model code
 cd ${SORCnam}/nam_nems_nmmb.fd/src
-##./build.sh > build_fcst.log 2>> build_fcst.log
+./build.sh > ${SORCnam}/build_fcst.log 2>> build_fcst.log
 
 # Now build land-surface utility codes
 cd ${SORCnam}/nam_land_utilities.fd/sorc
-./build_emcsfc.sh > build_emcsfc.log 2>> build_emcsfc.log
+./build_emcsfc.sh > ${SORCnam}/build_emcsfc.log 2>> build_emcsfc.log
 
 # Now build the GSI
 cd $SORCnam
-./build_gsi.sh > build_gsi.log 2>> build_gsi.log
+./build_gsi.sh > ${SORCnam}/build_gsi.log 2>> build_gsi.log
+
+cd ${SORCnam}/nam_nps.fd/sorc
+./build.sh > ${SORCnam}/build_nps.log 2>> build_nps.log
 
 cd $SORCnam
-
-echo -e " I do not build the following external source code: \n" \
-     "   nam_nps.fd "
-echo " Please compile this using the ./nam.v4.2.0/sorc/nam_nps.fd/sorc/build.sh script."
 
 exit 0
