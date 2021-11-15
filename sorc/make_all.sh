@@ -10,7 +10,7 @@ echo $versiondir
 . $versiondir/versions/build.ver
 
 module purge
-module load envvar/1.0
+module load envvar/${envvar_ver}
 
 moduledir=`dirname $(readlink -f ../modulefiles/${MACHID})`
 module use ${moduledir}

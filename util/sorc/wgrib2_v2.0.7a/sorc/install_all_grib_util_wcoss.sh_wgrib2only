@@ -1,6 +1,10 @@
 #!/bin/sh
 set -x
 
+versiondir=`dirname $(readlink -f ../../../../versions)`
+echo $versiondir
+. $versiondir/versions/build.ver
+
 wgrib2_ver=2.0.7a
 start_dir=$PWD
 

@@ -1,7 +1,9 @@
 #!/bin/sh
 
+pwd=$(pwd)
+
 LMOD_EXACT_MATCH=no
-module load prod_util/2.0.8
+module load prod_util/${prod_util_ver}
 machine=$(getsystem)
 
 if [ "$machine" = "IBM" ] || [ "$machine" = "Cray" ] || [ "$machine" = "Dell" ]; then
@@ -64,12 +66,11 @@ pwd=$(pwd)
 dir_modules=${pwd}/../../modulefiles/build_wgrib2/${machine_lc}
 
 # Load required modules
-###source /apps/prod/lmodules/startLmod
-module unload cce cpe-cray
-module load intel/19.1.3.304 PrgEnv-intel/8.1.0
-module load craype/2.7.6
-module load cray-mpich/8.1.7
-module load envvar/1.0
+module load envvar/${envvar_ver}
+module load intel/${intel_ver}
+module load PrgEnv-intel/${PrgEnv_intel_ver}
+module load craype/${craype_ver}
+module load cray-mpich/${cray_mpich_ver}
 module use $dir_modules/
 source ${dir_modules}/$1
 module list

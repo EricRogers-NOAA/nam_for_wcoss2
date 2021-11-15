@@ -13,7 +13,7 @@ dir_root=$pwd
 [ -d $dir_root/exec ] || mkdir -p $dir_root/exec
 
 module purge
-module load envvar/1.0
+module load envvar/${envvar_ver}
 
 dir_modules=$dir_root/modulefiles
 module use $dir_modules/

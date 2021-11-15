@@ -2,7 +2,12 @@
 
 MACHID=wcoss2
 
-###source /apps/prod/lmodules/startLmod
+set -x
+
+versiondir=`dirname $(readlink -f ../../versions)`
+echo $versiondir
+. $versiondir/versions/build.ver
+
 module purge
 module load envvar/1.0
 

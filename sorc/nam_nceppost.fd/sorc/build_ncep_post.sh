@@ -21,7 +21,7 @@ source build.ver
 cd $SORC
 
 module purge
-module load envvar/1.0
+module load envvar/${envvar_ver}
 machine=wcoss2
 
 # Lin Gan modifiy to use NCO vertical structure prefix for NCO deployment - 20160131
