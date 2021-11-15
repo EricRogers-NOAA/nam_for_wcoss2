@@ -1,5 +1,5 @@
 #!/bin/sh
-#PBS -N nam_nam_catchup_post_alaska_tm02_f01_12
+#PBS -N nam_catchup_post_alaska_tm02_f01_12
 #PBS -l select=1:ncpus=28:mem=50GB
 #PBS -l walltime=00:20:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_post_alaska_tm02_f01_12
