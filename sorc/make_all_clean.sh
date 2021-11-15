@@ -6,7 +6,7 @@ source /apps/prod/lmodules/startLmod
 
 module purge
 module use -a ../modulefiles/${MACHID}
-module load build/v4.0.0_build
+module load build/v4.0.0_build_new
 
 set -x
 export OUTmain=`dirname $(readlink -f ../exec/${MACHID}.exec/ )`

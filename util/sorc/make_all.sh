@@ -13,7 +13,7 @@ module load envvar/1.0
 
 moduledir=`dirname $(readlink -f ../../modulefiles/${MACHID})`
 module use ${moduledir}
-source ${moduledir}/${MACHID}/build/v4.0.0_build
+source ${moduledir}/${MACHID}/build/v4.0.0_build_new
 
 export OUTmain=`dirname $(readlink -f ../exec/ )`
 export OUTDIR=${OUTmain}/exec
