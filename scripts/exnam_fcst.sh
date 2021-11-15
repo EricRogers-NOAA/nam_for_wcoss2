@@ -652,7 +652,7 @@ export pgm=nam_nems_nmmb_fcst
 
 startmsg
 
-${MPIEXEC} -n ${ntasks} -ppn ${ppn} --cpu-bind depth --depth 1 $EXECnam/nam_nems_nmmb_fcst >>$pgmout 2>errfile
+${MPIEXEC} -n ${ntasks} -ppn ${ppn} --cpu-bind depth --depth ${threads} $EXECnam/nam_nems_nmmb_fcst >>$pgmout 2>errfile
 export err=$?;err_chk
 
 if [ $RUNTYPE = CATCHUP -a $tmmark != tm00 ]; then

@@ -59,7 +59,7 @@
         write_tasks=8
       fi
       if [ "$domain" = conus ] ; then
-        inpes=20
+        inpes=16
         jnpes=32
         write_groups=4
         write_tasks=16

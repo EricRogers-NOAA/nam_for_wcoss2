@@ -194,7 +194,7 @@ export pgm=nam_nems_nmmb_fcst
 . prep_step
 
 startmsg
-${MPIEXEC} -n ${ntasks} -ppn ${ppn} --cpu-bind core --depth 1 $EXECnam/nam_nems_nmmb_fcst >>$pgmout 2>errfile
+${MPIEXEC} -n ${ntasks} -ppn ${ppn} --cpu-bind core --depth ${threads} $EXECnam/nam_nems_nmmb_fcst >>$pgmout 2>errfile
 export err=$?
 
 date
