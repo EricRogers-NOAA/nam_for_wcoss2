@@ -46,23 +46,23 @@
     # for 1-h catchup cycle forecast
       if [ "$domain" = parent ]
       then
-        inpes=8
-        jnpes=14
-        write_groups=2
+        inpes=14
+        jnpes=16
+        write_groups=4
         write_tasks=8
       fi
     # For the nest domains:
       if [ "$domain" = alaska ] ; then
         inpes=16
-        jnpes=18
-        write_groups=4
-        write_tasks=8
-      fi
-      if [ "$domain" = conus ] ; then
-        inpes=20
-        jnpes=32
+        jnpes=28
         write_groups=4
         write_tasks=16
+      fi
+      if [ "$domain" = conus ] ; then
+        inpes=28
+        jnpes=32
+        write_groups=4
+        write_tasks=32
       fi
     fi
   fi 
