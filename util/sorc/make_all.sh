@@ -26,8 +26,6 @@ export OUTDIR=${OUTmain}/exec
 
 make -f ./Makefile
 
-exit
-
 cd wgrib2_v2.0.7a/sorc
 ./install_all_grib_util_wcoss.sh_wgrib2only
 cd ../exec
