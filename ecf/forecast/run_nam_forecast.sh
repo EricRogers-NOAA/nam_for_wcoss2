@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -N nam_forecast_12
-#PBS -l place=vscatter:excl,select=38:ncpus=128
+#PBS -l place=vscatter:excl,select=38:ncpus=128:mpiprocs=64:ompthreads=2
 #PBS -l walltime=02:30:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_12.out

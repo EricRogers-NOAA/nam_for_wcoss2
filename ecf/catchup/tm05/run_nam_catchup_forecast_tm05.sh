@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -N nam_catchup_forecast_tm05_12
-#PBS -l place=vscatter:excl,select=16:ncpus=128
+#PBS -l place=vscatter:excl,select=16:ncpus=128:mpiprocs=64:ompthreads=2
 #PBS -l walltime=00:45:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm05_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_catchup_forecast_tm05_12.out
@@ -40,6 +40,8 @@ export ppn=64
 export threads=2
 
 # OMP settings
+ulimit -s unlimited
+ulimit -a
 export OMP_PROC_BIND=true
 export OMP_NUM_THREADS=$threads
 export OMP_STACKSIZE=1G
