@@ -1,6 +1,6 @@
 #!/bin/sh
 #PBS -N nam_forecast_12
-#PBS -l place=vscatter:excl,select=56:ncpus=128
+#PBS -l place=vscatter:excl,select=38:ncpus=128
 #PBS -l walltime=02:30:00
 #PBS -e /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_12.out
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_12.out
@@ -37,31 +37,28 @@ module load grib_util/${grib_util_ver}
 
 set -x
 
-export ntasks=7168
-export ppn=128
-export threads=1
+export ntasks=2432
+export ppn=64
+export threads=2
 
 # OMP settings
+ulimit -s unlimited
+ulimit -a
 export OMP_PROC_BIND=true
 export OMP_NUM_THREADS=$threads
 export OMP_STACKSIZE=1G
 
 export MPICH_ABORT_ON_ERROR=1
-export MPICH_ENV_DISPLAY=1
-export MPICH_VERSION_DISPLAY=1
-export MPICH_OFI_VERBOSE=1
-export MPICH_OFI_NIC_VERBOSE=1
-#export MPICH_RANK_REORDER_DISPLAY=1
-
-#ulimit -c unlimited
 export MALLOC_MMAP_MAX_=0
 export MALLOC_TRIM_THRESHOLD_=134217728
 export FORT_FMT_NO_WRAP_MARGIN=true
 export MPICH_REDUCE_NO_SMP=1
 export FOR_DISABLE_KMP_MALLOC=TRUE
-export MPICH_OFI_STARTUP_CONNECT=1
 export FI_OFI_RXM_RX_SIZE=40000
 export FI_OFI_RXM_TX_SIZE=40000
+export MPICH_OFI_STARTUP_CONNECT=1
+export MPICH_OFI_VERBOSE=1
+export MPICH_OFI_NIC_VERBOSE=1
 
 export cyc=12
 export PDY=20210824

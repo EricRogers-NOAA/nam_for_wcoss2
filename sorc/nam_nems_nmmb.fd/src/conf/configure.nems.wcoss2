@@ -42,7 +42,7 @@ EXTLIBS_POST = $(POST_LIB) \
                $(ESMF_LIB) \
                $(NETCDF_LIB)
 
-FC          = ftn -g -traceback -qopenmp -init=zero
+FC          = ftn -g -traceback -qopenmp -init=zero -march=core-avx2 -mtune=core-avx2
 ##FC          = mpifort -g -traceback -mkl=sequential -diag-disable 8290,8291 -warn errors
 
 FREE        = -free
