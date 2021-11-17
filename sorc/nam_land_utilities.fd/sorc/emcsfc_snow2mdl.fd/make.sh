@@ -25,15 +25,13 @@ case $mac in
 # BUILD PROGRAM ON WCOSS2.
 #---------------------------------------------------------------------------------
 
-clogin??.cactus.wcoss2.ncep.noaa.gov)
+clogin??.cactus.wcoss2.ncep.noaa.gov | dlogin??.dogwood.wcoss2.ncep.noaa.gov)
 
   echo
   echo "BUILD EMCSFC_SNOW2MDL PROGRAM ON WCOSS2."
   echo
 
-# source /apps/prod/lmodules/startLmod
-# module purge
-  module load envvar/1.0
+  module load envvar/${envvar_ver}
 
   module use $dir_modules/
   source $dir_modules/module.snow2mdl.wcoss2

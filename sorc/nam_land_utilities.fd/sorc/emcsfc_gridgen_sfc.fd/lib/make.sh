@@ -27,13 +27,13 @@ case $mac in
 # BUILD PROGRAM ON WCOSS2.
 #---------------------------------------------------------------------------------
 
-clogin??.cactus.wcoss2.ncep.noaa.gov)
+clogin??.cactus.wcoss2.ncep.noaa.gov | dlogin??.dogwood.wcoss2.ncep.noaa.gov)
 
   echo
   echo "BUILD EMCSFC_GRIDGEN_SFC LIBRARY ON WCOSS DELL."
   echo
 
-  module load envvar/1.0
+  module load envvar/${envvar_ver}
 
   module use $dir_modules/
   source $dir_modules/module.gridgen_sfc_lib.wcoss2
