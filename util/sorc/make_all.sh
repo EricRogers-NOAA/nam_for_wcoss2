@@ -15,7 +15,7 @@ echo $versiondir
 export bufr_ver=11.4.0
 
 module purge
-module load envvar/1.0
+module load envvar/${envvar_ver}
 
 moduledir=`dirname $(readlink -f ../../modulefiles/${MACHID})`
 module use ${moduledir}
@@ -32,6 +32,6 @@ cd ../exec
 cp wgrib2 ../../../exec/.
 
 set +x
-module unload build/v4.0.0_build
+module unload build/v4.0.0_build_new
 set -x
 exit 0

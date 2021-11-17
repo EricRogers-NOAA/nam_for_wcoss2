@@ -1,16 +1,21 @@
 #!/bin/bash
 
+MACHID=wcoss2
 SORCnam=$(pwd)
 
-source /apps/prod/lmodules/startLmod
+set -x
 
-module purge
-module use -a ../modulefiles/${MACHID}
-module load build/v4.0.0_build_new
+versiondir=`dirname $(readlink -f ../versions)`
+echo $versiondir
+. $versiondir/versions/build.ver
+
+moduledir=`dirname $(readlink -f ../modulefiles/${MACHID})`
+module use ${moduledir}
+source ${moduledir}/${MACHID}/build/v4.0.0_build_new
 
 set -x
-export OUTmain=`dirname $(readlink -f ../exec/${MACHID}.exec/ )`
-export OUTDIR=${OUTmain}/${MACHID}.exec
+export OUTmain=`dirname $(readlink -f ../exec/ )`
+export OUTDIR=${OUTmain}/exec
 
 make -f ./Makefile clean
 
@@ -34,13 +39,13 @@ cd ${SORCnam}/nam_land_utilities.fd/sorc
 cd ${SORCnam}/nam_nps.fd/sorc
 ./build.sh_cleanonly
 
+# clean GSI code (remove ./GSI/build subdirectory)
+cd ${SORCnam}/nam_gsi.fd/GSI
+rm -rf build
+
 # remove remaining executables
 rm $OUTDIR/*
 
 cd ${SORCnam}
-
-echo -e " I do not clean the following external source code: \n" \
-	     "   nam_gsi.fd "
-echo " Please clean this by deleting the ./nam.v4.2.0/sorc/nam_gsi.fd/GSI/build subdirectory."
 
 exit 0

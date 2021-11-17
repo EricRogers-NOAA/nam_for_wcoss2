@@ -17,6 +17,7 @@
 # 2015-??-??  Carley/Rogers - General forecast script for NAMv4
 # 2019-05-01  Eric Rogers   - Mods to run on Dell
 # 2021-10-05  Eric Rogers   - Mods to run on WCOSS2
+# 2021-11-17  Eric Rogers   - WCOSS2 changes
 #
 
 set -xa

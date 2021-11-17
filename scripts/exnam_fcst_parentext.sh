@@ -16,6 +16,7 @@
 # 2009-12-07  Eric Rogers   - Modifications for NAM
 # 2013-01-03  Jacob Carley  - Run 60-84h NAM parent domain only
 # 2019-05-01  Eric Rogers   - Mods to run on Dell
+# 2021-11-17  Eric Rogers   - WCOSS2 changes
 #
 
 set -xa

@@ -17,8 +17,9 @@ module use ${moduledir}
 source ${moduledir}/${MACHID}/build/v4.0.0_build_new
 
 set -x
-export OUTmain=`dirname $(readlink -f ../exec/${MACHID}.exec/ )`
-export OUTDIR=${OUTmain}
+export OUTmain=`dirname $(readlink -f ../exec/ )`
+export OUTDIR=${OUTmain}/exec
+mkdir -p $OUTDIR
 
 make -f ./Makefile
 

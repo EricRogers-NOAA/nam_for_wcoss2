@@ -154,10 +154,7 @@ export pcom=$COMOUT/wmo  # needed by JNAM_POSTSND
 # Input directory for PCP data, need to point to the current run environment
 export COM_HRLY_PCP=${COM_HRLY_PCP:-${COMNAM}}
 mkdir -m 775 -p $COM_HRLY_PCP
-# Input directory for radar reflectivity data
 export COM_HRLY=${COM_HRLY:-${COMROOT}/hourly/prod}
-export COMINnhc=${COMINnhc:-/gpfs/dell2/nhc/save/guidance}
-export COMOUTgltrk=${COMOUTgltrk:-${COM_OUT}/global}
 
 # Specify the directory where forecasts run
 export FCSTDIR=${DATAROOT}/nam_${cyc}_${tmmark}_${envir}

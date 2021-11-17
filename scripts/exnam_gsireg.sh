@@ -15,6 +15,7 @@
 # 2018-08-24  Eric.Rogers - Changes for FV3GFS input
 # 2019-01-18  Eric Rogers - Removed NAM retro option on Dell
 # 2020-07-27  Eric Rogers - Changes for GDAS v16 (new GSI code, netcdf enkf files)
+# 2021-11-17  Eric Rogers - WCOSS2 changes
 #
 
 set -x

@@ -15,6 +15,7 @@
 # 2015-??-??  Jacob Carley - NAMV4 version
 # 2018-08-24  Eric.Rogers - Changes for FV3GFS input
 # 2020-07-27  Eric Rogers - Changes for GDAS v16 (new GSI code, netcdf enkf files)
+# 2021-11-17  Eric Rogers - WCOSS2 changes
 #
 
 set -x
