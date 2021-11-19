@@ -36,6 +36,7 @@ export tmmark=tm06
 export envir=canned
 export nam_ver=v4.2.0
 export jobid=jnam_catchup_coldstart_prep_${cyc}.${PBS_JOBID}
+export job=nam_catchup_coldstart_prep_${cyc}
 
 export procs=32
 export procspernode=32

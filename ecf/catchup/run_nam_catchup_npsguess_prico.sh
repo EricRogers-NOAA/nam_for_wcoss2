@@ -37,6 +37,7 @@ export tmmark=tm01
 export envir=canned
 export nam_ver=v4.2.0
 export jobid=jnam_catchup_npsguess_${domain}_${tmmark}_${cyc}.${PBS_JOBID}
+export job=nam_catchup_npsguess_${domain}_${tmmark}_${cyc}
 
 export procs=28
 export procspernode=28

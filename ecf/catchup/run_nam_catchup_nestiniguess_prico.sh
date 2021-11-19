@@ -37,6 +37,7 @@ export envir=canned
 export nam_ver=v4.2.0
 export domain=prico
 export jobid=jnam_catchup_nestiniguess_${domain}_${tmmark}_${cyc}.${PBS_JOBID}
+export job=nam_catchup_nestiniguess_${domain}_${tmmark}_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

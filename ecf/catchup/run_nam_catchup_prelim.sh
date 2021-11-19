@@ -33,7 +33,8 @@ export PDY=20210824
 export tmmark=tm06
 export envir=canned
 export nam_ver=v4.2.0
-export jobid=nam_catchup_main.${PBS_JOBID}
+export jobid=jnam_catchup_main_${cyc}.${PBS_JOBID}
+export job=nam_catchup_main_${cyc}
 
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers

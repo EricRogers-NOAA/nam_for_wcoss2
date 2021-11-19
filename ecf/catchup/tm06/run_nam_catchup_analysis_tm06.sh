@@ -31,7 +31,7 @@ module load netcdf/${netcdf_ver}
 set -x
 
 export FI_OFI_RXM_SAR_LIMIT=3145728
-export MPICH_COLL_OPT_OFF=1
+###export MPICH_COLL_OPT_OFF=1
 
 export ntasks=144
 export ppn=16
@@ -48,6 +48,7 @@ export tmmark=tm06
 export envir=canned
 export nam_ver=v4.2.0
 export jobid=jnam_catchup_analysis_${tmmark}_${cyc}.${PBS_JOBID}
+export job=nam_catchup_analysis_${tmmark}_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

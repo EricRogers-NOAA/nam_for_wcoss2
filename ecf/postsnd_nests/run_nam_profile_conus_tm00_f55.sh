@@ -39,6 +39,7 @@ export domain=conus
 export nam_ver=v4.2.0
 export fhr=55
 export jobid=jnam_profile_conus_f55_${cyc}.${PBS_JOBID}
+export job=nam_profile_conus_f55_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
