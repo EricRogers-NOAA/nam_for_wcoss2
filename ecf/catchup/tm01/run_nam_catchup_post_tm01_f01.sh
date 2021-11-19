@@ -39,6 +39,7 @@ export envir=canned
 export nam_ver=v4.2.0
 export post_times=01
 export jobid=jnam_catchup_post_tm01_f01_${cyc}.${PBS_JOBID}
+export job=nam_catchup_post_tm01_f01_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

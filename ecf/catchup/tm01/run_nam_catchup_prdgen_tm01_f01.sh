@@ -44,6 +44,7 @@ export nam_ver=v4.2.0
 export SENDCOM=YES
 export SENDDBN=NO
 export jobid=jnam_catchup_prdgen_tm01_f01_${cyc}.${PBS_JOBID}
+export job=nam_catchup_prdgen_tm01_f01_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

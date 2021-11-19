@@ -37,7 +37,8 @@ export envir=canned
 export nam_ver=v4.2.0
 export domain=hawaii
 
-export jobid=jnam_catchup_coldstart_prep_${domain}${cyc}.${PBS_JOBID}
+export jobid=jnam_catchup_coldstart_prep_${domain}_${cyc}.${PBS_JOBID}
+export job=jnam_catchup_coldstart_prep_${domain}_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
