@@ -49,6 +49,7 @@ export envir=canned
 export domain=alaska
 export nam_ver=v4.2.0
 export jobid=jnam_catchup_analysis_${domain}.${tmmark}_${cyc}.${PBS_JOBID}
+export job=nam_catchup_analysis_${domain}.${tmmark}_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

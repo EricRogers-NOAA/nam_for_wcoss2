@@ -39,6 +39,7 @@ export domain=hawaii
 export nam_ver=v4.2.0
 export fhr=36
 export jobid=jnam_profile_hawaii_f36_${cyc}.${PBS_JOBID}
+export job=nam_profile_hawaii_f36_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

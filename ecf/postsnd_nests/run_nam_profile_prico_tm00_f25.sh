@@ -39,6 +39,7 @@ export domain=prico
 export nam_ver=v4.2.0
 export fhr=25
 export jobid=jnam_profile_prico_f25_${cyc}.${PBS_JOBID}
+export job=nam_profile_prico_f25_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

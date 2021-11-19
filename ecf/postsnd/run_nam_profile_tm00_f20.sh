@@ -38,6 +38,7 @@ export envir=canned
 export nam_ver=v4.2.0
 export fhr=20
 export jobid=jnam_profile_f20_${cyc}.${PBS_JOBID}
+export jobid=nam_profile_f20_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

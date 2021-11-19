@@ -46,6 +46,7 @@ export nam_ver=v4.2.0
 export SENDCOM=YES
 export SENDDBN=NO
 export jobid=jnam_prdgen_alaska_f38_${cyc}.${PBS_JOBID}
+export job=nam_prdgen_alaska_f38_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
