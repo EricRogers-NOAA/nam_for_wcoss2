@@ -25,8 +25,8 @@ module load cray-pals/${cray_pals_ver}
 module load netcdf/${netcdf_ver}
 module load prod_util/${prod_util_ver}
 module load prod_envir/${prod_envir_ver}
-module load libjpeg/${libjpeg_ver}
 module load grib_util/${grib_util_ver}
+module load libjpeg/${libjpeg_ver}
 
 module load jasper/${jasper_ver}
 module load libpng/${libpng_ver}
