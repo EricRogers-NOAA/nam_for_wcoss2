@@ -45,6 +45,7 @@ export SENDCOM=YES
 export SENDDBN=NO
 export SENDDBN_NTC=NO
 export jobid=jnam_gempak_meta_${cyc}.${PBS_JOBID}
+export job=nam_gempak_meta_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

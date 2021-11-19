@@ -35,6 +35,7 @@ export domain=conus
 export envir=canned
 export nam_ver=v4.2.0
 export jobid=jnam_post_conus_manager_${cyc}.${PBS_JOBID}
+export job=nam_post_conus_manager_${cyc}
 
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers

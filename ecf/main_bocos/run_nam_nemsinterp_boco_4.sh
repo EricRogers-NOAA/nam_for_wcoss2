@@ -40,6 +40,7 @@ export tmmark=tm00
 export envir=canned
 export nam_ver=v4.2.0
 export jobid=jnam_nemsinterp_boco_4_${cyc}.${PBS_JOBID}
+export job=jnam_nemsinterp_boco_4_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 

@@ -45,7 +45,7 @@ export SENDCOM=YES
 export SENDDBN=NO
 export SENDDBN_NTC=NO
 export jobid=jnam_bulls_f60_${cyc}.${PBS_JOBID}
-export job=nam_bulls_f60_12
+export job=nam_bulls_f60_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
