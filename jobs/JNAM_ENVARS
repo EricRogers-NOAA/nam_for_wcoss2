@@ -147,7 +147,7 @@ export COMINpcpanl=${COMINpcpanl:-$(compath.py $envir/pcpanl/$pcpanl_ver)}
 #For testing
 ###export COMINradar=${COMINradar:-$(compath.py $envir/hourly/$radar_ver)}
 #For WCOSS2 ops
-export COMINradar=${COMINradar:-$(compath.py $envir/radar/$radarl2_ver)}
+export COMINradar=${COMINradar:-$(compath.py $envir/radarl2/$radarl2_ver)}
 export INPUT_FIRE_DIR=${INPUT_FIRE_DIR:-${DCOMROOT}/burned_area}
 export NAMFIXgem=${NAMFIXgem:-${HOMEnam}/gempak/fix}
 export GETGES_COM=${GETGES_COM:-${COMROOT}}
