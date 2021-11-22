@@ -129,6 +129,8 @@ export PRDGENSWITCH_HOUR_NEST=${PRDGENSWITCH_HOUR_NEST:-60}
 ## COMROOT's set in prod_envir module
 ##
 export COMIN=${COMIN:-${COMROOT}/${NET}/${nam_ver}/${RUN}.${PDY}}
+export COM_IN=${COM_IN:-${COMROOT}/${NET}/${nam_ver}
+export COM_OUT=${COM_OUT:-${COMROOT}/${NET}/${nam_ver}
 export COMOUT=${COMOUT:-${COMROOT}/${NET}/${nam_ver}/${RUN}.${PDY}}
 export COMAWP=${COMAWP:-${COMROOT}/${NET}/${nam_ver}/${RUN}.${PDY}/gempak}
 #for testing w/canned data
