@@ -6,7 +6,6 @@
 #PBS -o /lfs/h2/emc/lam/noscrub/Eric.Rogers/nam.v4.2.0/logs/nam_forecast_parentext_12.out
 #PBS -q dev
 #PBS -A NAM-DEV
-#PBS -l hyper=true
 #PBS -l debug=true
 #PBS -V
 
