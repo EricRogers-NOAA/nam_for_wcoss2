@@ -38,7 +38,7 @@ export nam_ver=v4.2.0
 export domain=firewx
 
 export jobid=jnam_catchup_coldstart_prep_${domain}_${cyc}.${PBS_JOBID}
-export job=jnam_catchup_coldstart_prep_${domain}_${cyc}
+export job=nam_catchup_coldstart_prep_${domain}_${cyc}
 export NWROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 export PACKAGEROOT=/lfs/h2/emc/lam/noscrub/Eric.Rogers
 
