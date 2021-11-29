@@ -7,7 +7,7 @@
 #PBS -q dev
 #PBS -A NAM-DEV
 #PBS -l debug=true
-#PBS -l hyper=true
+#####PBS -l hyper=true
 #PBS -V
 
 set -x
