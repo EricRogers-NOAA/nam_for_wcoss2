@@ -47,19 +47,19 @@ EOF
 snd=${outfilbase}.snd
 sfc=${outfilbase}.sfc
 aux=${outfilbase}.sfc_aux
-cp $snd $COMAWP/.$snd
-cp $sfc $COMAWP/.$sfc
-cp $aux $COMAWP/.$aux
+cp $snd $COMOUT/.$snd
+cp $sfc $COMOUT/.$sfc
+cp $aux $COMOUT/.$aux
 
-mv $COMAWP/.$snd $COMAWP/$snd.${tmmark}
-mv $COMAWP/.$sfc $COMAWP/$sfc.${tmmark}
-mv $COMAWP/.$aux $COMAWP/$aux.${tmmark}
+mv $COMOUT/.$snd $COMOUT/$snd.${tmmark}
+mv $COMOUT/.$sfc $COMOUT/$sfc.${tmmark}
+mv $COMOUT/.$aux $COMOUT/$aux.${tmmark}
 
 if [ $SENDDBN = "YES" ]
 then
-   $DBNROOT/bin/dbn_alert MODEL SFC_NAM $job $COMAWP/$sfc.${tmmark}
-   $DBNROOT/bin/dbn_alert MODEL SFC_NAM $job $COMAWP/$aux.${tmmark}
-   $DBNROOT/bin/dbn_alert MODEL SND_NAM $job $COMAWP/$snd.${tmmark}
+   $DBNROOT/bin/dbn_alert MODEL SFC_NAM $job $COMOUT/$sfc.${tmmark}
+   $DBNROOT/bin/dbn_alert MODEL SFC_NAM $job $COMOUT/$aux.${tmmark}
+   $DBNROOT/bin/dbn_alert MODEL SND_NAM $job $COMOUT/$snd.${tmmark}
 fi
 
 echo done > $DATA/gembufr.done
