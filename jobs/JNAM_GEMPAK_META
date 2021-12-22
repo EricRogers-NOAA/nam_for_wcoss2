@@ -16,7 +16,7 @@ date
 export pid=$$
 export HOMEnam=$PACKAGEROOT/nam.${nam_ver}
 export JJOBSnam=$HOMEnam/jobs
-export WKDIRNAME=${job}.${pid}
+export WKDIRNAME=${jobid:?}
 
 # Setup directories and common environment variables
 
