@@ -304,7 +304,7 @@ then
   CHKDATE=$CYCLE_TIME
 
   while ((CHKDATE >= OLD_DATE_8)) ; do
-     SST_DIR="$COMINsst/sst.${CHKDATE}"
+     SST_DIR="$COMINsst/nsst.${CHKDATE}"
      SST_GLOBAL_FILE=${SST_DIR}/${SST_GLOBAL_FILE_NAME}
      if [[ -s $SST_GLOBAL_FILE ]]
      then
@@ -333,7 +333,7 @@ then
 
        CHKDATE=$CYCLE_TIME
        while ((CHKDATE >= OLD_DATE_8)) ; do
-          SST_DIR="$COMINsst/sst.${CHKDATE}"
+          SST_DIR="$COMINsst/nsst.${CHKDATE}"
           if [[ -s ${SST_DIR}/${SST_REG_FILE_NAME} ]]
           then
             SST_REG_FILE=${SST_DIR}/${SST_REG_FILE_NAME}

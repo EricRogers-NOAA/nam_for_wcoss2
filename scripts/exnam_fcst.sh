@@ -29,7 +29,8 @@ cd $DATA
 
 export run_firewx=${run_firewx:-NO}
 if [ $tmmark = tm00 ] ; then
-  export NODE_CONFIGFILE=${NODE_CONFIGFILE:-$PARMnam/nam_node_decomposition_opsconfig.tm00_wcoss2}
+  export NODE_CONFIGFILE=${NODE_CONFIGFILE:-$PARMnam/nam_node_decomposition_opsconfig.tm00_wcoss2_38nodes}
+# export NODE_CONFIGFILE=${NODE_CONFIGFILE:-$PARMnam/nam_node_decomposition_opsconfig.tm00_wcoss2_63tasks_node}
 else
   export NODE_CONFIGFILE=${NODE_CONFIGFILE:-$PARMnam/nam_node_decomposition_opsconfig.tm06-01_wcoss2}
 fi
@@ -653,7 +654,7 @@ export pgm=nam_nems_nmmb_fcst
 
 startmsg
 
-${MPIEXEC} -n ${ntasks} -ppn ${ppn} --cpu-bind depth --depth ${threads} $EXECnam/nam_nems_nmmb_fcst >>$pgmout 2>errfile
+${MPIEXEC} --line-buffer --label -n ${ntasks} -ppn ${ppn} --cpu-bind depth --depth ${threads} $EXECnam/nam_nems_nmmb_fcst >>$pgmout 2>errfile
 export err=$?;err_chk
 
 if [ $RUNTYPE = CATCHUP -a $tmmark != tm00 ]; then

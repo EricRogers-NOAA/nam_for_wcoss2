@@ -27,7 +27,7 @@ postmsg "$msg"
 cd $DATA
 
 export domain=${domain:-parentonly}
-export NODE_CONFIGFILE=${NODE_CONFIGFILE:-$PARMnam/nam_node_decomposition_opsconfig.tm00_wcoss2}
+export NODE_CONFIGFILE=${NODE_CONFIGFILE:-$PARMnam/nam_node_decomposition_opsconfig.tm00_wcoss2_63tasks_node}
 
 export tmmark=tm00
 
@@ -195,7 +195,7 @@ export pgm=nam_nems_nmmb_fcst
 . prep_step
 
 startmsg
-${MPIEXEC} -n ${ntasks} -ppn ${ppn} --cpu-bind core --depth ${threads} $EXECnam/nam_nems_nmmb_fcst >>$pgmout 2>errfile
+${MPIEXEC} --line-buffer --label -n ${ntasks} -ppn ${ppn} --cpu-bind core --depth ${threads} $EXECnam/nam_nems_nmmb_fcst >>$pgmout 2>errfile
 export err=$?
 
 date

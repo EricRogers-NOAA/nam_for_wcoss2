@@ -203,18 +203,6 @@ fi
   ccpa2=$COMINccpa/ccpa.$daym1/00/ccpa.t00z.06h.hrap.conus
   ccpa3=$COMINccpa/ccpa.$daym1/06/ccpa.t06z.06h.hrap.conus
   ccpa4=$COMINccpa/ccpa.$daym1/12/ccpa.t12z.06h.hrap.conus
-  if [ ! -s $ccpa1 ]; then
-    ccpa1=$COMINgefs/gefs.$daym2/18/ccpa/ccpa_conus_hrap_t18z_06h
-  fi
-  if [ ! -s $ccpa2 ]; then
-    ccpa2=$COMINgefs/gefs.$daym1/00/ccpa/ccpa_conus_hrap_t00z_06h
-  fi
-  if [ ! -s $ccpa3 ]; then
-    ccpa3=$COMINgefs/gefs.$daym1/06/ccpa/ccpa_conus_hrap_t06z_06h
-  fi
-  if [ ! -s $ccpa4 ]; then
-    ccpa4=$COMINgefs/gefs.$daym1/12/ccpa/ccpa_conus_hrap_t12z_06h
-  fi
 
 cat > input_acc_ccpa <<EOF
 obs
