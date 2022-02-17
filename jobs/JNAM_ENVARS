@@ -136,6 +136,7 @@ export COMAWP=${COMAWP:-${COMROOT}/${NET}/${nam_ver}/${RUN}.${PDY}/gempak}
 #for testing w/canned data
 ##export COMNAM=${COMNAM:-/lfs/h1/ops/${prodenvir}/com/nam/${nam_ver}}
 #for WCOSS2 ops
+export COMINobsproc=${COMINobsproc:-$(compath.py $envir/obsproc/$obsproc_ver)}
 export COMNAM=${COMNAM:-$(compath.py $envir/nam/$nam_ver)}
 export COMINrap=${COMINrap:-$(compath.py $envir/rap/$rap_ver)}
 export COMINgfs=${COMINgfs:-$(compath.py $envir/gfs/$gfs_ver)}
@@ -166,45 +167,45 @@ export FCSTDIR=${DATAROOT}/nam_${cyc}_${tmmark}_${envir}
 ##############################################
 
 # PREPBUFR
-export COM_PREPBUFR=${COM_PREPBUFR:-$COM_IN}
+export COM_PREPBUFR=${COM_PREPBUFR:-$COMINobsproc}
 # IASI
-export COM_IASI=${COM_IASI:-$COM_IN}
+export COM_IASI=${COM_IASI:-$COMINobsproc}
 # HIRS3
-export COM_HIRS3=${COM_HIRS3:-$COM_IN}
+export COM_HIRS3=${COM_HIRS3:-$COMINobsproc}
 # HIRS4
-export COM_HIRS4=${COM_HIRS4:-$COM_IN}
+export COM_HIRS4=${COM_HIRS4:-$COMINobsproc}
 # AMSUA
-export COM_AMSUA=${COM_AMSUA:-$COM_IN}
+export COM_AMSUA=${COM_AMSUA:-$COMINobsproc}
 # AMSUB 
-export COM_AMSUB=${COM_AMSUB:-$COM_IN}
+export COM_AMSUB=${COM_AMSUB:-$COMINobsproc}
 # MHS
-export COM_MHS=${COM_MHS:-$COM_IN}
+export COM_MHS=${COM_MHS:-$COMINobsproc}
 # GPSRO
-export COM_GPSRO=${COM_GPSRO:-$COM_IN}
+export COM_GPSRO=${COM_GPSRO:-$COMINobsproc}
 # GOESFV
-export COM_GOESFV=${COM_GOESFV:-$COM_IN}
+export COM_GOESFV=${COM_GOESFV:-$COMINobsproc}
 # AIRS
-export COM_AIRS=${COM_AIRS:-$COM_IN}
+export COM_AIRS=${COM_AIRS:-$COMINobsproc}
 # RADWND
-export COM_RADWND=${COM_RADWND:-$COM_IN}
+export COM_RADWND=${COM_RADWND:-$COMINobsproc}
 # NEXRAD
-export COM_NEXRAD=${COM_NEXRAD:-$COM_IN}
+export COM_NEXRAD=${COM_NEXRAD:-$COMINobsproc}
 # ESAMUA
-export COM_ESAMUA=${COM_ESAMUA:-$COM_IN}
+export COM_ESAMUA=${COM_ESAMUA:-$COMINobsproc}
 # LGYCLD
-export COM_LGYCLD=${COM_LGYCLD:-$COM_IN}
+export COM_LGYCLD=${COM_LGYCLD:-$COMINobsproc}
 # LGHTNG
-export COM_LGHTNG=${COM_LGHTNG:-$COM_IN}
+export COM_LGHTNG=${COM_LGHTNG:-$COMINobsproc}
 # SATWND
-export COM_SATWND=${COM_SATWND:-$COM_IN}
+export COM_SATWND=${COM_SATWND:-$COMINobsproc}
 # ATMS
-export COM_ATMS=${COM_ATMS:-$COM_IN}
+export COM_ATMS=${COM_ATMS:-$COMINobsproc}
 # CRIS
-export COM_CRIS=${COM_CRIS:-$COM_IN}
+export COM_CRIS=${COM_CRIS:-$COMINobsproc}
 # SEVIRI
-export COM_SEVIRI=${COM_SEVIRI:-$COM_IN}
+export COM_SEVIRI=${COM_SEVIRI:-$COMINobsproc}
 # SSMIS
-export COM_SSMIS=${COM_SSMIS:-$COM_IN}
+export COM_SSMIS=${COM_SSMIS:-$COMINobsproc}
 
 ###########################################
 # SPECIFY PATH TO FIREWX NEST CENTER POINTS

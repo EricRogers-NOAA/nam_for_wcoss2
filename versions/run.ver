@@ -50,3 +50,5 @@ export pcpanl_ver=v4.1
 ##export radar_ver=v0.0
 #for wcoss2 ops
 export radarl2_ver=v1.2
+export obsproc_ver=v1.0
+export nsst_ver=v1.2
