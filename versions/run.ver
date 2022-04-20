@@ -40,15 +40,16 @@ export gfsio_ver="1.4.1"
 export python_ver="3.8.6"
 export git_ver="2.29.0"
 #Upsteam model versions
-#These are for using canned data
 export gfs_ver=v16.2
 export rtma_ver=v2.9
-export rap_ver=v5.1
+# JY export rap_ver=v5.1
 export ccpa_ver=v4.2
 export pcpanl_ver=v4.1
-#for testing
-##export radar_ver=v0.0
-#for wcoss2 ops
 export radarl2_ver=v1.2
-export obsproc_ver=v1.0
+export obsproc_ver=v1.0 
 export nsst_ver=v1.2
+
+export DBNLOG=YES
+export PATH=.:$PATH
+
+# export PARATEST=YES
