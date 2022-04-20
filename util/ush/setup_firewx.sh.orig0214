@@ -10,15 +10,11 @@ echo "by the NAM jobs that process the fire weather nest."
 
 envir=prod
 
-# in util/ush
-currentDir=$(dirname $(readlink -f "$0"))
-HOMEnam=$currentDir/../..
+. /gpfs/dell1/nco/ops/nw${envir}/versions/nam.ver
+EXECfirewx=/gpfs/dell1/nco/ops/nw${envir}/nam.${nam_ver}/util/exec/wcoss.exec
+COMOUT=/gpfs/dell1/nco/ops/com/nam/${envir}/input
 
-. ${HOMEnam}/versions/run.ver
-EXECfirewx=${HOMEnam}/util/exec
-COMOUT=/lfs/h1/ops/${envir}/com/nam/${nam_ver}/input
-
-TMP=/lfs/h1/nco/ptmp
+TMP=/gpfs/dell1/ptmp
 mkdir -p ${TMP}/`whoami`/firewx_setup
 cd ${TMP}/`whoami`/firewx_setup
 rm nam_firewx_loc
