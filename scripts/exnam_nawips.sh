@@ -11,13 +11,13 @@ echo "                    data on the CCS is properly protected."
 
 set -xa
 
-RUN=$1
+RUNTYPE=$1
 GRIB=$2
 GRIB1=$3
 finc=$4
 fend=$5
 
-cd $DATA/$RUN
+cd $DATA/$RUNTYPE
 
 msg="Begin job for $job"
 postmsg "$msg"
@@ -33,7 +33,7 @@ cp $NAMFIXgem/hrrr_g2varswmo2.tbl g2varswmo2.tbl
 cp $NAMFIXgem/hrrr_g2vcrdncep1.tbl g2vcrdncep1.tbl
 cp $NAMFIXgem/hrrr_g2vcrdwmo2.tbl g2vcrdwmo2.tbl
 
-entry=`grep "^$RUN " $NAGRIB_TABLE | awk 'index($1,"#") != 1 {print $0}'`
+entry=`grep "^$RUNTYPE " $NAGRIB_TABLE | awk 'index($1,"#") != 1 {print $0}'`
 
 if [ "$entry" != "" ] ; then
   cpyfil=`echo $entry  | awk 'BEGIN {FS="|"} {print $2}'`
@@ -70,45 +70,45 @@ while [ $fhcnt -le $fend ] ; do
   fhr3=$fhcnt
   typeset -Z3 fhr3
   GRIBIN=$COMIN/${model}.${cycle}.${GRIB}${fhr}${EXT}.grib2
-  GEMGRD=${RUN}_${PDY}${cyc}f${fhr3}
+  GEMGRD=${RUNTYPE}_${PDY}${cyc}f${fhr3}
 
-  case $RUN in
+  case $RUNTYPE in
    nam12) GRIBIN1=$COMIN/${model}.${cycle}.${GRIB1}${fhr}${EXT}.grib2 ;;
    nam12carib) GRIBIN1=$COMIN/${model}.${cycle}.${GRIB1}${fhr}${EXT}.grib2 ;;
    nam_alaskanest) GRIBIN=$COMIN/${model}.${cycle}.alaskanest.${GRIB}${fhr}${EXT}.grib2
-                GEMGRD=${RUN}_${PDY}${cyc}f${fhr3} ;;
+                GEMGRD=${RUNTYPE}_${PDY}${cyc}f${fhr3} ;;
    nam_conusnest) GRIBIN=$COMIN/${model}.${cycle}.conusnest.${GRIB}${fhr}${EXT}.grib2
-                GEMGRD=${RUN}_${PDY}${cyc}f${fhr3} ;;
+                GEMGRD=${RUNTYPE}_${PDY}${cyc}f${fhr3} ;;
    nam_conusnest_mag) GRIBIN=$COMIN/${model}.${cycle}.conusnest.${GRIB}${fhr}${EXT}.grib2
-                GEMGRD=${RUN}_${PDY}${cyc}f${fhr3} ;;
+                GEMGRD=${RUNTYPE}_${PDY}${cyc}f${fhr3} ;;
    nam_conusnest_cam) GRIBIN=$COMIN/${model}.${cycle}.conusnest.${GRIB}${fhr}${EXT}.grib2
-                GEMGRD=${RUN}_${PDY}${cyc}f${fhr3} ;;
+                GEMGRD=${RUNTYPE}_${PDY}${cyc}f${fhr3} ;;
    nam_hawaiinest) GRIBIN=$COMIN/${model}.${cycle}.hawaiinest.${GRIB}${fhr}${EXT}.grib2
-                GEMGRD=${RUN}_${PDY}${cyc}f${fhr3} ;;
+                GEMGRD=${RUNTYPE}_${PDY}${cyc}f${fhr3} ;;
    nam_priconest) GRIBIN=$COMIN/${model}.${cycle}.priconest.${GRIB}${fhr}${EXT}.grib2
-                GEMGRD=${RUN}_${PDY}${cyc}f${fhr3} ;;
+                GEMGRD=${RUNTYPE}_${PDY}${cyc}f${fhr3} ;;
   esac
 
-  if [ $RUN = "nam12" ] ; then
+  if [ $RUNTYPE = "nam12" ] ; then
     GRIBIN_chk=$GRIBIN
     GRIBIN_chk1=$GRIBIN1
-  elif [ $RUN = "nam_alaskanest" ] ; then
+  elif [ $RUNTYPE = "nam_alaskanest" ] ; then
     GRIBIN_chk=$COMIN/${model}.${cycle}.alaskanest.${GRIB}${fhr}${EXT}.grib2.idx
-  elif [ $RUN = "nam_conusnest" ] ; then
+  elif [ $RUNTYPE = "nam_conusnest" ] ; then
     GRIBIN_chk=$COMIN/${model}.${cycle}.conusnest.${GRIB}${fhr}${EXT}.grib2.idx
-  elif [ $RUN = "nam_conusnest_mag" ] ; then
+  elif [ $RUNTYPE = "nam_conusnest_mag" ] ; then
     GRIBIN_chk=$COMIN/${model}.${cycle}.conusnest.${GRIB}${fhr}${EXT}.grib2.idx
-  elif [ $RUN = "nam_conusnest_cam" ] ; then
+  elif [ $RUNTYPE = "nam_conusnest_cam" ] ; then
     GRIBIN_chk=$COMIN/${model}.${cycle}.conusnest.${GRIB}${fhr}${EXT}.grib2.idx
-  elif [ $RUN = "nam_hawaiinest" ] ; then
+  elif [ $RUNTYPE = "nam_hawaiinest" ] ; then
     GRIBIN_chk=$COMIN/${model}.${cycle}.hawaiinest.${GRIB}${fhr}${EXT}.grib2.idx
-  elif [ $RUN = "nam_priconest" ] ; then
+  elif [ $RUNTYPE = "nam_priconest" ] ; then
     GRIBIN_chk=$COMIN/${model}.${cycle}.priconest.${GRIB}${fhr}${EXT}.grib2.idx
   else
     GRIBIN_chk=$GRIBIN
   fi
 
-  if [ $RUN = "nam12" ] ; then
+  if [ $RUNTYPE = "nam12" ] ; then
 
   icnt=1
   while [ $icnt -lt 1000 ]
@@ -148,7 +148,7 @@ while [ $fhcnt -le $fend ] ; do
 
   fi
 
-  case $RUN in
+  case $RUNTYPE in
    nam_alaskanest)
          $WGRIB2 -s $GRIBIN | grep -f $utilfix_nam/nam_alaskanest.parmlist|$WGRIB2 -i -grib temp $GRIBIN
          mv temp grib$fhr
@@ -242,7 +242,7 @@ EOF
   #
   # Create ZAGL level products for the 40 km NAM grid and the ruc
   #
-  if [ "$RUN" = "nam40" ] ; then
+  if [ "$RUNTYPE" = "nam40" ] ; then
     gdvint << EOF
      GDFILE   = $GEMGRD
      GDOUTF   = $GEMGRD
@@ -260,7 +260,7 @@ EOF
   #
   # Create theta level products for the 90 and 40 km NAM grids
   #
-  if [ "$RUN" = "nam40" -o "$RUN" = "nam" ] ; then
+  if [ "$RUNTYPE" = "nam40" -o "$RUNTYPE" = "nam" ] ; then
     gdvint << EOF
      GDFILE   = $GEMGRD
      GDOUTF   = $GEMGRD
@@ -278,7 +278,7 @@ EOF
   if [ $SENDCOM = "YES" ] ; then
      cpfs $GEMGRD $COMAWP/$GEMGRD
      if [ $SENDDBN = "YES" ] ; then
-       if [ $RUN = "nam" -a $fhcnt3 -ne 0 ] ; then
+       if [ $RUNTYPE = "nam" -a $fhcnt3 -ne 0 ] ; then
          $DBNROOT/bin/dbn_alert MODEL ${DBN_ALERT_TYPE_2} $job \
             $COMAWP/$GEMGRD
        else
@@ -294,25 +294,25 @@ EOF
 
 
 
-   if [ $RUN = "nam" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_PARENT} ] ; then
+   if [ $RUNTYPE = "nam" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_PARENT} ] ; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam12" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_PARENT} ] ; then
+   elif [ $RUNTYPE = "nam12" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_PARENT} ] ; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam32" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_PARENT} ] ; then
+   elif [ $RUNTYPE = "nam32" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_PARENT} ] ; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam40" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_PARENT} ]; then
+   elif [ $RUNTYPE = "nam40" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_PARENT} ]; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam_alaskanest" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_NEST} ] ; then
+   elif [ $RUNTYPE = "nam_alaskanest" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_NEST} ] ; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam_conusnest" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_NEST} ] ; then
+   elif [ $RUNTYPE = "nam_conusnest" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_NEST} ] ; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam_conusnest_mag" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_NEST} ] ; then
+   elif [ $RUNTYPE = "nam_conusnest_mag" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_NEST} ] ; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam_conusnest_cam" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_NEST} ] ; then
+   elif [ $RUNTYPE = "nam_conusnest_cam" -a $fhcnt -lt ${PRDGENSWITCH_HOUR_NEST} ] ; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam_hawaiinest" -a $fhcnt -lt 36 ] ; then
+   elif [ $RUNTYPE = "nam_hawaiinest" -a $fhcnt -lt 36 ] ; then
      let fhcnt=fhcnt+1
-   elif [ $RUN = "nam_priconest" -a $fhcnt -lt 36 ] ; then
+   elif [ $RUNTYPE = "nam_priconest" -a $fhcnt -lt 36 ] ; then
      let fhcnt=fhcnt+1
    else
     let fhcnt=fhcnt+finc
@@ -322,9 +322,9 @@ done
 #####################################################################
 # GOOD RUN
 set +x
-echo "**************JOB $RUN NAWIPS COMPLETED NORMALLY ON THE IBM"
-echo "**************JOB $RUN NAWIPS COMPLETED NORMALLY ON THE IBM"
-echo "**************JOB $RUN NAWIPS COMPLETED NORMALLY ON THE IBM"
+echo "**************JOB $RUNTYPE NAWIPS COMPLETED NORMALLY ON THE IBM"
+echo "**************JOB $RUNTYPE NAWIPS COMPLETED NORMALLY ON THE IBM"
+echo "**************JOB $RUNTYPE NAWIPS COMPLETED NORMALLY ON THE IBM"
 set -x
 #####################################################################
 
