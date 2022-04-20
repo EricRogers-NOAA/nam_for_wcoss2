@@ -1,7 +1,7 @@
 #!/bin/bash
 set -xa
 
-export HOMEnam=$PACKAGEROOT/nam.${nam_ver}
+# export HOMEnam=$PACKAGEROOT/nam.${nam_ver}
 export JJOBSnam=$HOMEnam/jobs
 export WKDIRNAME=${jobid:?}
 

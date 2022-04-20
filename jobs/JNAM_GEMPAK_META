@@ -14,9 +14,9 @@ date
 # obtain temp directory name
 #
 export pid=$$
-export HOMEnam=$PACKAGEROOT/nam.${nam_ver}
+# export HOMEnam=$PACKAGEROOT/nam.${nam_ver}
 export JJOBSnam=$HOMEnam/jobs
-export WKDIRNAME=${jobid:?}
+export WKDIRNAME=${job}.${pid}
 
 # Setup directories and common environment variables
 
