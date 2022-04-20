@@ -5,34 +5,34 @@
     if [ "$domain" = parent ]
     then
         inpes=8
-	jnpes=29
+	jnpes=32
 	write_groups=3
 	write_tasks=4
     fi
     # For the nest domains:
      if [ "$domain" = alaska ] ; then
-      inpes=20
-      jnpes=32
+      inpes=23
+      jnpes=30
       write_groups=3
-      write_tasks=8
+      write_tasks=4
      fi
      if [ "$domain" = conus ] ; then
       inpes=24
-      jnpes=50
+      jnpes=54
       write_groups=3
-      write_tasks=16
+      write_tasks=12
      fi
      if [ "$domain" = hawaii ] ; then
       inpes=8
       jnpes=11
       write_groups=2
-      write_tasks=8
+      write_tasks=4
      fi
      if [ "$domain" = prico ] ; then
       inpes=6
       jnpes=9
       write_groups=2
-      write_tasks=5
+      write_tasks=4
      fi
   else                         
     if [ "$domain" = parentonly ]   # for 60-84h forecast
