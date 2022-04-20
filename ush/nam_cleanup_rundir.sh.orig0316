@@ -8,8 +8,7 @@ set -xa
 
 cd $DATA 
 
-# turn off the checking for rerun of the cleanup - 03/16 - JY
-#if [ ! -s ${GESDIR}/cleaned_${CDATE}_${RUNTYPE}.out ]; then
+if [ ! -s ${GESDIR}/cleaned_${CDATE}_${RUNTYPE}.out ]; then
 
 # Extract hourly precipitation from 00z NAM
 # 12-36 h forecast for OCONUS soil moisture adjustment
@@ -40,7 +39,7 @@ cd $DATA
       cd $DATAROOT
     fi
     echo "ALL_CLEAN!" > ${GESDIR}/cleaned_${CDATE}_${RUNTYPE}.out
-# fi
+fi
 
 exit 0 
 
